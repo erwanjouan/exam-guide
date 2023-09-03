@@ -106,65 +106,62 @@ exam:
                 ### Distributed Load Testing on AWS
                 - [Automate the testing of your software applications at scale](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/solution-overview.html)
             - name: 'Measuring application health based on application exit codes'
-              content: >-
-                Measuring application health based on application exit codes
-                <a href="https://shapeshed.com/unix-exit-codes/">[link]</a>
+              content: |
+                Linux and Unix exit code tutorial with examples [link](https://shapeshed.com/unix-exit-codes/)
             - name: 'Automating unit tests and code coverage'
-              content: >-
-                Automating unit tests and code coverage
-                <a href="https://docs.aws.amazon.com/codebuild/latest/userguide/report-create.html">[codebuild1]</a>
-                <a href="https://docs.aws.amazon.com/codebuild/latest/userguide/code-coverage-report.html">[codebuild2]</a>
-                <a href="https://aws.amazon.com/blogs/devops/maintaining-code-quality-with-amazon-codecatalyst-reports/">[codecatalyst]</a>
+              content: |
+                ### CodeBuild
+                - [Create a test report](https://docs.aws.amazon.com/codebuild/latest/userguide/report-create.html)
+                - [Code coverage reports](https://docs.aws.amazon.com/codebuild/latest/userguide/code-coverage-report.html)
+                - [Blog: AWS CodeCatalyst](https://aws.amazon.com/blogs/devops/maintaining-code-quality-with-amazon-codecatalyst-reports/)
             - name: 'Invoking AWS services in a pipeline for testing'
-              content: >-
-                Invoking AWS services in a pipeline for testing
-                <a href="https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference.html">[codepipeline1]</a>
-                <a href="https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html">[codepipeline2]</a>
-                <a href="https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/building-the-pipeline.html#adding-lambda-actions">[whitepaper]</a>
+              content: |
+                ### CodePipeline
+                - [Action structure reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference.html)
+                - [CodePipeline pipeline structure reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html)
+                - [Adding Lambda actions](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/building-the-pipeline.html#adding-lambda-actions)
         - id: '1.3'
           name: 'Build and manage artifacts.'
           knowledgeOf:
             - name: 'Artifact use cases and secure management'
-              content: >-
-                Artifact use cases and secure management
-                <a href="https://aws.amazon.com/fr/blogs/aws/software-package-management-with-aws-codeartifact/">[CodeArtifact Announcement]</a>
-                <a href="https://jfrog.com/blog/aws-codeartifact-vs-artifactory-for-binary-management/">[nexus]</a>
+              content: |
+                ### Artifact management
+                - [CodeArtifact Release Note](https://aws.amazon.com/fr/blogs/aws/software-package-management-with-aws-codeartifact/)
+                - [AWS CodeArtifact vs. Artifactory](https://jfrog.com/blog/aws-codeartifact-vs-artifactory-for-binary-management/)
             - name: 'Methods to create and generate artifacts'
-              content: >-
-                Methods to create and generate artifacts
-                <a href="https://medium.com/@pawel.piwosz/aws-codeartifact-the-long-awaited-feature-7c3757b274e9">[CodeArtifact2]</a>
-                <a href="https://ben11kehoe.medium.com/aws-codeartifact-should-be-the-place-to-store-aws-code-artifacts-1cb9b8249ccf">[CodeArtifact3]</a>
+              content: |
+                ### CodeArtifact
+                - [AWS CodeArtifact — the long-awaited feature](https://medium.com/@pawel.piwosz/aws-codeartifact-the-long-awaited-feature-7c3757b274e9)
+                - [AWS CodeArtifact should be the place to store AWS code artifacts](https://ben11kehoe.medium.com/aws-codeartifact-should-be-the-place-to-store-aws-code-artifacts-1cb9b8249ccf)
             - name: 'Artifact lifecycle considerations'
-              content: >-
-                Artifact lifecycle considerations
-                <a href="https://en.wikipedia.org/wiki/Unified_Process">[UnifiedProcess]</a>
-                <a href="https://www.geeksforgeeks.org/artifact-evolution-over-life-cycle/">[evolution]</a>
+              content: |
+                ### Principle
+                - [Unified Process](https://en.wikipedia.org/wiki/Unified_Process)
+                - [Artifact Evolution Over Life Cycle](https://www.geeksforgeeks.org/artifact-evolution-over-life-cycle/)
           skillsIn:
             - name: 'Creating and configuring artifact repositories (for example, AWS CodeArtifact, Amazon S3, Amazon Elastic Container Registry [Amazon ECR])'
-              content: >-
-                Creating and configuring artifact repositories (for example,
-                <a href="https://catalog.us-east-1.prod.workshops.aws/workshops/752fd04a-f7c3-49a0-a9a0-c9b5ed40061b/en-US/codeartifact">AWS CodeArtifact</a>,
-                <a href="https://dev.classmethod.jp/articles/aws-codepipeline-cd-pipeline-with-s3/">Amazon S3</a>,
-                Amazon Elastic Container Registry
-                <a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/Repositories.html">[Amazon ECR]</a>)
+              content: |
+                ### CodeArtifact
+                - [Workshop:AWS CodeArtifact](https://catalog.us-east-1.prod.workshops.aws/workshops/752fd04a-f7c3-49a0-a9a0-c9b5ed40061b/en-US/codeartifact)
+                ### S3
+                - [Pipeline with S3](https://dev.classmethod.jp/articles/aws-codepipeline-cd-pipeline-with-s3/)
+                ### Amazon Elastic Container Registry
+                - [Amazon ECR private repositories](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Repositories.html)
             - name: 'Configuring build tools for generating artifacts (for example, CodeBuild, AWS Lambda)'
-              content: >-
-                Configuring build tools for generating artifacts (for example,
-                <a href="https://docs.aws.amazon.com/codeartifact/latest/ug/codebuild.html">CodeBuild</a>
-                <a href="https://docs.aws.amazon.com/fr_fr/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html">[CodeBuildInCodePipeline]</a>
-                , AWS Lambda
-                <a href="https://docs.aws.amazon.com/lambda/latest/dg/java-package.html">[ZipJar]</a>
-                <a href="https://docs.aws.amazon.com/lambda/latest/dg/java-image.html">[JavaImage]</a>
-                <a href="https://docs.aws.amazon.com/lambda/latest/dg/python-package.html">[PythonZip]</a>
-                )
+              content: |
+                ### CodeBuild
+                - [Using CodeArtifact with CodeBuild](https://docs.aws.amazon.com/codeartifact/latest/ug/codebuild.html)
+                - [AWS::CodeBuild::Project Artifacts](https://docs.aws.amazon.com/fr_fr/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html)
+                ### AWS Lambda
+                - [Deploy Java Lambda functions with .zip or JAR file archives](https://docs.aws.amazon.com/lambda/latest/dg/java-package.html)
+                - [Deploy Java Lambda functions with container images](https://docs.aws.amazon.com/lambda/latest/dg/java-image.html)
+                - [Working with .zip file archives for Python Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)
             - name: 'Automating Amazon EC2 instance and container image build processes (for example, EC2 Image Builder)'
-              content: >-
-                Automating Amazon EC2 instance and container image build processes
-                (for example,
-                <a href="https://aws.amazon.com/blogs/aws/automate-os-image-build-pipelines-with-ec2-image-builder/">EC2 Image Builder</a>
-                <a href="https://github.com/aws-samples/amazon-ec2-image-builder-samples">[examples]</a>
-                <a href="https://aws.amazon.com/blogs/mt/creating-packer-images-using-system-manager-automation/">[packer]</a>
-                )
+              content: |
+                ### EC2 Image Builder
+                - [Automate OS Image Build Pipelines with EC2 Image Builder](https://aws.amazon.com/blogs/aws/automate-os-image-build-pipelines-with-ec2-image-builder/)
+                - [Amazon EC2 Image Builder Samples](https://github.com/aws-samples/amazon-ec2-image-builder-samples)
+                - [Creating Packer images using AWS System Manager Automation](https://aws.amazon.com/blogs/mt/creating-packer-images-using-system-manager-automation/)
         - id: '1.4'
           name: 'Implement deployment strategies for instance, container, and serverless environments.'
           knowledgeOf:
