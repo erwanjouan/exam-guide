@@ -1,0 +1,25 @@
+<mat-expansion-panel [class.mat-elevation-z0]="true">
+    <mat-expansion-panel-header>
+      <a mat-list-item routerLink="/exam-guide-entry/{{ _taskStatement.id }}">{{ _taskStatement.name }}</a>
+    </mat-expansion-panel-header>
+    <!-- Knowledge Of Panel-->
+    <mat-expansion-panel [class.mat-elevation-z0]="true">
+      <mat-expansion-panel-header>
+        Knowledge Of
+      </mat-expansion-panel-header>
+      <app-sub-task *ngFor="let subTask of _taskStatement.knowledgeOf; let myIndex = index"
+      [_subTask]="subTask"
+      [_ref]="_taskStatement.id+'.K.'+myIndex">
+     </app-sub-task> 
+    </mat-expansion-panel>
+    <!-- Skills in Panel-->
+    <mat-expansion-panel [class.mat-elevation-z0]="true">
+      <mat-expansion-panel-header>
+        Skills in
+      </mat-expansion-panel-header>
+      <app-sub-task *ngFor="let subTask of _taskStatement.skillsIn; let myIndex = index" 
+        [_subTask]="subTask"
+        [_ref]="_taskStatement.id+'.S.'+myIndex">
+      </app-sub-task>
+    </mat-expansion-panel>
+</mat-expansion-panel>

@@ -1,0 +1,7 @@
+::ng-deep a {
+    color:wheat;
+}
+
+.mat-card-title {
+    line-height: 1.2;
+}

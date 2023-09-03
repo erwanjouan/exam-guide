@@ -1,0 +1,6 @@
+<mat-expansion-panel [class.mat-elevation-z0]="true">
+    <mat-expansion-panel-header>
+      <a mat-list-item routerLink="/exam-guide-entry/{{ _domain.id }}">{{ _domain.name }}</a>
+    </mat-expansion-panel-header>
+    <app-task-statement *ngFor="let taskStatement of _domain.taskStatements" [_taskStatement]="taskStatement"></app-task-statement>
+</mat-expansion-panel>
