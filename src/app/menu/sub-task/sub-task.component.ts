@@ -9,7 +9,7 @@ import { SubTask } from 'src/app/model/exam';
 export class SubTaskComponent implements OnInit {
     
   @Input() _subTask:SubTask
-
+  @Input() _index:number
   @Input() _ref:string
 
   constructor() { }

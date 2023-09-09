@@ -51,6 +51,7 @@ exam:
                 ### ECR
                 - [Setting up in User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/get-set-up-for-amazon-ecr.html)
                 ### Code Artifact
+                - [UserGuide:What is AWS CodeArtifact?](https://docs.aws.amazon.com/codeartifact/latest/ug/welcome.html)
                 - [Blog:Code Artifact](https://aws.amazon.com/blogs/devops/category/developer-tools/aws-code-artifact/)
             - name: 'Using version control to integrate pipelines with application environments'
               content: |
@@ -139,13 +140,13 @@ exam:
                 - [Unified Process](https://en.wikipedia.org/wiki/Unified_Process)
                 - [Artifact Evolution Over Life Cycle](https://www.geeksforgeeks.org/artifact-evolution-over-life-cycle/)
           skillsIn:
-            - name: 'Creating and configuring artifact repositories (for example, AWS CodeArtifact, Amazon S3, Amazon Elastic Container Registry [Amazon ECR])'
+            - name: Creating and configuring artifact repositories (e.g. CodeArtifact, S3, ECR)
               content: |
                 ### CodeArtifact
                 - [Workshop:AWS CodeArtifact](https://catalog.us-east-1.prod.workshops.aws/workshops/752fd04a-f7c3-49a0-a9a0-c9b5ed40061b/en-US/codeartifact)
-                ### S3
+                ### Amazon S3
                 - [Pipeline with S3](https://dev.classmethod.jp/articles/aws-codepipeline-cd-pipeline-with-s3/)
-                ### Amazon Elastic Container Registry
+                ### Amazon Elastic Container Registry [Amazon ECR]
                 - [Amazon ECR private repositories](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Repositories.html)
             - name: 'Configuring build tools for generating artifacts (for example, CodeBuild, AWS Lambda)'
               content: |
@@ -165,44 +166,119 @@ exam:
         - id: '1.4'
           name: 'Implement deployment strategies for instance, container, and serverless environments.'
           knowledgeOf:
-            - name: 'Deployment methodologies for various platforms (for example, Amazon EC2, Amazon Elastic Container Service [Amazon ECS], Amazon Elastic Kubernetes Service [Amazon EKS], Lambda)'
-              content: >-
-                <a href="https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/deployment-methods.html">Deployment methodologies</a>
-                for various platforms
-                (for example,
-                Amazon EC2, Amazon Elastic Container Service [Amazon ECS], Amazon Elastic Kubernetes Service [Amazon EKS], Lambda)
-                <a href="https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html">[codedeploy]</a>
-                <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html#cfn-attributes-updatepolicy-replacingupdate">[asg]</a>
-                <a href="https://awstip.com/best-deployment-strategies-on-aws-eks-roll-out-like-a-pro-bd2d9deadc01">[eks]</a>
-                <a href="https://lumigo.io/aws-lambda-deployment/canary-deployment-for-aws-lambda/">[lambda]</a>
-            - name: 'Application storage patterns (for example, Amazon Elastic File System [Amazon EFS], Amazon S3, Amazon Elastic Block Store [Amazon EBS])'
-              content: >-
-                Application storage patterns (for example, Amazon Elastic File System
-                <a href="https://tutorialsdojo.com/amazon-efs/">[Amazon EFS]</a>,
-                <a href="https://tutorialsdojo.com/amazon-s3/">Amazon S3</a>,
-                Amazon Elastic Block Store
-                <a href="https://tutorialsdojo.com/amazon-ebs/">[Amazon EBS]</a>)
-            - name: 'Mutable deployment patterns in contrast to immutable deployment patterns'
-              content: >-
-                <a href="https://blog.isweluiz.com.br/2022/10/mutable-vs-immutable-infrastructure.html">Mutable</a>
-                deployment patterns in contrast to
-                <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environmentmgmt-updates-immutable.html">immutable</a> deployment patterns
-            - name: 'Tools and services available for distributing code (for example, CodeDeploy, EC2 Image Builder)'
-              content: >-
-                Tools and services available for distributing code (for example, CodeDeploy, EC2 Image Builder)
+            - name: 'Deployment methodologies for various platforms (e.g. EC2, ECS, EKS, Lambda)'
+              content: |
+                ### Practicing Continuous Integration and Continuous Delivery on AWS
+                - [Deployment methods](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/deployment-methods.html)
+                
+                ### __In-Place Deployments__
+                Updates the application version without replacing any infrastructure components. Basically, all the instances are stopped, and then the latest version is installed.
+                #### Pros
+                - Do not need new infrastructure
+                - Minimizes infrastructure costs and management overhead
+                #### Cons
+                - Application availability is affected
+                - Rollback (You need to install again the old version)
+                ### __Blue/Green Deployments__
+                In this strategy, you have two separate but identical environments (Environment Blue and Green). 
+                - __[Environment Green]__: running current application version; 
+                - __[Environment Blue]__: running the new application version.
+                #### Pros
+                - Application availability is not affected
+                - Reduces deployment risk (easy rollback, just need to swap URL)
+                - Zero downtime
+                #### Cons
+                - Deployment time
+                - Extra cost
+                
+                After the green environment is ready and tested, production traffic is redirected from blue to green. If any problem is found, you can redirect the traffic to the blue environment again.
+
+                ### __Canary Deployments__
+                This is a subset of Blue/Green deployment. The only difference is, you redirect just a percentage of the users for the green environment (could be 10% or something), the other users (90%) stays in the blue environment. If the green environment is not operating as expected, you can route the 10% traffic back to the blue environment. The big advantage of this strategy, only a small percentage of the users were impacted.
+                #### Pros
+                - Application availability is not affected
+                - Reduces deployment risk (easy rollback, just need to swap URL)
+                - Zero downtime
+                - Just a small percentage of the users are impacted if the new environment is not working as expected.
+                #### Cons
+                - Deployment time
+                - Extra cost
+
+                ### __Linear Deployments__
+                This is a subset of Blue/Green deployment. Just like canary deployment, but with this strategy the traffic is shifted in equal increments with an equal number of minutes between each increment. Something like every 3 minutes 10% of traffic will be shifted from Blue to Green environment until achieving 100%.
+                #### Pros
+                - Application availability is not affected
+                - Reduces deployment risk (easy rollback, just need to swap URL)
+                - Zero downtime
+                - Just a small percentage of the users are impacted if the new environment is not working as expected.
+                #### Cons
+                - Deployment time
+                - Extra cost
+
+                ### __All-at-once Deployments__
+                This is another subset of Blue/Green deployment, but all traﬃc is shifted from the original task set to the updated task set all at once, instead of shift the traffic in small steps.
+                #### Pros
+                - Application availability is not affected
+                - Reduces deployment risk (easy rollback, just need to swap URL)
+                - Zero downtime
+                #### Cons
+                - Deployment time (Within the Blue/Green deployments this is the faster one)
+                - Extra cost
+
+                ### Deployment on Services
+                - [CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html)
+                - [AutoScaling Group](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html#cfn-attributes-updatepolicy-replacingupdate)
+                - Amazon EC2
+                - Amazon Elastic Container Service [Amazon ECS]
+                - [Amazon Elastic Kubernetes Service [Amazon EKS]](https://awstip.com/best-deployment-strategies-on-aws-eks-roll-out-like-a-pro-bd2d9deadc01)
+                - [Amazon Lambda](https://lumigo.io/aws-lambda-deployment/canary-deployment-for-aws-lambda/)
+            - name: 'Application storage patterns (e.g. EFS, S3, EBS)'
+              content: |
+                ### EFS
+                - [[UserGuide] What is Amazon Elastic File System?](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
+                - [FAQ](https://aws.amazon.com/efs/faq/?nc1=h_ls)
+                - [Amazon Elastic File System [Amazon EFS] Cheat Sheet](https://tutorialsdojo.com/amazon-efs/)
+                ### EBS
+                - [UserGuide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html)
+                - [FAQ](https://aws.amazon.com/ebs/faqs/?nc1=h_ls)
+                - [Amazon Elastic Block Store [Amazon EBS] Cheat Sheet](https://tutorialsdojo.com/amazon-ebs/)
+                ### S3
+                - [[UserGuide] What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+                - [FAQ](https://aws.amazon.com/s3/faqs/?nc1=h_ls)
+                - [Amazon S3 Cheat Sheet](https://tutorialsdojo.com/amazon-s3/)
+            - name: Mutable deployment patterns in contrast to immutable deployment patterns
+              content: |
+                ### Deployment patterns
+                - [Blog: Mutable vs. Immutable Infrastructure](https://blog.isweluiz.com.br/2022/10/mutable-vs-immutable-infrastructure.html)
+                - [EB UserGuide: Immutable environment updates](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environmentmgmt-updates-immutable.html)
+            - name: Tools and services available for distributing code (for example, CodeDeploy, EC2 Image Builder)
+              content: |
+                ### AWS Developer tools
+                - [AWS Cheat Sheets:AWS Developer Tools Overview](https://digitalcloud.training/aws-developer-tools/)
+                - [EC2 Image Builder FAQs](https://aws.amazon.com/image-builder/faqs/?nc1=h_ls)
           skillsIn:
-            - name: 'Configuring security permissions to allow access to artifact repositories (for example, AWS Identity and Access Management [IAM], CodeArtifact)'
-              content: >-
-                Configuring security permissions to allow access to artifact repositories (for example, AWS Identity and Access Management [IAM], CodeArtifact)
-            - name: 'Configuring deployment agents (for example, CodeDeploy agent)'
-              content: >-
-                Configuring deployment agents (for example, CodeDeploy agent)
-            - name: 'Troubleshooting deployment issues'
-              content: >-
-                Troubleshooting deployment issues
-            - name: 'Using different deployment methods (for example, blue/green, canary)'
-              content: >-
-                Using different deployment methods (for example, blue/green, canary)
+            - name: Configuring security permissions to allow access to artifact repositories (e.g. IAM, CodeArtifact)
+              content: |
+                ### CodeArtifact
+                - [CodeArtifact UserGuide:How AWS CodeArtifact works with IAM](https://docs.aws.amazon.com/codeartifact/latest/ug/security_iam_service-with-iam.html)
+                - [CodeArtifact UserGuide:Repository policies](https://docs.aws.amazon.com/codeartifact/latest/ug/repo-policies.html#granting-read-access-to-specific-principals)
+                - [Article:Secure AWS CodeArtifact access for isolated Amazon SageMaker notebook instances](https://dataintegration.info/secure-aws-codeartifact-access-for-isolated-amazon-sagemaker-notebook-instances)
+            - name: Configuring deployment agents (for example, CodeDeploy agent)
+              content: |
+                ### CodeDeploy Agent
+                - [CodeDeploy UserGuide:Working with the CodeDeploy agent](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent.html)
+                - [How can I use launch templates to automatically install the CodeDeploy agent on an Amazon EC2 instance running Amazon Linux or Ubuntu?](https://repost.aws/knowledge-center/codedeploy-agent-launch-template)
+            - name: Troubleshooting deployment issues
+              content: |
+                ### CodeDeploy
+                - [CodeDeploy UserGuide:Troubleshooting CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting.html)
+            - name: Using different deployment methods (for example, blue/green, canary)
+              content: | 
+                ### Docs
+                - [Article:Deployment Strategies for Lambda in SAM](https://osamaoracle.com/2021/11/13/deployment-strategies/)
+                - [Medium:AWS Deployment Strategies](https://jafreitas90.medium.com/aws-deployment-strategies-ebc910420bf2)
+                - [AWS WhitePaper:Overview of Deployment Options on AWS](https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf)
+
     - id: '2'
       name: 'Configuration Management and IaC (17%)'
       taskStatements:
@@ -210,11 +286,16 @@ exam:
           name: 'Define cloud infrastructure and reusable components to provision and manage systems throughout their lifecycle'
           knowledgeOf:
             - name: 'Infrastructure as code (IaC) options and tools for AWS'
-              content: >-
-                Infrastructure as code (IaC) options and tools for AWS
+              content: |
+                ### CloudFormation
+                - [[CloudFormation UserGuide] What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+                ### Cdk
+                - [[CDK User Guide] What is the AWS CDK?](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
+                ### SAM
+                - [[SAM Devi Guide] What is the AWS Serverless Application Model (AWS SAM)?](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
             - name: 'Change management processes for IaC-based platforms'
-              content: >-
-                Change management processes for IaC-based platforms
+              content: |
+                - [WhitePaper] Change Management in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/change-management-in-the-cloud/change-management-in-the-cloud.html)
             - name: 'Configurations management services and strategies'
               content: >-
                 Configurations management services and strategies

@@ -11,6 +11,7 @@ import { ExamGuideService } from '../service/exam-guide.service';
 export class ContentComponent implements OnInit {
 
   _toDisplay: Displayable; // content of the subtask to display
+  _id: string | null
 
   constructor(
     private _route: ActivatedRoute,
@@ -18,9 +19,9 @@ export class ContentComponent implements OnInit {
 
   ngOnInit(): void {
     this._route.paramMap.subscribe((params: ParamMap) => {
-      let id = params.get('id')
-      let content = this._examGuideService.getContent(id)
-      this._toDisplay = content == undefined ? {content:''} : content
+      this._id = params.get('id')
+      let content = this._examGuideService.getContent(this._id)
+      this._toDisplay = content == undefined ? { content: '' } : content
     });
   }
 

@@ -9,6 +9,7 @@ import { Domain } from 'src/app/model/exam';
 export class DomainComponent implements OnInit {
 
   @Input() _domain: Domain;
+  @Input() _index: number;
 
   constructor() { }
 

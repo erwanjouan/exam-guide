@@ -4,7 +4,10 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-nav-list>
-      <app-domain *ngFor="let domain of _exam.domains" [_domain]="domain"></app-domain>
+      <app-domain *ngFor="let domain of _exam.domains; let myIndex = index"
+        [_index]="myIndex"
+       [_domain]="domain">
+      </app-domain>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

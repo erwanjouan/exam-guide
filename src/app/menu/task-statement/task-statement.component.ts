@@ -9,6 +9,7 @@ import { TaskStatement } from 'src/app/model/exam';
 export class TaskStatementComponent implements OnInit {
 
   @Input() _taskStatement: TaskStatement;
+  @Input() _index: number;
 
   constructor() { }
 
