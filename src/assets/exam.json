@@ -183,7 +183,7 @@
                 "name": "Determining optimal configuration management services (e.g. AWS OpsWorks, AWS Systems Manager, AWS Config, AWS AppConfig)"
               },
               {
-                "content": "### Documentation\n- [How to reuse patterns when developing infrastructure as code](https://d1.awsstatic.com/events/Summits/reinvent2022/DOP302_How-to-reuse-patterns-when-developing-infrastructure-as-code.pdf)\n- [Blog:Cloud governance and compliance on AWS with policy as code](https://aws.amazon.com/fr/blogs/opensource/cloud-governance-and-compliance-on-aws-with-policy-as-code/)\n### Service Catalog\n- [What Is Service Catalog?](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html)\n### AWS CloudFormation\n- [[Blog] Introducing AWS CloudFormation modules](https://aws.amazon.com/fr/blogs/mt/introducing-aws-cloudformation-modules/)\n- [Developing hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/hooks.html#hooks-characteristics)\n- [Open Policy Agent CloudFormation Hooks](https://www.openpolicyagent.org/docs/latest/aws-cloudformation-hooks/)\n### CDK\n- [CDK Patterns](https://cdkpatterns.com/patterns/all/)\n### AWS Control Tower\n- [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)\n- [WorkShop](https://controltower.aws-management.tools/core/overview/)\n- [Deploy and manage AWS Control Tower controls by using Terraform](https://github.com/aws-samples/aws-control-tower-controls-terraform)\n",
+                "content": "### Documentation\n- [How to reuse patterns when developing infrastructure as code](https://d1.awsstatic.com/events/Summits/reinvent2022/DOP302_How-to-reuse-patterns-when-developing-infrastructure-as-code.pdf)\n- [Blog:Cloud governance and compliance on AWS with policy as code](https://aws.amazon.com/fr/blogs/opensource/cloud-governance-and-compliance-on-aws-with-policy-as-code/)\n- [Identity, Security, and Compliance AWS services to help govern your AWS environment](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/security-assurance-aws.html#identity-security-compliance-services)\n### Service Catalog\n- [What Is Service Catalog?](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html)\n### AWS CloudFormation\n- [[Blog] Introducing AWS CloudFormation modules](https://aws.amazon.com/fr/blogs/mt/introducing-aws-cloudformation-modules/)\n- [Developing hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/hooks.html#hooks-characteristics)\n- [Open Policy Agent CloudFormation Hooks](https://www.openpolicyagent.org/docs/latest/aws-cloudformation-hooks/)\n### CDK\n- [CDK Patterns](https://cdkpatterns.com/patterns/all/)\n",
                 "name": "Implementing infrastructure patterns, governance controls, and security standards into reusable IaC templates (e.g. AWS Service Catalog, CloudFormation modules, AWS CDK)"
               }
             ]
@@ -192,26 +192,26 @@
             "id": "2.2",
             "knowledgeOf": [
               {
-                "content": "AWS account structures, best practices, and related AWS services",
+                "content": "### WhitePaper\n- [Organizing Your AWS Environment Using Multiple Accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html)\n- [Benefits of using multiple AWS accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html)\n- [Establishing Your Cloud Foundation on AWS](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/welcome.html)\n### AWS Organizations\n- [Best practices for multi-account management](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices.html)\n",
                 "name": "AWS account structures, best practices, and related AWS services"
               }
             ],
             "name": "Deploy automation to create, onboard, and secure AWS accounts in a multi-account/multi-Region environment.",
             "skillsIn": [
               {
-                "content": "Standardizing and automating account provisioning and configuration",
+                "content": "### WhitePaper\n- [Design principles for your multi-account strategy](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/design-principles-for-your-multi-account-strategy.html#organize-based-on-security-and-operational-needs)\n### AWS Control Tower\n- [AWS Control Tower Features](https://aws.amazon.com/fr/controltower/features/#:~:text=A%20landing%20zone%20is%20a,federated%20access%2C%20and%20account%20structure.)\n",
                 "name": "Standardizing and automating account provisioning and configuration"
               },
               {
-                "content": "Creating, consolidating, and centrally managing accounts (for example, AWS Organizations, AWS Control Tower)",
+                "content": "### AWS Organizations\n- [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)\n### AWS Control Tower\n- [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)\n- [WorkShop](https://controltower.aws-management.tools/core/overview/)\n### Github\n- [Deploy and manage AWS Control Tower controls by using Terraform](https://github.com/aws-samples/aws-control-tower-controls-terraform)\n",
                 "name": "Creating, consolidating, and centrally managing accounts (for example, AWS Organizations, AWS Control Tower)"
               },
               {
-                "content": "Applying IAM solutions for multi-account and complex organization structures (for example, SCPs, assuming roles)",
+                "content": "### WhitePaper\n- [Identity Management \u0026 Access Control capability](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/identity-management-access-control-capability.html)\n- [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)\n### AWS Organizations\n- [Accessing member accounts in your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html)\n- [Granting a user permissions to switch roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html)\n- [Creating a role to delegate permissions to an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html)\n",
                 "name": "Applying IAM solutions for multi-account and complex organization structures (for example, SCPs, assuming roles)"
               },
               {
-                "content": "Implementing and developing governance and security controls at scale (AWS Config, AWS Control Tower, AWS Security Hub, Amazon Detective, Amazon GuardDuty, AWS Service Catalog, SCPs)",
+                "content": "### AWS Config\n- [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)\n### AWS Control Tower\n- [AWS multi-account strategy for your AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html)\n### AWS Security Hub\n- [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)\n### Amazon Detective\n- [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)\n### Amazon GuardDuty\n- [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)\n",
                 "name": "Implementing and developing governance and security controls at scale (AWS Config, AWS Control Tower, AWS Security Hub, Amazon Detective, Amazon GuardDuty, AWS Service Catalog, SCPs)"
               }
             ]
@@ -633,6 +633,7 @@
         "name": "Security and Compliance (17%)",
         "taskStatements": [
           {
+            "content": "### WhitePaper\n[Identity Management \u0026 Access Control capability](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/identity-management-access-control-capability.html)\n",
             "id": "6.1",
             "knowledgeOf": [
               {

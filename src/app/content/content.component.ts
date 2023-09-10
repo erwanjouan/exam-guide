@@ -20,8 +20,8 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
     this._route.paramMap.subscribe((params: ParamMap) => {
       this._id = params.get('id')
-      let content = this._examGuideService.getContent(this._id)
-      this._toDisplay = content == undefined ? { content: '' } : content
+      let examElement = this._examGuideService.getExamElement(this._id)
+      this._toDisplay = examElement == undefined ? { content: '' } : examElement
     });
   }
 

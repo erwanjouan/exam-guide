@@ -327,6 +327,7 @@ exam:
                 ### Documentation
                 - [How to reuse patterns when developing infrastructure as code](https://d1.awsstatic.com/events/Summits/reinvent2022/DOP302_How-to-reuse-patterns-when-developing-infrastructure-as-code.pdf)
                 - [Blog:Cloud governance and compliance on AWS with policy as code](https://aws.amazon.com/fr/blogs/opensource/cloud-governance-and-compliance-on-aws-with-policy-as-code/)
+                - [Identity, Security, and Compliance AWS services to help govern your AWS environment](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/security-assurance-aws.html#identity-security-compliance-services)
                 ### Service Catalog
                 - [What Is Service Catalog?](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html)
                 ### AWS CloudFormation
@@ -335,29 +336,54 @@ exam:
                 - [Open Policy Agent CloudFormation Hooks](https://www.openpolicyagent.org/docs/latest/aws-cloudformation-hooks/)
                 ### CDK
                 - [CDK Patterns](https://cdkpatterns.com/patterns/all/)
-                ### AWS Control Tower
-                - [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
-                - [WorkShop](https://controltower.aws-management.tools/core/overview/)
-                - [Deploy and manage AWS Control Tower controls by using Terraform](https://github.com/aws-samples/aws-control-tower-controls-terraform)
         - id: '2.2'
           name: Deploy automation to create, onboard, and secure AWS accounts in a multi-account/multi-Region environment.
           knowledgeOf:
-            - name: 'AWS account structures, best practices, and related AWS services'
-              content: >-
-                AWS account structures, best practices, and related AWS services
+            - name: AWS account structures, best practices, and related AWS services
+              content: |
+                ### WhitePaper
+                - [Organizing Your AWS Environment Using Multiple Accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html)
+                - [Benefits of using multiple AWS accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html)
+                - [Establishing Your Cloud Foundation on AWS](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/welcome.html)
+                ### AWS Organizations
+                - [Best practices for multi-account management](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices.html)
           skillsIn:
-            - name: 'Standardizing and automating account provisioning and configuration'
-              content: >-
-                Standardizing and automating account provisioning and configuration
-            - name: 'Creating, consolidating, and centrally managing accounts (for example, AWS Organizations, AWS Control Tower)'
-              content: >-
-                Creating, consolidating, and centrally managing accounts (for example, AWS Organizations, AWS Control Tower)
-            - name: 'Applying IAM solutions for multi-account and complex organization structures (for example, SCPs, assuming roles)'
-              content: >-
-                Applying IAM solutions for multi-account and complex organization structures (for example, SCPs, assuming roles)
-            - name: 'Implementing and developing governance and security controls at scale (AWS Config, AWS Control Tower, AWS Security Hub, Amazon Detective, Amazon GuardDuty, AWS Service Catalog, SCPs)'
-              content: >-
-                Implementing and developing governance and security controls at scale (AWS Config, AWS Control Tower, AWS Security Hub, Amazon Detective, Amazon GuardDuty, AWS Service Catalog, SCPs)
+            - name: Standardizing and automating account provisioning and configuration
+              content: |
+                ### WhitePaper
+                - [Design principles for your multi-account strategy](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/design-principles-for-your-multi-account-strategy.html#organize-based-on-security-and-operational-needs)
+                ### AWS Control Tower
+                - [AWS Control Tower Features](https://aws.amazon.com/fr/controltower/features/#:~:text=A%20landing%20zone%20is%20a,federated%20access%2C%20and%20account%20structure.)
+            - name: Creating, consolidating, and centrally managing accounts (for example, AWS Organizations, AWS Control Tower)
+              content: |
+                ### AWS Organizations
+                - [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
+                ### AWS Control Tower
+                - [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
+                - [WorkShop](https://controltower.aws-management.tools/core/overview/)
+                ### Github
+                - [Deploy and manage AWS Control Tower controls by using Terraform](https://github.com/aws-samples/aws-control-tower-controls-terraform)
+            - name: Applying IAM solutions for multi-account and complex organization structures (for example, SCPs, assuming roles)
+              content: |
+                ### WhitePaper
+                - [Identity Management & Access Control capability](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/identity-management-access-control-capability.html)
+                - [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+                ### AWS Organizations
+                - [Accessing member accounts in your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html)
+                - [Granting a user permissions to switch roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html)
+                - [Creating a role to delegate permissions to an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html)
+            - name: Implementing and developing governance and security controls at scale (AWS Config, AWS Control Tower, AWS Security Hub, Amazon Detective, Amazon GuardDuty, AWS Service Catalog, SCPs)
+              content: |
+                ### AWS Config
+                - [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)
+                ### AWS Control Tower
+                - [AWS multi-account strategy for your AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html)
+                ### AWS Security Hub
+                - [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)
+                ### Amazon Detective
+                - [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)
+                ### Amazon GuardDuty
+                - [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)
         - id: '2.3'
           name: Design and build automated solutions for complex tasks and large-scale environments.
           knowledgeOf:
@@ -646,6 +672,9 @@ exam:
       taskStatements:
         - id: '6.1'
           name: 'Implement techniques for identity and access management at scale.'
+          content: |
+            ### WhitePaper
+            [Identity Management & Access Control capability](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/identity-management-access-control-capability.html)
           knowledgeOf:
             - name: 'Appropriate usage of different IAM entities for human and machine access (for example, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)'
               content: >-

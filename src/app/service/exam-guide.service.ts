@@ -14,17 +14,17 @@ export class ExamGuideService {
     this.examGuide = exam    
   }
 
-  getContent(id: string | null): Displayable | undefined {
+  getExamElement(id: string | null): Displayable | undefined {
     if (id != undefined) {
       let splitted = id.split(".")
       if (splitted.length == 0) {
-        return this.getMarkdown(this.getDomain(id));
+        return this.markdownizeContent(this.getDomain(id));
       } else if (splitted.length == 1) {
-        return this.getMarkdown(this.getDomain(id));
+        return this.markdownizeContent(this.getDomain(id));
       } else if (splitted.length == 2) {
-        return this.getMarkdown(this.getTaskStatement(splitted[0], splitted[1]))
+        return this.markdownizeContent(this.getTaskStatement(splitted[0], splitted[1]))
       } else if (splitted.length == 4) {
-        return this.getMarkdown(this.getSubTask(splitted[0], splitted[1], splitted[2], splitted[3]))
+        return this.markdownizeContent(this.getSubTask(splitted[0], splitted[1], splitted[2], splitted[3]))
       }
     }
     return this.getExam();
@@ -61,7 +61,7 @@ export class ExamGuideService {
   }
 
   
-  getMarkdown(input: Displayable | undefined): Displayable | undefined {
+  markdownizeContent(input: Displayable | undefined): Displayable | undefined {
     if (input == undefined) {
       return { 'name': '', 'content': '' }
     } else {
