@@ -278,7 +278,6 @@ exam:
                 - [Article:Deployment Strategies for Lambda in SAM](https://osamaoracle.com/2021/11/13/deployment-strategies/)
                 - [Medium:AWS Deployment Strategies](https://jafreitas90.medium.com/aws-deployment-strategies-ebc910420bf2)
                 - [AWS WhitePaper:Overview of Deployment Options on AWS](https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf)
-
     - id: '2'
       name: 'Configuration Management and IaC (17%)'
       taskStatements:
@@ -295,23 +294,51 @@ exam:
                 - [[SAM Devi Guide] What is the AWS Serverless Application Model (AWS SAM)?](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
             - name: 'Change management processes for IaC-based platforms'
               content: |
-                - [WhitePaper] Change Management in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/change-management-in-the-cloud/change-management-in-the-cloud.html)
-            - name: 'Configurations management services and strategies'
-              content: >-
-                Configurations management services and strategies
+                ### AWS WhitePaper
+                - [[WhitePaper] Change Management in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/change-management-in-the-cloud/change-management-in-the-cloud.html)
+            - name: Configurations management services and strategies
+              content: |
+                ### AWS WhitePaper
+                - [[WhitePaper] Configuration management](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/configuration-management.html)
           skillsIn:
-            - name: 'Composing and deploying IaC templates (for example, AWS Serverless Application Model [AWS SAM], AWS CloudFormation, AWS Cloud Development Kit [AWS CDK])'
-              content: >-
-                Composing and deploying IaC templates (for example, AWS Serverless Application Model [AWS SAM], AWS CloudFormation, AWS Cloud Development Kit [AWS CDK])
-            - name: 'Applying AWS CloudFormation StackSets across multiple accounts and AWS Regions'
-              content: >-
-                Applying AWS CloudFormation StackSets across multiple accounts and AWS Regions
-            - name: 'Determining optimal configuration management services (for example, AWS OpsWorks, AWS Systems Manager, AWS Config, AWS AppConfig)'
-              content: >-
-                Determining optimal configuration management services (for example, AWS OpsWorks, AWS Systems Manager, AWS Config, AWS AppConfig)
-            - name: 'Implementing infrastructure patterns, governance controls, and security standards into reusable IaC templates (for example, AWS Service Catalog, CloudFormation modules, AWS CDK)'
-              content: >-
-                Implementing infrastructure patterns, governance controls, and security standards into reusable IaC templates (for example, AWS Service Catalog, CloudFormation modules, AWS CDK)
+            - name: Composing and deploying IaC templates (e.g. SAM, CloudFormation, CDK)
+              content: |
+                ### AWS Serverless Application Model [AWS SAM]
+                - [[UserGuide] AWS SAM template anatomy](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-template-anatomy.html)
+                ### AWS CloudFormation
+                - [[UserGuide] Working with AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html)
+                ### AWS Cloud Development Kit [AWS CDK]
+                - [[Developer Guide] Core Concepts](https://docs.aws.amazon.com/cdk/v2/guide/core_concepts.html)
+            - name: Applying AWS CloudFormation StackSets across multiple accounts and AWS Regions
+              content: |
+                ### AWS Cloudformation
+                - [[UserGuide] Working with AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
+                - [[UserGuide] Prerequisites for stack set operations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs.html)
+            - name: Determining optimal configuration management services (e.g. AWS OpsWorks, AWS Systems Manager, AWS Config, AWS AppConfig)
+              content: |
+                ### OpsWorks Stacks Vs AWS Systems Manager
+                - [[Blog] Migrate your AWS OpsWorks Stacks to AWS Systems Manager](https://aws.amazon.com/fr/blogs/mt/migrate-your-aws-opsworks-stacks-to-aws-systems-manager/)
+                ### AWS AppConfig
+                - [What Is AWS AppConfig?](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html)
+                ### AWS Config
+                - [What Is AWS Config?](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)
+            - name: Implementing infrastructure patterns, governance controls, and security standards into reusable IaC templates (e.g. AWS Service Catalog, CloudFormation modules, AWS CDK)
+              content: |
+                ### Documentation
+                - [How to reuse patterns when developing infrastructure as code](https://d1.awsstatic.com/events/Summits/reinvent2022/DOP302_How-to-reuse-patterns-when-developing-infrastructure-as-code.pdf)
+                - [Blog:Cloud governance and compliance on AWS with policy as code](https://aws.amazon.com/fr/blogs/opensource/cloud-governance-and-compliance-on-aws-with-policy-as-code/)
+                ### Service Catalog
+                - [What Is Service Catalog?](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html)
+                ### AWS CloudFormation
+                - [[Blog] Introducing AWS CloudFormation modules](https://aws.amazon.com/fr/blogs/mt/introducing-aws-cloudformation-modules/)
+                - [Developing hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/hooks.html#hooks-characteristics)
+                - [Open Policy Agent CloudFormation Hooks](https://www.openpolicyagent.org/docs/latest/aws-cloudformation-hooks/)
+                ### CDK
+                - [CDK Patterns](https://cdkpatterns.com/patterns/all/)
+                ### AWS Control Tower
+                - [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
+                - [WorkShop](https://controltower.aws-management.tools/core/overview/)
+                - [Deploy and manage AWS Control Tower controls by using Terraform](https://github.com/aws-samples/aws-control-tower-controls-terraform)
         - id: '2.2'
           name: Deploy automation to create, onboard, and secure AWS accounts in a multi-account/multi-Region environment.
           knowledgeOf:
