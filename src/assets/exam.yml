@@ -472,25 +472,51 @@ exam:
               content: |
                 ### Blog
                 - [AWS:Architecture I: How to Get High Availability](https://aws.amazon.com/fr/blogs/startups/how-to-get-high-availability-in-architecture/)
-                - [Netapp Blog:AWS High Availability: Compute, SQL and Storage](https://bluexp.netapp.com/blog/understanding-aws-high-availability-compute-sql-and-storage)
+                - [Netapp Blog: AWS High Availability: Compute, SQL and Storage](https://bluexp.netapp.com/blog/understanding-aws-high-availability-compute-sql-and-storage)
+                - [cbtnuggets Blog: AWS Architecture: High Availability vs Fault Tolerance](https://www.cbtnuggets.com/blog/certifications/cloud/aws-architecture-high-availability-vs-fault-tolerance)
                 ### Presentation
                 - [High-Availability in the Cloud Architectural Best Practices](https://s3.amazonaws.com/aws001/guided_trek/GuidedTrek_RightScale_High%20Availability%20in%20the%20Cloud_SanFran.pdf)
           skillsIn:
             - name: "Translating business requirements into technical resiliency needs"
-              content: >-
-                Translating business requirements into technical resiliency needs
+              content: |
+                ### Blog
+                - [What Is IT Resilience? – Strategy and Planning for Technology Resiliency](https://www.parkplacetechnologies.com/blog/what-is-it-resilience-strategy-and-planning-for-technology-resiliency/)
+                ### AWS Well-Architected Framework
+                - [Resiliency Requirement Planning](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/resiliency-requirement-planning.html)
             - name: "Identifying and remediating single points of failure in existing workloads"
-              content: >-
-                Identifying and remediating single points of failure in existing workloads
+              content: |
+                ### Book
+                - [Amazon Web Services in Action: Chapter 13. Designing for fault-tolerance](https://livebook.manning.com/book/amazon-web-services-in-action/chapter-13/)
+                ### WhitePaper
+                - [Real-Time Communication on AWS: High availability and scalability on AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)
             - name: "Enabling cross-Region solutions where available (for example, Amazon DynamoDB, Amazon RDS, Amazon Route 53, Amazon S3, Amazon CloudFront)"
-              content: >-
-                Enabling cross-Region solutions where available (for example, Amazon DynamoDB, Amazon RDS, Amazon Route 53, Amazon S3, Amazon CloudFront)
-            - name=: Configuring load balancing to support cross-AZ services
-              content: >-
-                Configuring load balancing to support cross-AZ services
+              content: |
+                ### Amazon DynamoDB
+                - [Blog: New – Convert Your Single-Region Amazon DynamoDB Tables to Global Tables](https://aws.amazon.com/fr/blogs/aws/new-convert-your-single-region-amazon-dynamodb-tables-to-global-tables/)
+                ### Amazon RDS
+                - [Cross-Region read replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionReadReplicas.html)
+                - [Cross-Region automated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionAutomatedBackups.html)
+                - [Using Amazon Aurora global databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)
+                ### Amazon Route 53
+                - [Blog: Using Route 53 Private Hosted Zones for Cross-account Multi-region Architectures](https://aws.amazon.com/fr/blogs/architecture/using-route-53-private-hosted-zones-for-cross-account-multi-region-architectures/)
+                - [Workshop: Module 5: Multi-Region Resiliency with Route 53 ARC](https://www.wellarchitectedlabs.com/reliability/disaster-recovery/workshop_5/)
+                - [Workshop: Route 53 - Failover in Private DNS](https://disaster-recovery.workshop.aws/en/labs/basics/route53.html)
+                ### Amazon S3
+                - [S3 Bi-Directional Replication](https://wellarchitectedlabs.com/reliability/200_labs/200_bidirectional_replication_for_s3/)
+                ### Amazon CloudFront
+                - [Blog: Using Amazon CloudFront and Amazon S3 to build multi-Region active-active geo proximity applications](https://aws.amazon.com/fr/blogs/networking-and-content-delivery/using-amazon-cloudfront-and-amazon-s3-to-build-multi-region-active-active-geo-proximity-applications/)
+                - [DR Workshop: CloudFront - Origin Group](https://disaster-recovery.workshop.aws/en/labs/basics/cloudfront.html)
+            - name: Configuring load balancing to support cross-AZ services
+              content: |
+                ### Classic Load Balancer
+                - [Configure cross-zone load balancing for your **Classic Load Balancer**](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-disable-crosszone-lb.html)
+                ### Application Load Balancer
+                - [How Elastic Load Balancing works | Cross-zone load balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html#cross-zone-load-balancing)
             - name: "Configuring applications and related services to support multiple Availability Zones and Regions while minimizing downtime"
-              content: >-
-                Configuring applications and related services to support multiple Availability Zones and Regions while minimizing downtime
+              content: |
+                ### Route 53
+                - [Guidance for Cross Region Failover and Graceful Failback on AWS](https://d1.awsstatic.com/solutions/guidance/architecture-diagrams/cross-region-failover-and-graceful-failback-on-aws.pdf)
+                - [DR Workshop: API Gateway - Failover for Private APIs](https://disaster-recovery.workshop.aws/en/labs/advanced/api-gateway.html)
         - id: "3.2"
           name: Implement solutions that are scalable to meet business requirements.
           knowledgeOf:
