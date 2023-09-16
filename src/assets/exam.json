@@ -192,7 +192,7 @@
             "id": "2.2",
             "knowledgeOf": [
               {
-                "content": "### WhitePaper\n- [Organizing Your AWS Environment Using Multiple Accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html)\n- [Benefits of using multiple AWS accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html)\n- [Establishing Your Cloud Foundation on AWS](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/welcome.html)\n### AWS Organizations\n- [Best practices for multi-account management](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices.html)\n",
+                "content": "### Reference Guide\n- [Welcome to the AWS Account Management Reference Guide](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html)\n- [Do I need multiple AWS accounts?](https://docs.aws.amazon.com/accounts/latest/reference/welcome-multiple-accounts.html)\n### WhitePaper\n- [Organizing Your AWS Environment Using Multiple Accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html)\n- [Benefits of using multiple AWS accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html)\n- [Establishing Your Cloud Foundation on AWS](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/welcome.html)\n### AWS Organizations\n- [Best practices for multi-account management](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices.html)\n",
                 "name": "AWS account structures, best practices, and related AWS services"
               }
             ],
@@ -211,7 +211,7 @@
                 "name": "Applying IAM solutions for multi-account and complex organization structures (for example, SCPs, assuming roles)"
               },
               {
-                "content": "### AWS Config\n- [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)\n### AWS Control Tower\n- [AWS multi-account strategy for your AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html)\n### AWS Security Hub\n- [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)\n### Amazon Detective\n- [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)\n### Amazon GuardDuty\n- [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)\n",
+                "content": "### AWS Config\n- [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)\n### AWS Control Tower\n- [AWS multi-account strategy for your AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html)\n### AWS Security Hub\n- [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)\n### Amazon Detective\n- [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)\n### Amazon GuardDuty\n- [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)\n### Service Catalog\n- [Compliance Validation for Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/service-catalog-compliance.html)\n- [Security Best Practices for AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/security-best-practices.html)\n## SCPs\n- [What is AWS SCP (Service Control Policy) and How does it Help with Permissions?](https://www.stormit.cloud/blog/aws-scp-service-control-policy/)\n",
                 "name": "Implementing and developing governance and security controls at scale (AWS Config, AWS Control Tower, AWS Security Hub, Amazon Detective, Amazon GuardDuty, AWS Service Catalog, SCPs)"
               }
             ]
@@ -220,30 +220,30 @@
             "id": "2.3",
             "knowledgeOf": [
               {
-                "content": "AWS services and solutions to automate tasks and processes",
+                "content": "### Step Functions\n- [What is AWS Step Functions?](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)\n### Batch\n- [What Is AWS Batch?](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html)\n",
                 "name": "AWS services and solutions to automate tasks and processes"
               },
               {
-                "content": "Methods and strategies to interact with the AWS software-defined infrastructure",
+                "content": "### Documentation\n- [LinkedIn:The methods to interact with AWS and information about regions and availability zones with edge locations](https://www.linkedin.com/pulse/methods-interact-aws-information-regions-availability-jayannavar#:~:text=Methods%20of%20Interacting%20with%20AWS%3A%20We%20can%20interact%20with%20AWS,to%20interact%20with%20AWS%20services.)\n### AWS CLI\n- [AWS Cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)\n### Protect Root Account\n- [Best practices to protect your account's root user](https://docs.aws.amazon.com/accounts/latest/reference/best-practices-root-user.html)\n- [Identity and Access Management for AWS Account Management](https://docs.aws.amazon.com/accounts/latest/reference/security-iam.html)\n",
                 "name": "Methods and strategies to interact with the AWS software-defined infrastructure"
               }
             ],
             "name": "Design and build automated solutions for complex tasks and large-scale environments.",
             "skillsIn": [
               {
-                "content": "Automating system inventory, configuration, and patch management (for example, Systems Manager, AWS Config)",
+                "content": "### Sytems Manager\n- [AWS Systems Manager Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html)\n- [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html)\n- [Evaluating Resources with AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html)\n",
                 "name": "Automating system inventory, configuration, and patch management (for example, Systems Manager, AWS Config)"
               },
               {
-                "content": "Developing Lambda function automations for complex scenarios (for example, AWS SDKs, Lambda, AWS Step Functions)",
+                "content": "### SDKs\n- [Lambda examples using SDK for Python (Boto3)](https://docs.aws.amazon.com/code-library/latest/ug/python_3_lambda_code_examples.html)\n### Step function with lambda\n- [Creating a Step Functions state machine that uses Lambda](https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-creating-lambda-state-machine.html)\n",
                 "name": "Developing Lambda function automations for complex scenarios (for example, AWS SDKs, Lambda, AWS Step Functions)"
               },
               {
-                "content": "Automating the configuration of software applications to the desired state (for example, OpsWorks, Systems Manager State Manager)",
+                "content": "### AWS OpsWorks \n- [AWS OpsWorks Stacks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome_classic.html) EOL May 26 2024\n- [AWS Systems Manager State Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html)\n",
                 "name": "Automating the configuration of software applications to the desired state (for example, OpsWorks, Systems Manager State Manager)"
               },
               {
-                "content": "Maintaining software compliance (for example, Systems Manager)",
+                "content": "### AWS Systems Manager Compliance\n- [AWS Systems Manager Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html)\n",
                 "name": "Maintaining software compliance (for example, Systems Manager)"
               }
             ]
