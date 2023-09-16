@@ -302,11 +302,11 @@
             "id": "3.2",
             "knowledgeOf": [
               {
-                "content": "Appropriate metrics for scaling services",
+                "content": "### Auto Scaling\n- [Amazon CloudWatch metrics for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-metrics.html)\n- [Advanced predictive scaling policy configurations using custom metrics](https://docs.aws.amazon.com/autoscaling/ec2/userguide/predictive-scaling-customized-metric-specification.html)\n",
                 "name": "Appropriate metrics for scaling services"
               },
               {
-                "content": "Loosely coupled and distributed architectures",
+                "content": "Loosely coupled and distributed architectures\n",
                 "name": "Loosely coupled and distributed architectures"
               },
               {

@@ -521,10 +521,12 @@ exam:
           name: Implement solutions that are scalable to meet business requirements.
           knowledgeOf:
             - name: "Appropriate metrics for scaling services"
-              content: >-
-                Appropriate metrics for scaling services
+              content: |
+                ### Auto Scaling
+                - [Amazon CloudWatch metrics for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-metrics.html)
+                - [Advanced predictive scaling policy configurations using custom metrics](https://docs.aws.amazon.com/autoscaling/ec2/userguide/predictive-scaling-customized-metric-specification.html)
             - name: "Loosely coupled and distributed architectures"
-              content: >-
+              content: |
                 Loosely coupled and distributed architectures
             - name: "Serverless architectures"
               content: >-
