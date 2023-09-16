@@ -258,19 +258,19 @@
             "id": "3.1",
             "knowledgeOf": [
               {
-                "content": "Multi-AZ and multi-Region deployments (for example, compute layer, data layer)",
+                "content": "### Multi-AZ Services\n#### Load Balancer\n- [ALB:Availability Zones for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-subnets.html)\n- [ALB:Cross-zone load balancing for target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/disable-cross-zone.html)\n#### Auto Scaling Group\n- [ASG:Amazon EC2 Auto Scaling benefits](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html)\n#### RDS\n- [RDS:Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)\n### Blog: Building highly resilient applications using Amazon Route 53 Application Recovery Controller\n- [Part 1: Single-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-1-single-region-stack/)\n- [Part 2: Multi-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-2-multi-region-stack/)\n### Route53\n- [Route53:Adding another Region to your latency-based routing in Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialAddingLBRRegion.html)\n",
                 "name": "Multi-AZ and multi-Region deployments (for example, compute layer, data layer)"
               },
               {
-                "content": "SLAs",
+                "content": "### AWS Services\n- [AWS Service Level Agreement – What you need to know](https://www.logicata.com/blog/aws-service-level-agreement/)\n",
                 "name": "SLAs"
               },
               {
-                "content": "Replication and failover methods for stateful services",
+                "content": "### DynamoDB\n- [Global tables - multi-Region replication for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)\n### RDS\n-  [Multi-AZ DB instance deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZSingleStandby.html)\n### Aurora\n- [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)\n- [Doing failover in Amazon Aurora Read Replica with the highest priority](https://dev.to/aws-builders/doing-failover-in-amazon-aurora-read-replica-with-the-highest-priority-4okb)\n### S3\n- [Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)\n",
                 "name": "Replication and failover methods for stateful services"
               },
               {
-                "content": "Techniques to achieve high availability (for example, Multi-AZ, multi-Region)",
+                "content": "### Blog\n- [AWS:Architecture I: How to Get High Availability](https://aws.amazon.com/fr/blogs/startups/how-to-get-high-availability-in-architecture/)\n- [Netapp Blog:AWS High Availability: Compute, SQL and Storage](https://bluexp.netapp.com/blog/understanding-aws-high-availability-compute-sql-and-storage)\n### Presentation\n- [High-Availability in the Cloud Architectural Best Practices](https://s3.amazonaws.com/aws001/guided_trek/GuidedTrek_RightScale_High%20Availability%20in%20the%20Cloud_SanFran.pdf)\n",
                 "name": "Techniques to achieve high availability (for example, Multi-AZ, multi-Region)"
               }
             ],

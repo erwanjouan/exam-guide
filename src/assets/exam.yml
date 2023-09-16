@@ -439,17 +439,42 @@ exam:
           name: Implement highly available solutions to meet resilience and business requirements.
           knowledgeOf:
             - name: "Multi-AZ and multi-Region deployments (for example, compute layer, data layer)"
-              content: >-
-                Multi-AZ and multi-Region deployments (for example, compute layer, data layer)
+              content: |
+                ### Multi-AZ Services
+                #### Load Balancer
+                - [ALB:Availability Zones for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-subnets.html)
+                - [ALB:Cross-zone load balancing for target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/disable-cross-zone.html)
+                #### Auto Scaling Group
+                - [ASG:Amazon EC2 Auto Scaling benefits](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html)
+                #### RDS
+                - [RDS:Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+                ### Blog: Building highly resilient applications using Amazon Route 53 Application Recovery Controller
+                - [Part 1: Single-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-1-single-region-stack/)
+                - [Part 2: Multi-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-2-multi-region-stack/)
+                ### Route53
+                - [Route53:Adding another Region to your latency-based routing in Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialAddingLBRRegion.html)
             - name: "SLAs"
-              content: >-
-                SLAs
+              content: |
+                ### AWS Services
+                - [AWS Service Level Agreement – What you need to know](https://www.logicata.com/blog/aws-service-level-agreement/)
             - name: "Replication and failover methods for stateful services"
-              content: >-
-                Replication and failover methods for stateful services
+              content: |
+                ### DynamoDB
+                - [Global tables - multi-Region replication for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)
+                ### RDS
+                -  [Multi-AZ DB instance deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZSingleStandby.html)
+                ### Aurora
+                - [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)
+                - [Doing failover in Amazon Aurora Read Replica with the highest priority](https://dev.to/aws-builders/doing-failover-in-amazon-aurora-read-replica-with-the-highest-priority-4okb)
+                ### S3
+                - [Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)
             - name: "Techniques to achieve high availability (for example, Multi-AZ, multi-Region)"
-              content: >-
-                Techniques to achieve high availability (for example, Multi-AZ, multi-Region)
+              content: |
+                ### Blog
+                - [AWS:Architecture I: How to Get High Availability](https://aws.amazon.com/fr/blogs/startups/how-to-get-high-availability-in-architecture/)
+                - [Netapp Blog:AWS High Availability: Compute, SQL and Storage](https://bluexp.netapp.com/blog/understanding-aws-high-availability-compute-sql-and-storage)
+                ### Presentation
+                - [High-Availability in the Cloud Architectural Best Practices](https://s3.amazonaws.com/aws001/guided_trek/GuidedTrek_RightScale_High%20Availability%20in%20the%20Cloud_SanFran.pdf)
           skillsIn:
             - name: "Translating business requirements into technical resiliency needs"
               content: >-
