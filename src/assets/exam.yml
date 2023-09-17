@@ -527,29 +527,58 @@ exam:
                 - [Advanced predictive scaling policy configurations using custom metrics](https://docs.aws.amazon.com/autoscaling/ec2/userguide/predictive-scaling-customized-metric-specification.html)
             - name: "Loosely coupled and distributed architectures"
               content: |
-                Loosely coupled and distributed architectures
+                ### Loosely Coupled
+                #### AWS Well-Architected Framework
+                - [High Performance Computing Lens: Loosely Coupled Scenarios](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/loosely-coupled-scenarios.html)
+                - [Queue-Based Architecture](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/queue-based-architecture.html)
+                - [REL04-BP02 Implement loosely coupled dependencies](https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_prevent_interaction_failure_loosely_coupled_system.html)
+                ### Distributed architectures
+                - [Challenges with distributed systems](https://aws.amazon.com/builders-library/challenges-with-distributed-systems/?nc1=h_ls)
+                - [Distributed systems components](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/distributed-systems-components.html)
             - name: "Serverless architectures"
-              content: >-
-                Serverless architectures
+              content: |
+                ### AWS Well-Architected Framework
+                - [Serverless Applications Lens: Scenarios](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/restful-microservices.html)
+                - [High Performance Computing Lens: Serverless](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/serverless.html)
             - name: "Container platforms"
-              content: >-
-                Container platforms
+              content: |
+                ### Comparison
+                - [What Are the Differences Between Elastic Beanstalk, EKS, ECS, EC2, Lambda, and Fargate?](https://www.logicmonitor.com/blog/what-are-the-differences-between-elastic-beanstalk-eks-ecs-ec2-lambda-and-fargate)
+                - [What is Amazon EKS?](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
+                - [What is Amazon Elastic Container Service?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+                - [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+                - [What is AWS Elastic Beanstalk?](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
           skillsIn:
             - name: "Identifying and remediating scaling issues"
-              content: >-
-                Identifying and remediating scaling issues
+              content: |
+                ### TroubleShooting
+                - [ASG_UserGuide: Troubleshoot Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-auto-scaling.html)
+                - [CodeDeploy_UserGuide: Troubleshoot Amazon EC2 Auto Scaling issues](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-auto-scaling.html)
+                - [Blog: How do I troubleshoot scaling issues with my Amazon EC2 Auto Scaling group?](https://repost.aws/knowledge-center/auto-scaling-troubleshooting)
+                ### Auto Scaling actions
+                - [ASG_UserGuide: Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
+                - [ASG_UserGuide: Temporarily remove instances from your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-standby.html)
+                - [ASG_UserGuide: Suspend and resume a process for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-suspend-resume-processes.html)
             - name: "Identifying and implementing appropriate auto scaling, load balancing, and caching solutions"
-              content: >-
-                Identifying and implementing appropriate auto scaling, load balancing, and caching solutions
+              content: |
+                ### Auto Scaling
+                - [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html)
+                - [Worshop: Ec2 Spot Instances](https://ec2spotworkshops.com/)
             - name: "Deploying container-based applications (for example, Amazon ECS, Amazon EKS)"
-              content: >-
-                Deploying container-based applications (for example, Amazon ECS, Amazon EKS)
+              content: |
+                ### Workshop
+                - [Amazon ECS Workshop](https://ecsworkshop.com/)
+                - [AWS Elastic Kubernetes Service (EKS) workshop](https://www.eksworkshop.com/docs/introduction/)
             - name: "Deploying workloads in multiple AWS Regions for global scalability"
-              content: >-
-                Deploying workloads in multiple AWS Regions for global scalability
+              content: |
+                ### Articles
+                - [Blog: Creating a Multi-Region Application with AWS Services – Part 1, Compute, Networking, and Security](https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/)
+                - [Medium: How to Design a Highly Available, Scalable & Secured AWS 3-tier Application for Multi-region?](https://medium.com/@azizulmaqsud/how-to-design-a-highly-available-scalable-secured-aws-3-tier-application-for-multi-region-%EF%B8%8F-b1e2032ea22c)
             - name: "Configuring serverless applications (for example, Amazon API Gateway, Lambda, AWS Fargate)"
-              content: >-
-                Configuring serverless applications (for example, Amazon API Gateway, Lambda, AWS Fargate)
+              content: |
+                - [Build a CRUD Serverless API from scratch using AWS Lambda (Python), API Gateway, and DynamoDB](https://dev.to/aws-builders/build-a-crud-serverless-api-from-scratch-using-aws-lambda-api-gateway-and-dynamodb-1ia4)
+                - [Field Notes: Serverless Container-based APIs with Amazon ECS and Amazon API Gateway](https://aws.amazon.com/blogs/architecture/field-notes-serverless-container-based-apis-with-amazon-ecs-and-amazon-api-gateway/)
+                - [EDA using Amazon EventBridge, Lambda, and Fargate ECS, with SAM-CLI and a Native Spring Boot MS as Event Source](https://aosolorzano.medium.com/eda-with-eventbridge-and-lambda-using-sam-cli-with-spring-boot-ms-on-fargate-ecs-as-event-source-9abee237be08)
         - id: "3.3"
           name: Implement automated recovery processes to meet RTO/RPO requirements.
           knowledgeOf:
@@ -684,8 +713,9 @@ exam:
               content: >-
                 Installing and configuring agents on EC2 instances (for example, AWS Systems Manager Agent [SSM Agent], CloudWatch agent)
             - name: "Configuring AWS Config rules to remediate issues"
-              content: >-
-                Configuring AWS Config rules to remediate issues
+              content: |
+                ### AWS Config
+                https://mng.workshop.aws/config.html
             - name: "Configuring health checks (for example, Route 53, Application Load Balancer)"
               content: >-
                 Configuring health checks (for example, Route 53, Application Load Balancer)

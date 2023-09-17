@@ -306,38 +306,38 @@
                 "name": "Appropriate metrics for scaling services"
               },
               {
-                "content": "Loosely coupled and distributed architectures\n",
+                "content": "### Loosely Coupled\n#### AWS Well-Architected Framework\n- [High Performance Computing Lens: Loosely Coupled Scenarios](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/loosely-coupled-scenarios.html)\n- [Queue-Based Architecture](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/queue-based-architecture.html)\n- [REL04-BP02 Implement loosely coupled dependencies](https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_prevent_interaction_failure_loosely_coupled_system.html)\n### Distributed architectures\n- [Challenges with distributed systems](https://aws.amazon.com/builders-library/challenges-with-distributed-systems/?nc1=h_ls)\n- [Distributed systems components](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/distributed-systems-components.html)\n",
                 "name": "Loosely coupled and distributed architectures"
               },
               {
-                "content": "Serverless architectures",
+                "content": "### AWS Well-Architected Framework\n- [Serverless Applications Lens: Scenarios](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/restful-microservices.html)\n- [High Performance Computing Lens: Serverless](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/serverless.html)\n",
                 "name": "Serverless architectures"
               },
               {
-                "content": "Container platforms",
+                "content": "### Comparison\n- [What Are the Differences Between Elastic Beanstalk, EKS, ECS, EC2, Lambda, and Fargate?](https://www.logicmonitor.com/blog/what-are-the-differences-between-elastic-beanstalk-eks-ecs-ec2-lambda-and-fargate)\n- [What is Amazon EKS?](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)\n- [What is Amazon Elastic Container Service?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)\n- [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)\n- [What is AWS Elastic Beanstalk?](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)\n",
                 "name": "Container platforms"
               }
             ],
             "name": "Implement solutions that are scalable to meet business requirements.",
             "skillsIn": [
               {
-                "content": "Identifying and remediating scaling issues",
+                "content": "### TroubleShooting\n- [ASG_UserGuide: Troubleshoot Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-auto-scaling.html)\n- [CodeDeploy_UserGuide: Troubleshoot Amazon EC2 Auto Scaling issues](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-auto-scaling.html)\n- [Blog: How do I troubleshoot scaling issues with my Amazon EC2 Auto Scaling group?](https://repost.aws/knowledge-center/auto-scaling-troubleshooting)\n### Auto Scaling actions\n- [ASG_UserGuide: Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)\n- [ASG_UserGuide: Temporarily remove instances from your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-standby.html)\n- [ASG_UserGuide: Suspend and resume a process for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-suspend-resume-processes.html)\n",
                 "name": "Identifying and remediating scaling issues"
               },
               {
-                "content": "Identifying and implementing appropriate auto scaling, load balancing, and caching solutions",
+                "content": "### Auto Scaling\n- [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html)\n- [Worshop: Ec2 Spot Instances](https://ec2spotworkshops.com/)\n",
                 "name": "Identifying and implementing appropriate auto scaling, load balancing, and caching solutions"
               },
               {
-                "content": "Deploying container-based applications (for example, Amazon ECS, Amazon EKS)",
+                "content": "### Workshop\n- [Amazon ECS Workshop](https://ecsworkshop.com/)\n- [AWS Elastic Kubernetes Service (EKS) workshop](https://www.eksworkshop.com/docs/introduction/)\n",
                 "name": "Deploying container-based applications (for example, Amazon ECS, Amazon EKS)"
               },
               {
-                "content": "Deploying workloads in multiple AWS Regions for global scalability",
+                "content": "Deploying workloads in multiple AWS Regions for global scalability\n",
                 "name": "Deploying workloads in multiple AWS Regions for global scalability"
               },
               {
-                "content": "Configuring serverless applications (for example, Amazon API Gateway, Lambda, AWS Fargate)",
+                "content": "- [EDA using Amazon EventBridge, Lambda, and Fargate ECS, with SAM-CLI and a Native Spring Boot MS as Event Source](https://aosolorzano.medium.com/eda-with-eventbridge-and-lambda-using-sam-cli-with-spring-boot-ms-on-fargate-ecs-as-event-source-9abee237be08)\n",
                 "name": "Configuring serverless applications (for example, Amazon API Gateway, Lambda, AWS Fargate)"
               }
             ]
@@ -531,7 +531,7 @@
                 "name": "Installing and configuring agents on EC2 instances (for example, AWS Systems Manager Agent [SSM Agent], CloudWatch agent)"
               },
               {
-                "content": "Configuring AWS Config rules to remediate issues",
+                "content": "### AWS Config\nhttps://mng.workshop.aws/config.html\n",
                 "name": "Configuring AWS Config rules to remediate issues"
               },
               {
