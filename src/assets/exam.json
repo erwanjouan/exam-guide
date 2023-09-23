@@ -355,7 +355,7 @@
                 "name": "Backup and recovery strategies (for example, pilot light, warm standby)"
               },
               {
-                "content": "Recovery procedures",
+                "content": "### AWS Well-Architected Framework\n- [Disaster Recovery of Workloads on AWS: Recovery in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)\n### Disaster Recovery FAQ\n- [What are the best disaster recovery methods?](https://aws.amazon.com/what-is/disaster-recovery/#seo-faq-pairs#what-are-the-best-disaster-recovery-methods)\n",
                 "name": "Recovery procedures"
               }
             ],

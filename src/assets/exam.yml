@@ -608,8 +608,12 @@ exam:
                 - [Blog: Disaster Recovery (DR) Architecture on AWS, Part III: Pilot Light and Warm Standby](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/)
                 - [Blog: Disaster Recovery (DR) Architecture on AWS, Part IV: Multi-site Active/Active](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iv-multi-site-active-active/)
             - name: "Recovery procedures"
-              content: >-
-                Recovery procedures
+              content: |
+                ### AWS Well-Architected Framework
+                - [Disaster Recovery of Workloads on AWS: Recovery in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)
+                ### Disaster Recovery FAQ
+                - [What are the best disaster recovery methods?](https://aws.amazon.com/what-is/disaster-recovery/#seo-faq-pairs#what-are-the-best-disaster-recovery-methods)
+
           skillsIn:
             - name: "Testing failover of Multi-AZ/multi-Region workloads (for example, Amazon RDS, Amazon Aurora, Route 53, CloudFront)"
               content: >-
