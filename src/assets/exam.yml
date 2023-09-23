@@ -667,14 +667,25 @@ exam:
           name: Configure the collection, aggregation, and storage of logs and metrics.
           knowledgeOf:
             - name: "How to monitor applications and infrastructure"
-              content: >-
-                How to monitor applications and infrastructure
+              content: |
+                ### CloudWatch
+                - [What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+                ### AWS Health
+                - [What is AWS Health?](https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html)
+                - [Getting started with your AWS Health Dashboard – Your account health](https://docs.aws.amazon.com/health/latest/ug/getting-started-health-dashboard.html)
+                - [Logging and monitoring in AWS Health](https://docs.aws.amazon.com/health/latest/ug/monitoring-overview.html)
             - name: "Amazon CloudWatch metrics (for example, namespaces, metrics, dimensions, and resolution)"
-              content: >-
-                Amazon CloudWatch metrics (for example, namespaces, metrics, dimensions, and resolution)
+              content: |
+                ### CloudWatch
+                - [Amazon CloudWatch concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html)
             - name: "Real-time log ingestion"
-              content: >-
-                Real-time log ingestion
+              content: |
+                ### CloudWatch
+                - [Real-time processing of log data with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html)
+                ### Kinesis Firehose
+                - [CloudWatch Logs vs. Kinesis Firehose](https://medium.com/circuitpeople/cloudwatch-logs-vs-kinesis-firehose-71fc3fd54f8c)
+                ### Kinesis Stream
+                - [AWS — Sending real-time CloudWatch log events to Kinesis stream](https://awstip.com/aws-sending-real-time-cloudwatch-log-events-to-kinesis-stream-f80e09341bd2)
             - name: "Encryption options for at-rest and in-transit logs and metrics (for example, client-side and server-side, AWS Key Management Service [AWS KMS])"
               content: >-
                 Encryption options for at-rest and in-transit logs and metrics (for example, client-side and server-side, AWS Key Management Service [AWS KMS])
