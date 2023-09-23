@@ -370,7 +370,7 @@
                 "name": "Identifying and implementing appropriate cross-Region backup and recovery strategies (for example, AWS Backup, Amazon S3, Systems Manager)"
               },
               {
-                "content": "### Application Load Balancer\n- [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)\n### Classic Load Balancer\n- [Configure health checks for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-healthchecks.html)\n",
+                "content": "### Application Load Balancer\n- [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)\n- [Cross-zone load balancing for target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/disable-cross-zone.html)\n- [Target group health](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health.html)\n### Classic Load Balancer\n- [Configure health checks for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-healthchecks.html)\n",
                 "name": "Configuring a load balancer to recover from backend failure"
               }
             ]

@@ -656,6 +656,8 @@ exam:
               content: |
                 ### Application Load Balancer
                 - [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
+                - [Cross-zone load balancing for target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/disable-cross-zone.html)
+                - [Target group health](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health.html)
                 ### Classic Load Balancer
                 - [Configure health checks for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-healthchecks.html)
     - id: "4"
