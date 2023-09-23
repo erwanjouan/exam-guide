@@ -469,7 +469,6 @@ exam:
                 -  [Multi-AZ DB instance deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZSingleStandby.html)
                 ### Aurora
                 - [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)
-                - [Doing failover in Amazon Aurora Read Replica with the highest priority](https://dev.to/aws-builders/doing-failover-in-amazon-aurora-read-replica-with-the-highest-priority-4okb)
                 ### S3
                 - [Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)
             - name: "Techniques to achieve high availability (for example, Multi-AZ, multi-Region)"
@@ -614,16 +613,51 @@ exam:
                 - [Disaster Recovery of Workloads on AWS: Recovery in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)
                 ### Disaster Recovery FAQ
                 - [What are the best disaster recovery methods?](https://aws.amazon.com/what-is/disaster-recovery/#seo-faq-pairs#what-are-the-best-disaster-recovery-methods)
+                ### Availability zone evacuation pattern
+                - [AWS Whitepapers](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/control-plane-controlled-evacuation.html)
           skillsIn:
             - name: "Testing failover of Multi-AZ/multi-Region workloads (for example, Amazon RDS, Amazon Aurora, Route 53, CloudFront)"
-              content: >-
-                Testing failover of Multi-AZ/multi-Region workloads (for example, Amazon RDS, Amazon Aurora, Route 53, CloudFront)
+              content: |
+                ### Amazon RDS
+                - Reboot with failover
+                  - [AWS Well-Architected Labs: RDS Failure Injection](https://www.wellarchitectedlabs.com/reliability/300_labs/300_testing_for_resiliency_of_ec2_rds_and_s3/5_failure_injection_rds/)
+                  - [AWS RDS MySQL on Multi-AZ Test Failover](https://tungle.ca/?p=3677)
+                  ```
+                  aws rds reboot-db-instance \
+                    --region us-east-1 \
+                    --profile my_aws_profile_name_here \
+                    --db-instance-identifier my_rds_db_identifier_here \
+                    --force-failover
+                  ```
+                ### Amazon Aurora
+                - [Testing Amazon Aurora MySQL using fault injection queries](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.FaultInjectionQueries.html)
+                - [Doing failover in Amazon Aurora Read Replica with the highest priority](https://dev.to/aws-builders/doing-failover-in-amazon-aurora-read-replica-with-the-highest-priority-4okb)
+                - [How can I perform a failover in my Aurora global database, and why did my failover fail?](https://repost.aws/knowledge-center/aurora-postgresql-failover-issues)
+                - [DR WorkShop: Fail Over at Aurora Global Database](https://disaster-recovery.workshop.aws/en/labs/advanced/aurora-global-database/failover.html)
+                - [Blog: Deploy multi-Region Amazon Aurora applications with a failover blueprint](https://aws.amazon.com/blogs/database/deploy-multi-region-amazon-aurora-applications-with-a-failover-blueprint/)
+
+                ### Route 53
+                - [DNS Failover with Route53](https://medium.com/tysonworks/dns-failover-with-route53-cc3427a3629a)
+                - [Amazon Route 53: Health Checks and DNS Failover](https://www.stormit.cloud/blog/route-53-health-check/)
+
+                ### CloudFront
+                - [Optimizing high availability with CloudFront origin failover](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html)
             - name: "Identifying and implementing appropriate cross-Region backup and recovery strategies (for example, AWS Backup, Amazon S3, Systems Manager)"
-              content: >-
-                Identifying and implementing appropriate cross-Region backup and recovery strategies (for example, AWS Backup, Amazon S3, Systems Manager)
+              content: |
+                ### AWS Backup
+                - [AWS Backup: Creating backup copies across AWS Regions](https://docs.aws.amazon.com/aws-backup/latest/devguide/cross-region-backup.html)                
+                - [Blog: Secure data recovery with cross-account backup and Cross-Region copy using AWS Backup](https://aws.amazon.com/blogs/storage/secure-data-recovery-with-cross-account-backup-and-cross-region-copy-using-aws-backup/)
+                ### Amazon S3
+                - [S3 Backup Strategy and How configure Cross Region Replication.](https://medium.com/@ajay20kin/s3-backup-strategy-and-how-configure-cross-region-replication-dd5f1e3b8b63)
+                - [Workshop](https://www.wellarchitectedlabs.com/reliability/disaster-recovery/workshop_1/2-s3-crr/)
+                ### Systems Manager
+                - [Create an AMI and cross-Region copy](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-document-backup-maintenance-example.html)
             - name: "Configuring a load balancer to recover from backend failure"
-              content: >-
-                Configuring a load balancer to recover from backend failure
+              content: |
+                ### Application Load Balancer
+                - [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
+                ### Classic Load Balancer
+                - [Configure health checks for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-healthchecks.html)
     - id: "4"
       name: "Monitoring and Logging (15%)"
       taskStatements:
