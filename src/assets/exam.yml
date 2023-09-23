@@ -451,6 +451,7 @@ exam:
                 - [ASG:Amazon EC2 Auto Scaling benefits](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html)
                 #### RDS
                 - [RDS:Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+                - [https://aws.amazon.com/rds/features/multi-az/](https://aws.amazon.com/rds/features/multi-az/)
                 ### Blog: Building highly resilient applications using Amazon Route 53 Application Recovery Controller
                 - [Part 1: Single-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-1-single-region-stack/)
                 - [Part 2: Multi-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-2-multi-region-stack/)
@@ -613,7 +614,6 @@ exam:
                 - [Disaster Recovery of Workloads on AWS: Recovery in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)
                 ### Disaster Recovery FAQ
                 - [What are the best disaster recovery methods?](https://aws.amazon.com/what-is/disaster-recovery/#seo-faq-pairs#what-are-the-best-disaster-recovery-methods)
-
           skillsIn:
             - name: "Testing failover of Multi-AZ/multi-Region workloads (for example, Amazon RDS, Amazon Aurora, Route 53, CloudFront)"
               content: >-
