@@ -251,6 +251,7 @@
         ]
       },
       {
+        "content": "### AWS Well-Architected Framework\n- [Reliability Pillar:Reliability](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/reliability.html)        \n",
         "id": "3",
         "name": "Resilient Cloud Solutions (15%)",
         "taskStatements": [
@@ -333,11 +334,11 @@
                 "name": "Deploying container-based applications (for example, Amazon ECS, Amazon EKS)"
               },
               {
-                "content": "Deploying workloads in multiple AWS Regions for global scalability\n",
+                "content": "### Articles\n- [Blog: Creating a Multi-Region Application with AWS Services – Part 1, Compute, Networking, and Security](https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/)\n- [Medium: How to Design a Highly Available, Scalable \u0026 Secured AWS 3-tier Application for Multi-region?](https://medium.com/@azizulmaqsud/how-to-design-a-highly-available-scalable-secured-aws-3-tier-application-for-multi-region-%EF%B8%8F-b1e2032ea22c)\n",
                 "name": "Deploying workloads in multiple AWS Regions for global scalability"
               },
               {
-                "content": "- [EDA using Amazon EventBridge, Lambda, and Fargate ECS, with SAM-CLI and a Native Spring Boot MS as Event Source](https://aosolorzano.medium.com/eda-with-eventbridge-and-lambda-using-sam-cli-with-spring-boot-ms-on-fargate-ecs-as-event-source-9abee237be08)\n",
+                "content": "- [Build a CRUD Serverless API from scratch using AWS Lambda (Python), API Gateway, and DynamoDB](https://dev.to/aws-builders/build-a-crud-serverless-api-from-scratch-using-aws-lambda-api-gateway-and-dynamodb-1ia4)\n- [Field Notes: Serverless Container-based APIs with Amazon ECS and Amazon API Gateway](https://aws.amazon.com/blogs/architecture/field-notes-serverless-container-based-apis-with-amazon-ecs-and-amazon-api-gateway/)\n- [EDA using Amazon EventBridge, Lambda, and Fargate ECS, with SAM-CLI and a Native Spring Boot MS as Event Source](https://aosolorzano.medium.com/eda-with-eventbridge-and-lambda-using-sam-cli-with-spring-boot-ms-on-fargate-ecs-as-event-source-9abee237be08)\n",
                 "name": "Configuring serverless applications (for example, Amazon API Gateway, Lambda, AWS Fargate)"
               }
             ]
@@ -346,11 +347,11 @@
             "id": "3.3",
             "knowledgeOf": [
               {
-                "content": "Disaster recovery concepts (for example, RTO, RPO)",
+                "content": "### AWS Well-Architected Framework\n- [Reliability Pillar:Plan for Disaster Recovery (DR)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/plan-for-disaster-recovery-dr.html)\n### Definition of objectives\n- [__Recovery Time Objective (RTO)__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html)\n  - Defined by the organization. RTO is the maximum acceptable delay between the interruption of service and restoration of service. This determines what is considered an acceptable time window when service is unavailable.\n- [__Recovery Point Objective (RPO)__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html)\n  - Defined by the organization. RPO is the maximum acceptable amount of time since the last data recovery point. This determines what is considered an acceptable loss of data between the last recovery point and the interruption of service.\n- [__Availability__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/availability.html)\n  - is the percentage of time that a workload is available for use. \n- [__Resiliency__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/resiliency-and-the-components-of-reliability.html)\n  -  is the ability of a workload to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions, such as misconfigurations or transient network issues.\n",
                 "name": "Disaster recovery concepts (for example, RTO, RPO)"
               },
               {
-                "content": "Backup and recovery strategies (for example, pilot light, warm standby)",
+                "content": "### Principles\n- [AWS Well-Architected Framework: Disaster recovery options in the cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)\n### AWS Architecture Blog\n- [Blog: Disaster Recovery (DR) Architecture on AWS, Part I: Strategies for Recovery in the Cloud](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/)\n- [Blog: Disaster Recovery (DR) Architecture on AWS, Part II: Backup and Restore with Rapid Recovery](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-ii-backup-and-restore-with-rapid-recovery/)\n- [Blog: Disaster Recovery (DR) Architecture on AWS, Part III: Pilot Light and Warm Standby](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/)\n- [Blog: Disaster Recovery (DR) Architecture on AWS, Part IV: Multi-site Active/Active](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iv-multi-site-active-active/)\n",
                 "name": "Backup and recovery strategies (for example, pilot light, warm standby)"
               },
               {

@@ -434,6 +434,9 @@ exam:
                 - [AWS Systems Manager Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html)
     - id: "3"
       name: "Resilient Cloud Solutions (15%)"
+      content: |
+        ### AWS Well-Architected Framework
+        - [Reliability Pillar:Reliability](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/reliability.html)        
       taskStatements:
         - id: "3.1"
           name: Implement highly available solutions to meet resilience and business requirements.
@@ -583,11 +586,27 @@ exam:
           name: Implement automated recovery processes to meet RTO/RPO requirements.
           knowledgeOf:
             - name: "Disaster recovery concepts (for example, RTO, RPO)"
-              content: >-
-                Disaster recovery concepts (for example, RTO, RPO)
+              content: |
+                ### AWS Well-Architected Framework
+                - [Reliability Pillar:Plan for Disaster Recovery (DR)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/plan-for-disaster-recovery-dr.html)
+                ### Definition of objectives
+                - [__Recovery Time Objective (RTO)__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html)
+                  - Defined by the organization. RTO is the maximum acceptable delay between the interruption of service and restoration of service. This determines what is considered an acceptable time window when service is unavailable.
+                - [__Recovery Point Objective (RPO)__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html)
+                  - Defined by the organization. RPO is the maximum acceptable amount of time since the last data recovery point. This determines what is considered an acceptable loss of data between the last recovery point and the interruption of service.
+                - [__Availability__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/availability.html)
+                  - is the percentage of time that a workload is available for use. 
+                - [__Resiliency__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/resiliency-and-the-components-of-reliability.html)
+                  -  is the ability of a workload to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions, such as misconfigurations or transient network issues.
             - name: "Backup and recovery strategies (for example, pilot light, warm standby)"
-              content: >-
-                Backup and recovery strategies (for example, pilot light, warm standby)
+              content: |
+                ### Principles
+                - [AWS Well-Architected Framework: Disaster recovery options in the cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)
+                ### AWS Architecture Blog
+                - [Blog: Disaster Recovery (DR) Architecture on AWS, Part I: Strategies for Recovery in the Cloud](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/)
+                - [Blog: Disaster Recovery (DR) Architecture on AWS, Part II: Backup and Restore with Rapid Recovery](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-ii-backup-and-restore-with-rapid-recovery/)
+                - [Blog: Disaster Recovery (DR) Architecture on AWS, Part III: Pilot Light and Warm Standby](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/)
+                - [Blog: Disaster Recovery (DR) Architecture on AWS, Part IV: Multi-site Active/Active](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iv-multi-site-active-active/)
             - name: "Recovery procedures"
               content: >-
                 Recovery procedures
