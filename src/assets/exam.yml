@@ -687,11 +687,16 @@ exam:
                 ### Kinesis Stream
                 - [AWS — Sending real-time CloudWatch log events to Kinesis stream](https://awstip.com/aws-sending-real-time-cloudwatch-log-events-to-kinesis-stream-f80e09341bd2)
             - name: "Encryption options for at-rest and in-transit logs and metrics (for example, client-side and server-side, AWS Key Management Service [AWS KMS])"
-              content: >-
-                Encryption options for at-rest and in-transit logs and metrics (for example, client-side and server-side, AWS Key Management Service [AWS KMS])
+              content: |
+                ### AWS WhitePaper
+                - [Encrypting Data-at-Rest and Data-in-Transit](https://docs.aws.amazon.com/whitepapers/latest/logical-separation/encrypting-data-at-rest-and--in-transit.html)
+                ### Blog
+                - [Medium: Data Encryption at Rest & Transit on AWS](https://hetakshi-patil.medium.com/data-encryption-at-rest-transit-on-aws-38a6a9140004)
+                - [How to Enable End-to-End Encryption in AWS](https://www.infracloud.io/blogs/enable-end-to-end-encryption-aws/)
             - name: "Security configurations (for example, IAM roles and permissions to allow for log collection)"
-              content: >-
-                Security configurations (for example, IAM roles and permissions to allow for log collection)
+              content: |
+                ### AWS CloudWatch
+                - [Using identity-based policies (IAM policies) for CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-identity-based-access-control-cwl.html)
           skillsIn:
             - name: "Securely storing and managing logs"
               content: >-

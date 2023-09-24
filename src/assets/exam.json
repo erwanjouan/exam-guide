@@ -385,23 +385,23 @@
             "id": "4.1",
             "knowledgeOf": [
               {
-                "content": "How to monitor applications and infrastructure",
+                "content": "### CloudWatch\n- [What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)\n### AWS Health\n- [What is AWS Health?](https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html)\n- [Getting started with your AWS Health Dashboard – Your account health](https://docs.aws.amazon.com/health/latest/ug/getting-started-health-dashboard.html)\n- [Logging and monitoring in AWS Health](https://docs.aws.amazon.com/health/latest/ug/monitoring-overview.html)\n",
                 "name": "How to monitor applications and infrastructure"
               },
               {
-                "content": "Amazon CloudWatch metrics (for example, namespaces, metrics, dimensions, and resolution)",
+                "content": "### CloudWatch\n- [Amazon CloudWatch concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html)\n",
                 "name": "Amazon CloudWatch metrics (for example, namespaces, metrics, dimensions, and resolution)"
               },
               {
-                "content": "Real-time log ingestion",
+                "content": "### CloudWatch\n- [Real-time processing of log data with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html)\n### Kinesis Firehose\n- [CloudWatch Logs vs. Kinesis Firehose](https://medium.com/circuitpeople/cloudwatch-logs-vs-kinesis-firehose-71fc3fd54f8c)\n### Kinesis Stream\n- [AWS — Sending real-time CloudWatch log events to Kinesis stream](https://awstip.com/aws-sending-real-time-cloudwatch-log-events-to-kinesis-stream-f80e09341bd2)\n",
                 "name": "Real-time log ingestion"
               },
               {
-                "content": "Encryption options for at-rest and in-transit logs and metrics (for example, client-side and server-side, AWS Key Management Service [AWS KMS])",
+                "content": "### AWS WhitePaper\n- [Encrypting Data-at-Rest and Data-in-Transit](https://docs.aws.amazon.com/whitepapers/latest/logical-separation/encrypting-data-at-rest-and--in-transit.html)\n### Blog\n- [Medium: Data Encryption at Rest \u0026 Transit on AWS](https://hetakshi-patil.medium.com/data-encryption-at-rest-transit-on-aws-38a6a9140004)\n- [How to Enable End-to-End Encryption in AWS](https://www.infracloud.io/blogs/enable-end-to-end-encryption-aws/)\n",
                 "name": "Encryption options for at-rest and in-transit logs and metrics (for example, client-side and server-side, AWS Key Management Service [AWS KMS])"
               },
               {
-                "content": "Security configurations (for example, IAM roles and permissions to allow for log collection)",
+                "content": "### AWS CloudWatch\n- [Using identity-based policies (IAM policies) for CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-identity-based-access-control-cwl.html)\n",
                 "name": "Security configurations (for example, IAM roles and permissions to allow for log collection)"
               }
             ],
