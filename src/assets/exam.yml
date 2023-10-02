@@ -699,29 +699,67 @@ exam:
                 - [Using identity-based policies (IAM policies) for CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-identity-based-access-control-cwl.html)
           skillsIn:
             - name: "Securely storing and managing logs"
-              content: >-
-                Securely storing and managing logs
+              content: |
+                ### Solutions for Cloud Foundation
+                - [Guidance for Log Storage on AWS](https://aws.amazon.com/solutions/guidance/log-storage-on-aws/)
+                  - Log storage must be tamper-resistant and encrypted, and accessed only by controlled and monitored mechanisms, based on least privilege access by role.
+                #### Build a secure and resilient log storage
+                - Secure access to log storage
+                - Configure default encryption on log storage
+                - Create a place to store your logs
+                #### Store logs centrally
+                - Capture audit trails logs in central location
+                - Capture resource configuration changes in a central location
+                - Generate logs at an organization-defined frequency
+                #### Ensuring the integrity of logs within your log storage
+                - Set preventive controls to prevent unauthorized access and modification of the logs
+                - Generate and store access logs to your log storage
+                #### Managing your logs in your log storage
+                - Create a policy document that specifies the length of time logs must be kept
+                - Automate log rotation and archiving to the proper storage tier (frequently access to archival)
+                - Define time period to retain regular access to logs or to rotate to the archive
+                - Establish a process exception mechanism when log deletion or archiving may be required
+                #### Adding new logs into the log storage
+                - Define a process to add new logs to the log storage
+                - Build a mechanism to store new logs into the log storage
+                - Automate the addition of new logs to your log storage
+                #### Granting access to the logs
+                - Grant read-only accesses by role/user using the Principle of Least Privilege (PoLP)
+                - Provide read access to the logs in order to perform analysis or an audit (internal/external)
+                - Automate temporary read-only access to specific log in the log storage by owner or use case
             - name: "Creating CloudWatch metrics from log events by using metric filters"
-              content: >-
-                Creating CloudWatch metrics from log events by using metric filters
+              content: |
+                ### CloudWatch Logs
+                - [Creating metrics from log events using filters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogData.html)
+                - [Filter pattern syntax for metric filters, subscription filters, and filter log events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html)
             - name: "Creating CloudWatch metric streams (for example, Amazon S3 or Amazon Kinesis Data Firehose options)"
-              content: >-
-                Creating CloudWatch metric streams (for example, Amazon S3 or Amazon Kinesis Data Firehose options)
+              content: |
+                ### AWS Solutions Library
+                - [DevOps Monitoring Dashboard on AWS](https://aws.amazon.com/solutions/implementations/devops-monitoring-dashboard-on-aws/?did=sl_card&trk=sl_card)
+                - [Ingesting, analyzing, and visualizing metrics with DevOps Monitoring Dashboard on AWS](https://docs.aws.amazon.com/solutions/latest/devops-monitoring-dashboard-on-aws/solution-overview.html)
             - name: "Collecting custom metrics (for example, using the CloudWatch agent)"
-              content: >-
-                Collecting custom metrics (for example, using the CloudWatch agent)
+              content: |
+                ### CloudWatch
+                - [Publish custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html)
+                - [Collect metrics, logs, and traces from Amazon EC2 instances and on-premises servers with the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html)
+                - [Metrics collected by the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html)
             - name: "Managing log storage lifecycles (for example, S3 lifecycles, CloudWatch log group retention)"
-              content: >-
-                Managing log storage lifecycles (for example, S3 lifecycles, CloudWatch log group retention)
+              content: |
+                ### S3
+                - [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
+                ### Cloudwatch logs
+                - [Altering CloudWatch log retention](https://docs.aws.amazon.com/managedservices/latest/userguide/log-customize-retention.html)
             - name: "Processing log data by using CloudWatch log subscriptions (for example, Kinesis, Lambda, Amazon OpenSearch Service)"
-              content: >-
-                Processing log data by using CloudWatch log subscriptions (for example, Kinesis, Lambda, Amazon OpenSearch Service)
+              content: |
+                ### Cloudwatch logs
+                - [Real-time processing of log data with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html)
             - name: "Searching log data by using filter and pattern syntax or CloudWatch Logs Insights"
-              content: >-
-                Searching log data by using filter and pattern syntax or CloudWatch Logs Insights
+              content: |
+                ### Amazon CloudWatch Logs
+                - [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
             - name: "Configuring encryption of log data (for example, AWS KMS)"
-              content: >-
-                Configuring encryption of log data (for example, AWS KMS)
+              content: |
+                [Encrypt log data in CloudWatch Logs using AWS Key Management Service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/encrypt-log-data-kms.html)
         - id: "4.2"
           name: Audit, monitor, and analyze logs and metrics to detect issues.
           knowledgeOf:

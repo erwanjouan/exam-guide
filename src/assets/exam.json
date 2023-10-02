@@ -408,35 +408,35 @@
             "name": "Configure the collection, aggregation, and storage of logs and metrics.",
             "skillsIn": [
               {
-                "content": "Securely storing and managing logs",
+                "content": "### Solutions for Cloud Foundation\n- [Guidance for Log Storage on AWS](https://aws.amazon.com/solutions/guidance/log-storage-on-aws/)\n  - Log storage must be tamper-resistant and encrypted, and accessed only by controlled and monitored mechanisms, based on least privilege access by role.\n#### Build a secure and resilient log storage\n- Secure access to log storage\n- Configure default encryption on log storage\n- Create a place to store your logs\n#### Store logs centrally\n- Capture audit trails logs in central location\n- Capture resource configuration changes in a central location\n- Generate logs at an organization-defined frequency\n#### Ensuring the integrity of logs within your log storage\n- Set preventive controls to prevent unauthorized access and modification of the logs\n- Generate and store access logs to your log storage\n#### Managing your logs in your log storage\n- Create a policy document that specifies the length of time logs must be kept\n- Automate log rotation and archiving to the proper storage tier (frequently access to archival)\n- Define time period to retain regular access to logs or to rotate to the archive\n- Establish a process exception mechanism when log deletion or archiving may be required\n#### Adding new logs into the log storage\n- Define a process to add new logs to the log storage\n- Build a mechanism to store new logs into the log storage\n- Automate the addition of new logs to your log storage\n#### Granting access to the logs\n- Grant read-only accesses by role/user using the Principle of Least Privilege (PoLP)\n- Provide read access to the logs in order to perform analysis or an audit (internal/external)\n- Automate temporary read-only access to specific log in the log storage by owner or use case\n",
                 "name": "Securely storing and managing logs"
               },
               {
-                "content": "Creating CloudWatch metrics from log events by using metric filters",
+                "content": "### CloudWatch Logs\n- [Creating metrics from log events using filters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogData.html)\n- [Filter pattern syntax for metric filters, subscription filters, and filter log events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html)\n",
                 "name": "Creating CloudWatch metrics from log events by using metric filters"
               },
               {
-                "content": "Creating CloudWatch metric streams (for example, Amazon S3 or Amazon Kinesis Data Firehose options)",
+                "content": "### AWS Solutions Library\n- [DevOps Monitoring Dashboard on AWS](https://aws.amazon.com/solutions/implementations/devops-monitoring-dashboard-on-aws/?did=sl_card\u0026trk=sl_card)\n- [Ingesting, analyzing, and visualizing metrics with DevOps Monitoring Dashboard on AWS](https://docs.aws.amazon.com/solutions/latest/devops-monitoring-dashboard-on-aws/solution-overview.html)\n",
                 "name": "Creating CloudWatch metric streams (for example, Amazon S3 or Amazon Kinesis Data Firehose options)"
               },
               {
-                "content": "Collecting custom metrics (for example, using the CloudWatch agent)",
+                "content": "### CloudWatch\n- [Publish custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html)\n- [Collect metrics, logs, and traces from Amazon EC2 instances and on-premises servers with the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html)\n- [Metrics collected by the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html)\n",
                 "name": "Collecting custom metrics (for example, using the CloudWatch agent)"
               },
               {
-                "content": "Managing log storage lifecycles (for example, S3 lifecycles, CloudWatch log group retention)",
+                "content": "### S3\n- [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)\n### Cloudwatch logs\n- [Altering CloudWatch log retention](https://docs.aws.amazon.com/managedservices/latest/userguide/log-customize-retention.html)\n",
                 "name": "Managing log storage lifecycles (for example, S3 lifecycles, CloudWatch log group retention)"
               },
               {
-                "content": "Processing log data by using CloudWatch log subscriptions (for example, Kinesis, Lambda, Amazon OpenSearch Service)",
+                "content": "### Cloudwatch logs\n- [Real-time processing of log data with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html)\n",
                 "name": "Processing log data by using CloudWatch log subscriptions (for example, Kinesis, Lambda, Amazon OpenSearch Service)"
               },
               {
-                "content": "Searching log data by using filter and pattern syntax or CloudWatch Logs Insights",
+                "content": "### Amazon CloudWatch Logs\n- [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)\n",
                 "name": "Searching log data by using filter and pattern syntax or CloudWatch Logs Insights"
               },
               {
-                "content": "Configuring encryption of log data (for example, AWS KMS)",
+                "content": "[Encrypt log data in CloudWatch Logs using AWS Key Management Service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/encrypt-log-data-kms.html)\n",
                 "name": "Configuring encryption of log data (for example, AWS KMS)"
               }
             ]
