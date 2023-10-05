@@ -25,16 +25,16 @@
                 "name": "Configuring code, image, and artifact repositories"
               },
               {
-                "content": "### CI/CD\n- [Blog:Complete CI/CD with AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy, and AWS CodePipeline](https://aws.amazon.com/blogs/devops/complete-ci-cd-with-aws-codecommit-aws-codebuild-aws-codedeploy-and-aws-codepipeline/)\n### CodePipeline\n- [DevOps pipeline example](https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-devops-example.html)\n",
+                "content": "### CI/CD\n- [Blog:Complete CI/CD with AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy, and AWS CodePipeline](https://aws.amazon.com/blogs/devops/complete-ci-cd-with-aws-codecommit-aws-codebuild-aws-codedeploy-and-aws-codepipeline/)\n### CodePipeline\n- [DevOps pipeline example](https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-devops-example.html)\n### CloudWatch integration in CodePipeline\n- [Continuous delivery with CodePipeline](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline.html)\n",
                 "name": "Using version control to integrate pipelines with application environments"
               },
               {
                 "content": "### CodeBuild\n- [Workshop:CI/CD Pipeline/AWS CodeBuild](https://catalog.us-east-1.prod.workshops.aws/workshops/fff8e490-f397-43d2-ae26-737a6dc4ac68/en-US/50-build-ci-cd-pipeline/52-set-up-codebuild)\n- [CodeBuild CheatSheet](https://tutorialsdojo.com/aws-codebuild/)\n",
-                "name": "Setting up build processes (for example AWS CodeBuild)"
+                "name": "Setting up build processes (e.g AWS CodeBuild)"
               },
               {
                 "content": "### Building well-architected serverless applications\n- [Implementing application workload security – part 1](https://aws.amazon.com/fr/blogs/compute/building-well-architected-serverless-applications-implementing-application-workload-security-part-1/)\n- [Implementing application workload security – part 2](https://aws.amazon.com/fr/blogs/compute/building-well-architected-serverless-applications-implementing-application-workload-security-part-2/)\n### Secrets Manager\n- [UserGuide:Intro](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)\n### Parameter Store\n- [UserGuide](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)\n",
-                "name": "Managing build and deployment secrets (for example, AWS Secrets Manager, AWS Systems Manager, Parameter Store)"
+                "name": "Managing build and deployment secrets (e.g, AWS Secrets Manager, AWS Systems Manager, Parameter Store)"
               }
             ]
           },
@@ -43,7 +43,7 @@
             "knowledgeOf": [
               {
                 "content": "### Test types\n- [Unit Test](https://saturncloud.io/blog/unit-test-integration-test-regression-test-acceptance-test/#what-is-a-unit-test)\n- [Integration Test](https://saturncloud.io/blog/unit-test-integration-test-regression-test-acceptance-test/#what-is-an-integration-test)\n- [Acceptance Test](https://saturncloud.io/blog/unit-test-integration-test-regression-test-acceptance-test/#what-is-an-acceptance-test)\n- [User Interface Test](https://en.wikipedia.org/wiki/Graphical_user_interface_testing)\n### Image scanning\n- [Vulnerability scanning and penetration testing](https://docs.aws.amazon.com/whitepapers/latest/architecting-hipaa-security-and-compliance-on-amazon-eks/vulnerability-scanning-and-penetration-testing.html)\n- [ECR Image Scanning](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning-basic.html)\n- [Inspector](https://docs.aws.amazon.com/inspector/latest/user/scanning-ecr.html)\n",
-                "name": "Different types of tests (for example, unit tests, integration tests, acceptance tests, user interface tests, security scans)"
+                "name": "Different types of tests (e.g, unit tests, integration tests, acceptance tests, user interface tests, security scans)"
               },
               {
                 "content": "### CodeBuild\n- [Add test](https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create-pipeline.html#how-to-create-pipeline-add-test)\n- [Workshop](https://catalog.workshops.aws/cicdonaws/en-US/lab03/2-build-and-test)\n- [Api Testing with Postman](https://aws.amazon.com/fr/blogs/devops/automating-your-api-testing-with-aws-codebuild-aws-codepipeline-and-postman/)\n",
@@ -54,7 +54,7 @@
             "skillsIn": [
               {
                 "content": "### Pull Request in CodeCommit\n- [Validating AWS CodeCommit Pull Requests with AWS CodeBuild and AWS Lambda](https://aws.amazon.com/fr/blogs/devops/validating-aws-codecommit-pull-requests-with-aws-codebuild-and-aws-lambda/)\n- [Creating a AWS CodeCommit Pull Request Workflow with Terraform](https://medium.com/@kpiroddi/creating-a-aws-codecommit-pull-request-workflow-with-terraform-2e57138cef95)\n### GitHub BitBucket\n- [Tracking the AWS CodePipeline build status from the third-party Git repository](https://aws.amazon.com/fr/blogs/devops/aws-codepipeline-build-status-in-a-third-party-git-repository/)\n- [CodeBuild:GitHub webhook events](https://docs.aws.amazon.com/codebuild/latest/userguide/github-webhook.html)\n",
-                "name": "Running builds or tests when generating pull requests or code merges (for example, AWS CodeCommit, CodeBuild)"
+                "name": "Running builds or tests when generating pull requests or code merges (e.g, AWS CodeCommit, CodeBuild)"
               },
               {
                 "content": "### Distributed Load Testing on AWS\n- [Automate the testing of your software applications at scale](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/solution-overview.html)\n",
@@ -98,11 +98,11 @@
               },
               {
                 "content": "### CodeBuild\n- [Using CodeArtifact with CodeBuild](https://docs.aws.amazon.com/codeartifact/latest/ug/codebuild.html)\n- [AWS::CodeBuild::Project Artifacts](https://docs.aws.amazon.com/fr_fr/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html)\n### AWS Lambda\n- [Deploy Java Lambda functions with .zip or JAR file archives](https://docs.aws.amazon.com/lambda/latest/dg/java-package.html)\n- [Deploy Java Lambda functions with container images](https://docs.aws.amazon.com/lambda/latest/dg/java-image.html)\n- [Working with .zip file archives for Python Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)\n",
-                "name": "Configuring build tools for generating artifacts (for example, CodeBuild, AWS Lambda)"
+                "name": "Configuring build tools for generating artifacts (e.g, CodeBuild, AWS Lambda)"
               },
               {
-                "content": "### EC2 Image Builder\n- [Automate OS Image Build Pipelines with EC2 Image Builder](https://aws.amazon.com/blogs/aws/automate-os-image-build-pipelines-with-ec2-image-builder/)\n- [Amazon EC2 Image Builder Samples](https://github.com/aws-samples/amazon-ec2-image-builder-samples)\n- [Creating Packer images using AWS System Manager Automation](https://aws.amazon.com/blogs/mt/creating-packer-images-using-system-manager-automation/)\n",
-                "name": "Automating Amazon EC2 instance and container image build processes (for example, EC2 Image Builder)"
+                "content": "### EC2 Image Builder\n- [Automate OS Image Build Pipelines with EC2 Image Builder](https://aws.amazon.com/blogs/aws/automate-os-image-build-pipelines-with-ec2-image-builder/)\n- [Amazon EC2 Image Builder Samples](https://github.com/aws-samples/amazon-ec2-image-builder-samples)\n- [Creating Packer images using AWS System Manager Automation](https://aws.amazon.com/blogs/mt/creating-packer-images-using-system-manager-automation/)\n### Migrating from Packer to EC2 Image Builder\n- [Migrating from Packer to EC2 Image Builder](https://geeks.wego.com/migrating-jenkins-from-packer-to-ec2-image-builder/)\n### WorkShop\n- [Building golden images using Amazon EC2 Image Builder](https://catalog.us-east-1.prod.workshops.aws/workshops/d6c7ecdc-c75f-4ad1-910f-fdd994cc4aed/en-US/100-ec2-ib)\n### Blog\n- [Create immutable servers using EC2 Image Builder and AWS CodePipeline](https://aws.amazon.com/blogs/mt/create-immutable-servers-using-ec2-image-builder-aws-codepipeline/)\n",
+                "name": "Automating Amazon EC2 instance and container image build processes (e.g, EC2 Image Builder)"
               }
             ]
           },
@@ -123,7 +123,7 @@
               },
               {
                 "content": "### AWS Developer tools\n- [AWS Cheat Sheets:AWS Developer Tools Overview](https://digitalcloud.training/aws-developer-tools/)\n- [EC2 Image Builder FAQs](https://aws.amazon.com/image-builder/faqs/?nc1=h_ls)\n",
-                "name": "Tools and services available for distributing code (for example, CodeDeploy, EC2 Image Builder)"
+                "name": "Tools and services available for distributing code (e.g, CodeDeploy, EC2 Image Builder)"
               }
             ],
             "name": "Implement deployment strategies for instance, container, and serverless environments.",
@@ -134,7 +134,7 @@
               },
               {
                 "content": "### CodeDeploy Agent\n- [CodeDeploy UserGuide:Working with the CodeDeploy agent](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent.html)\n- [How can I use launch templates to automatically install the CodeDeploy agent on an Amazon EC2 instance running Amazon Linux or Ubuntu?](https://repost.aws/knowledge-center/codedeploy-agent-launch-template)\n",
-                "name": "Configuring deployment agents (for example, CodeDeploy agent)"
+                "name": "Configuring deployment agents (e.g, CodeDeploy agent)"
               },
               {
                 "content": "### CodeDeploy\n- [CodeDeploy UserGuide:Troubleshooting CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting.html)\n",
@@ -142,7 +142,7 @@
               },
               {
                 "content": "### Docs\n- [Article:Deployment Strategies for Lambda in SAM](https://osamaoracle.com/2021/11/13/deployment-strategies/)\n- [Medium:AWS Deployment Strategies](https://jafreitas90.medium.com/aws-deployment-strategies-ebc910420bf2)\n- [AWS WhitePaper:Overview of Deployment Options on AWS](https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf)\n",
-                "name": "Using different deployment methods (for example, blue/green, canary)"
+                "name": "Using different deployment methods (e.g, blue/green, canary)"
               }
             ]
           }
@@ -204,11 +204,11 @@
               },
               {
                 "content": "### AWS Organizations\n- [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)\n### AWS Control Tower\n- [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)\n- [WorkShop](https://controltower.aws-management.tools/core/overview/)\n### Github\n- [Deploy and manage AWS Control Tower controls by using Terraform](https://github.com/aws-samples/aws-control-tower-controls-terraform)\n",
-                "name": "Creating, consolidating, and centrally managing accounts (for example, AWS Organizations, AWS Control Tower)"
+                "name": "Creating, consolidating, and centrally managing accounts (e.g, AWS Organizations, AWS Control Tower)"
               },
               {
                 "content": "### WhitePaper\n- [Identity Management \u0026 Access Control capability](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/identity-management-access-control-capability.html)\n- [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)\n### AWS Organizations\n- [Accessing member accounts in your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html)\n- [Granting a user permissions to switch roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html)\n- [Creating a role to delegate permissions to an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html)\n",
-                "name": "Applying IAM solutions for multi-account and complex organization structures (for example, SCPs, assuming roles)"
+                "name": "Applying IAM solutions for multi-account and complex organization structures (e.g, SCPs, assuming roles)"
               },
               {
                 "content": "### AWS Config\n- [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)\n### AWS Control Tower\n- [AWS multi-account strategy for your AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html)\n### AWS Security Hub\n- [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)\n### Amazon Detective\n- [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)\n### Amazon GuardDuty\n- [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)\n### Service Catalog\n- [Compliance Validation for Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/service-catalog-compliance.html)\n- [Security Best Practices for AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/security-best-practices.html)\n## SCPs\n- [What is AWS SCP (Service Control Policy) and How does it Help with Permissions?](https://www.stormit.cloud/blog/aws-scp-service-control-policy/)\n",
@@ -232,19 +232,19 @@
             "skillsIn": [
               {
                 "content": "### Sytems Manager\n- [AWS Systems Manager Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html)\n- [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html)\n- [Evaluating Resources with AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html)\n",
-                "name": "Automating system inventory, configuration, and patch management (for example, Systems Manager, AWS Config)"
+                "name": "Automating system inventory, configuration, and patch management (e.g, Systems Manager, AWS Config)"
               },
               {
                 "content": "### SDKs\n- [Lambda examples using SDK for Python (Boto3)](https://docs.aws.amazon.com/code-library/latest/ug/python_3_lambda_code_examples.html)\n### Step function with lambda\n- [Creating a Step Functions state machine that uses Lambda](https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-creating-lambda-state-machine.html)\n",
-                "name": "Developing Lambda function automations for complex scenarios (for example, AWS SDKs, Lambda, AWS Step Functions)"
+                "name": "Developing Lambda function automations for complex scenarios (e.g, AWS SDKs, Lambda, AWS Step Functions)"
               },
               {
                 "content": "### AWS OpsWorks \n- [AWS OpsWorks Stacks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome_classic.html) EOL May 26 2024\n- [AWS Systems Manager State Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html)\n",
-                "name": "Automating the configuration of software applications to the desired state (for example, OpsWorks, Systems Manager State Manager)"
+                "name": "Automating the configuration of software applications to the desired state (e.g, OpsWorks, Systems Manager State Manager)"
               },
               {
                 "content": "### AWS Systems Manager Compliance\n- [AWS Systems Manager Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-compliance.html)\n",
-                "name": "Maintaining software compliance (for example, Systems Manager)"
+                "name": "Maintaining software compliance (e.g, Systems Manager)"
               }
             ]
           }
@@ -260,7 +260,7 @@
             "knowledgeOf": [
               {
                 "content": "### Multi-AZ Services\n#### Load Balancer\n- [ALB:Availability Zones for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-subnets.html)\n- [ALB:Cross-zone load balancing for target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/disable-cross-zone.html)\n#### Auto Scaling Group\n- [ASG:Amazon EC2 Auto Scaling benefits](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html)\n#### RDS\n- [RDS:Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)\n- [https://aws.amazon.com/rds/features/multi-az/](https://aws.amazon.com/rds/features/multi-az/)\n### Blog: Building highly resilient applications using Amazon Route 53 Application Recovery Controller\n- [Part 1: Single-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-1-single-region-stack/)\n- [Part 2: Multi-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-2-multi-region-stack/)\n### Route53\n- [Route53:Adding another Region to your latency-based routing in Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialAddingLBRRegion.html)\n",
-                "name": "Multi-AZ and multi-Region deployments (for example, compute layer, data layer)"
+                "name": "Multi-AZ and multi-Region deployments (e.g, compute layer, data layer)"
               },
               {
                 "content": "### AWS Services\n- [AWS Service Level Agreement – What you need to know](https://www.logicata.com/blog/aws-service-level-agreement/)\n",
@@ -272,7 +272,7 @@
               },
               {
                 "content": "### Blog\n- [AWS:Architecture I: How to Get High Availability](https://aws.amazon.com/fr/blogs/startups/how-to-get-high-availability-in-architecture/)\n- [Netapp Blog: AWS High Availability: Compute, SQL and Storage](https://bluexp.netapp.com/blog/understanding-aws-high-availability-compute-sql-and-storage)\n- [cbtnuggets Blog: AWS Architecture: High Availability vs Fault Tolerance](https://www.cbtnuggets.com/blog/certifications/cloud/aws-architecture-high-availability-vs-fault-tolerance)\n### Presentation\n- [High-Availability in the Cloud Architectural Best Practices](https://s3.amazonaws.com/aws001/guided_trek/GuidedTrek_RightScale_High%20Availability%20in%20the%20Cloud_SanFran.pdf)\n",
-                "name": "Techniques to achieve high availability (for example, Multi-AZ, multi-Region)"
+                "name": "Techniques to achieve high availability (e.g, Multi-AZ, multi-Region)"
               }
             ],
             "name": "Implement highly available solutions to meet resilience and business requirements.",
@@ -287,7 +287,7 @@
               },
               {
                 "content": "### Amazon DynamoDB\n- [Blog: New – Convert Your Single-Region Amazon DynamoDB Tables to Global Tables](https://aws.amazon.com/fr/blogs/aws/new-convert-your-single-region-amazon-dynamodb-tables-to-global-tables/)\n### Amazon RDS\n- [Cross-Region read replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionReadReplicas.html)\n- [Cross-Region automated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionAutomatedBackups.html)\n- [Using Amazon Aurora global databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)\n### Amazon Route 53\n- [Blog: Using Route 53 Private Hosted Zones for Cross-account Multi-region Architectures](https://aws.amazon.com/fr/blogs/architecture/using-route-53-private-hosted-zones-for-cross-account-multi-region-architectures/)\n- [Workshop: Module 5: Multi-Region Resiliency with Route 53 ARC](https://www.wellarchitectedlabs.com/reliability/disaster-recovery/workshop_5/)\n- [Workshop: Route 53 - Failover in Private DNS](https://disaster-recovery.workshop.aws/en/labs/basics/route53.html)\n### Amazon S3\n- [S3 Bi-Directional Replication](https://wellarchitectedlabs.com/reliability/200_labs/200_bidirectional_replication_for_s3/)\n### Amazon CloudFront\n- [Blog: Using Amazon CloudFront and Amazon S3 to build multi-Region active-active geo proximity applications](https://aws.amazon.com/fr/blogs/networking-and-content-delivery/using-amazon-cloudfront-and-amazon-s3-to-build-multi-region-active-active-geo-proximity-applications/)\n- [DR Workshop: CloudFront - Origin Group](https://disaster-recovery.workshop.aws/en/labs/basics/cloudfront.html)\n",
-                "name": "Enabling cross-Region solutions where available (for example, Amazon DynamoDB, Amazon RDS, Amazon Route 53, Amazon S3, Amazon CloudFront)"
+                "name": "Enabling cross-Region solutions where available (e.g, Amazon DynamoDB, Amazon RDS, Amazon Route 53, Amazon S3, Amazon CloudFront)"
               },
               {
                 "content": "### Classic Load Balancer\n- [Configure cross-zone load balancing for your **Classic Load Balancer**](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-disable-crosszone-lb.html)\n### Application Load Balancer\n- [How Elastic Load Balancing works | Cross-zone load balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html#cross-zone-load-balancing)\n",
@@ -331,7 +331,7 @@
               },
               {
                 "content": "### Workshop\n- [Amazon ECS Workshop](https://ecsworkshop.com/)\n- [AWS Elastic Kubernetes Service (EKS) workshop](https://www.eksworkshop.com/docs/introduction/)\n",
-                "name": "Deploying container-based applications (for example, Amazon ECS, Amazon EKS)"
+                "name": "Deploying container-based applications (e.g, Amazon ECS, Amazon EKS)"
               },
               {
                 "content": "### Articles\n- [Blog: Creating a Multi-Region Application with AWS Services – Part 1, Compute, Networking, and Security](https://aws.amazon.com/blogs/architecture/creating-a-multi-region-application-with-aws-services-part-1-compute-and-security/)\n- [Medium: How to Design a Highly Available, Scalable \u0026 Secured AWS 3-tier Application for Multi-region?](https://medium.com/@azizulmaqsud/how-to-design-a-highly-available-scalable-secured-aws-3-tier-application-for-multi-region-%EF%B8%8F-b1e2032ea22c)\n",
@@ -339,7 +339,7 @@
               },
               {
                 "content": "- [Build a CRUD Serverless API from scratch using AWS Lambda (Python), API Gateway, and DynamoDB](https://dev.to/aws-builders/build-a-crud-serverless-api-from-scratch-using-aws-lambda-api-gateway-and-dynamodb-1ia4)\n- [Field Notes: Serverless Container-based APIs with Amazon ECS and Amazon API Gateway](https://aws.amazon.com/blogs/architecture/field-notes-serverless-container-based-apis-with-amazon-ecs-and-amazon-api-gateway/)\n- [EDA using Amazon EventBridge, Lambda, and Fargate ECS, with SAM-CLI and a Native Spring Boot MS as Event Source](https://aosolorzano.medium.com/eda-with-eventbridge-and-lambda-using-sam-cli-with-spring-boot-ms-on-fargate-ecs-as-event-source-9abee237be08)\n",
-                "name": "Configuring serverless applications (for example, Amazon API Gateway, Lambda, AWS Fargate)"
+                "name": "Configuring serverless applications (e.g, Amazon API Gateway, Lambda, AWS Fargate)"
               }
             ]
           },
@@ -348,11 +348,11 @@
             "knowledgeOf": [
               {
                 "content": "### AWS Well-Architected Framework\n- [Reliability Pillar:Plan for Disaster Recovery (DR)](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/plan-for-disaster-recovery-dr.html)\n### Definition of objectives\n- [__Recovery Time Objective (RTO)__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html)\n  - Defined by the organization. RTO is the maximum acceptable delay between the interruption of service and restoration of service. This determines what is considered an acceptable time window when service is unavailable.\n- [__Recovery Point Objective (RPO)__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html)\n  - Defined by the organization. RPO is the maximum acceptable amount of time since the last data recovery point. This determines what is considered an acceptable loss of data between the last recovery point and the interruption of service.\n- [__Availability__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/availability.html)\n  - is the percentage of time that a workload is available for use. \n- [__Resiliency__](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/resiliency-and-the-components-of-reliability.html)\n  -  is the ability of a workload to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions, such as misconfigurations or transient network issues.\n",
-                "name": "Disaster recovery concepts (for example, RTO, RPO)"
+                "name": "Disaster recovery concepts (e.g, RTO, RPO)"
               },
               {
                 "content": "### Principles\n- [AWS Well-Architected Framework: Disaster recovery options in the cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)\n### AWS Architecture Blog\n- [Blog: Disaster Recovery (DR) Architecture on AWS, Part I: Strategies for Recovery in the Cloud](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/)\n- [Blog: Disaster Recovery (DR) Architecture on AWS, Part II: Backup and Restore with Rapid Recovery](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-ii-backup-and-restore-with-rapid-recovery/)\n- [Blog: Disaster Recovery (DR) Architecture on AWS, Part III: Pilot Light and Warm Standby](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/)\n- [Blog: Disaster Recovery (DR) Architecture on AWS, Part IV: Multi-site Active/Active](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iv-multi-site-active-active/)\n",
-                "name": "Backup and recovery strategies (for example, pilot light, warm standby)"
+                "name": "Backup and recovery strategies (e.g, pilot light, warm standby)"
               },
               {
                 "content": "### AWS Well-Architected Framework\n- [Disaster Recovery of Workloads on AWS: Recovery in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html)\n### Disaster Recovery FAQ\n- [What are the best disaster recovery methods?](https://aws.amazon.com/what-is/disaster-recovery/#seo-faq-pairs#what-are-the-best-disaster-recovery-methods)\n### Availability zone evacuation pattern\n- [AWS Whitepapers](https://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/control-plane-controlled-evacuation.html)\n",
@@ -363,11 +363,11 @@
             "skillsIn": [
               {
                 "content": "### Amazon RDS\n- Reboot with failover\n  - [AWS Well-Architected Labs: RDS Failure Injection](https://www.wellarchitectedlabs.com/reliability/300_labs/300_testing_for_resiliency_of_ec2_rds_and_s3/5_failure_injection_rds/)\n  - [AWS RDS MySQL on Multi-AZ Test Failover](https://tungle.ca/?p=3677)\n  ```\n  aws rds reboot-db-instance \\\n    --region us-east-1 \\\n    --profile my_aws_profile_name_here \\\n    --db-instance-identifier my_rds_db_identifier_here \\\n    --force-failover\n  ```\n### Amazon Aurora\n- [Testing Amazon Aurora MySQL using fault injection queries](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.FaultInjectionQueries.html)\n- [Doing failover in Amazon Aurora Read Replica with the highest priority](https://dev.to/aws-builders/doing-failover-in-amazon-aurora-read-replica-with-the-highest-priority-4okb)\n- [How can I perform a failover in my Aurora global database, and why did my failover fail?](https://repost.aws/knowledge-center/aurora-postgresql-failover-issues)\n- [DR WorkShop: Fail Over at Aurora Global Database](https://disaster-recovery.workshop.aws/en/labs/advanced/aurora-global-database/failover.html)\n- [Blog: Deploy multi-Region Amazon Aurora applications with a failover blueprint](https://aws.amazon.com/blogs/database/deploy-multi-region-amazon-aurora-applications-with-a-failover-blueprint/)\n\n### Route 53\n- [DNS Failover with Route53](https://medium.com/tysonworks/dns-failover-with-route53-cc3427a3629a)\n- [Amazon Route 53: Health Checks and DNS Failover](https://www.stormit.cloud/blog/route-53-health-check/)\n\n### CloudFront\n- [Optimizing high availability with CloudFront origin failover](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html)\n",
-                "name": "Testing failover of Multi-AZ/multi-Region workloads (for example, Amazon RDS, Amazon Aurora, Route 53, CloudFront)"
+                "name": "Testing failover of Multi-AZ/multi-Region workloads (e.g, Amazon RDS, Amazon Aurora, Route 53, CloudFront)"
               },
               {
                 "content": "### AWS Backup\n- [AWS Backup: Creating backup copies across AWS Regions](https://docs.aws.amazon.com/aws-backup/latest/devguide/cross-region-backup.html)                \n- [Blog: Secure data recovery with cross-account backup and Cross-Region copy using AWS Backup](https://aws.amazon.com/blogs/storage/secure-data-recovery-with-cross-account-backup-and-cross-region-copy-using-aws-backup/)\n### Amazon S3\n- [S3 Backup Strategy and How configure Cross Region Replication.](https://medium.com/@ajay20kin/s3-backup-strategy-and-how-configure-cross-region-replication-dd5f1e3b8b63)\n- [Workshop](https://www.wellarchitectedlabs.com/reliability/disaster-recovery/workshop_1/2-s3-crr/)\n### Systems Manager\n- [Create an AMI and cross-Region copy](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-document-backup-maintenance-example.html)\n",
-                "name": "Identifying and implementing appropriate cross-Region backup and recovery strategies (for example, AWS Backup, Amazon S3, Systems Manager)"
+                "name": "Identifying and implementing appropriate cross-Region backup and recovery strategies (e.g, AWS Backup, Amazon S3, Systems Manager)"
               },
               {
                 "content": "### Application Load Balancer\n- [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)\n- [Cross-zone load balancing for target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/disable-cross-zone.html)\n- [Target group health](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health.html)\n### Classic Load Balancer\n- [Configure health checks for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-healthchecks.html)\n",
@@ -390,7 +390,7 @@
               },
               {
                 "content": "### CloudWatch\n- [Amazon CloudWatch concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html)\n",
-                "name": "Amazon CloudWatch metrics (for example, namespaces, metrics, dimensions, and resolution)"
+                "name": "Amazon CloudWatch metrics (e.g, namespaces, metrics, dimensions, and resolution)"
               },
               {
                 "content": "### CloudWatch\n- [Real-time processing of log data with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html)\n### Kinesis Firehose\n- [CloudWatch Logs vs. Kinesis Firehose](https://medium.com/circuitpeople/cloudwatch-logs-vs-kinesis-firehose-71fc3fd54f8c)\n### Kinesis Stream\n- [AWS — Sending real-time CloudWatch log events to Kinesis stream](https://awstip.com/aws-sending-real-time-cloudwatch-log-events-to-kinesis-stream-f80e09341bd2)\n",
@@ -398,11 +398,11 @@
               },
               {
                 "content": "### AWS WhitePaper\n- [Encrypting Data-at-Rest and Data-in-Transit](https://docs.aws.amazon.com/whitepapers/latest/logical-separation/encrypting-data-at-rest-and--in-transit.html)\n### Blog\n- [Medium: Data Encryption at Rest \u0026 Transit on AWS](https://hetakshi-patil.medium.com/data-encryption-at-rest-transit-on-aws-38a6a9140004)\n- [How to Enable End-to-End Encryption in AWS](https://www.infracloud.io/blogs/enable-end-to-end-encryption-aws/)\n",
-                "name": "Encryption options for at-rest and in-transit logs and metrics (for example, client-side and server-side, AWS Key Management Service [AWS KMS])"
+                "name": "Encryption options for at-rest and in-transit logs and metrics (e.g, client-side and server-side, AWS Key Management Service [AWS KMS])"
               },
               {
                 "content": "### AWS CloudWatch\n- [Using identity-based policies (IAM policies) for CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/iam-identity-based-access-control-cwl.html)\n",
-                "name": "Security configurations (for example, IAM roles and permissions to allow for log collection)"
+                "name": "Security configurations (e.g, IAM roles and permissions to allow for log collection)"
               }
             ],
             "name": "Configure the collection, aggregation, and storage of logs and metrics.",
@@ -417,27 +417,27 @@
               },
               {
                 "content": "### AWS Solutions Library\n- [DevOps Monitoring Dashboard on AWS](https://aws.amazon.com/solutions/implementations/devops-monitoring-dashboard-on-aws/?did=sl_card\u0026trk=sl_card)\n- [Ingesting, analyzing, and visualizing metrics with DevOps Monitoring Dashboard on AWS](https://docs.aws.amazon.com/solutions/latest/devops-monitoring-dashboard-on-aws/solution-overview.html)\n",
-                "name": "Creating CloudWatch metric streams (for example, Amazon S3 or Amazon Kinesis Data Firehose options)"
+                "name": "Creating CloudWatch metric streams (e.g, Amazon S3 or Amazon Kinesis Data Firehose options)"
               },
               {
                 "content": "### CloudWatch\n- [Publish custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html)\n- [Collect metrics, logs, and traces from Amazon EC2 instances and on-premises servers with the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html)\n- [Metrics collected by the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html)\n",
-                "name": "Collecting custom metrics (for example, using the CloudWatch agent)"
+                "name": "Collecting custom metrics (e.g, using the CloudWatch agent)"
               },
               {
                 "content": "### S3\n- [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)\n### Cloudwatch logs\n- [Altering CloudWatch log retention](https://docs.aws.amazon.com/managedservices/latest/userguide/log-customize-retention.html)\n",
-                "name": "Managing log storage lifecycles (for example, S3 lifecycles, CloudWatch log group retention)"
+                "name": "Managing log storage lifecycles (e.g, S3 lifecycles, CloudWatch log group retention)"
               },
               {
                 "content": "### Cloudwatch logs\n- [Real-time processing of log data with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html)\n",
-                "name": "Processing log data by using CloudWatch log subscriptions (for example, Kinesis, Lambda, Amazon OpenSearch Service)"
+                "name": "Processing log data by using CloudWatch log subscriptions (e.g, Kinesis, Lambda, Amazon OpenSearch Service)"
               },
               {
                 "content": "### Amazon CloudWatch Logs\n- [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)\n",
                 "name": "Searching log data by using filter and pattern syntax or CloudWatch Logs Insights"
               },
               {
-                "content": "[Encrypt log data in CloudWatch Logs using AWS Key Management Service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/encrypt-log-data-kms.html)\n",
-                "name": "Configuring encryption of log data (for example, AWS KMS)"
+                "content": "### Amazon CloudWatch Logs\n- [Encrypt log data in CloudWatch Logs using AWS Key Management Service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/encrypt-log-data-kms.html)\n",
+                "name": "Configuring encryption of log data (e.g, AWS KMS)"
               }
             ]
           },
@@ -445,47 +445,47 @@
             "id": "4.2",
             "knowledgeOf": [
               {
-                "content": "Anomaly detection alarms (for example, CloudWatch anomaly detection)",
-                "name": "Anomaly detection alarms (for example, CloudWatch anomaly detection)"
+                "content": "### Amazon CloudWatch Logs\n- [Using CloudWatch anomaly detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html)\n",
+                "name": "Anomaly detection alarms (e.g, CloudWatch anomaly detection)"
               },
               {
-                "content": "Common CloudWatch metrics and logs (for example, CPU utilization with Amazon EC2, queue length with Amazon RDS, 5xx errors with an Application Load Balancer)",
-                "name": "Common CloudWatch metrics and logs (for example, CPU utilization with Amazon EC2, queue length with Amazon RDS, 5xx errors with an Application Load Balancer)"
+                "content": "### CloudWatch\n- [List the available CloudWatch metrics for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html)\n### RDS\n- [Amazon CloudWatch metrics for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html)\n### Application Load Balancer\n- [CloudWatch metrics for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html)\n",
+                "name": "Common CloudWatch metrics and logs (e.g, CPU utilization with Amazon EC2, queue length with Amazon RDS, 5xx errors with an Application Load Balancer)"
               },
               {
-                "content": "Amazon Inspector and common assessment templates",
+                "content": "### Amazon Inspector\n- [What is Amazon Inspector?](https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html)\n#### Legacy reports in Amazon Inspector Classic\n- [Amazon Inspector Classic assessment templates and assessment runs](https://docs.aws.amazon.com/inspector/v1/userguide/inspector_assessments.html)\n#### Reports in new Amazon Inspector\n- [Understanding findings in Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/findings-understanding.html)\n",
                 "name": "Amazon Inspector and common assessment templates"
               },
               {
-                "content": "AWS Config rules",
+                "content": "### AWS Config\n- [Evaluating Resources with AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html)\n#### Aggregator\n- [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)\n",
                 "name": "AWS Config rules"
               },
               {
-                "content": "AWS CloudTrail log events",
+                "content": "### CloudTrail \n- [CloudTrail log event reference](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html)\n- [CloudTrail log file examples](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-examples.html)\n- [Sending events to CloudWatch Logs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html)\n",
                 "name": "AWS CloudTrail log events"
               }
             ],
             "name": "Audit, monitor, and analyze logs and metrics to detect issues.",
             "skillsIn": [
               {
-                "content": "Building CloudWatch dashboards and Amazon QuickSight visualizations",
+                "content": "### CloudWatch\n- [Using Amazon CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html)\n### Amazon QuickSight\n- [What is Amazon QuickSight?](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)\n",
                 "name": "Building CloudWatch dashboards and Amazon QuickSight visualizations"
               },
               {
-                "content": "Associating CloudWatch alarms with CloudWatch metrics (standard and custom)",
+                "content": "### Amazon Cloudwatch\n- [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Alarm-On-Metrics.html)\n  - metric alarm (single metric based)\n  - composite alarm (based on several other alarms)\n#### Targets for Cloudwatch Alarms\n- [Notifying users on alarm changes](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Notify_Users_Alarm_Changes.html)\n  - [Setting up AWS User Notifications](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Notify_Users_Alarm_Changes.html#Alarm_User_Notifications)\n  - [Setting up Amazon SNS notifications](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Notify_Users_Alarm_Changes.html#US_SetupSNS)\n",
                 "name": "Associating CloudWatch alarms with CloudWatch metrics (standard and custom)"
               },
               {
-                "content": "Configuring AWS X-Ray for different services (for example, containers, API Gateway, Lambda)",
-                "name": "Configuring AWS X-Ray for different services (for example, containers, API Gateway, Lambda)"
+                "content": "### AWS X-Ray\n- [What is AWS X-Ray?](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)\n### AWS X-Ray daemon\n- [AWS X-Ray daemon](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon.html)\n- [Running the X-Ray daemon on AWS Elastic Beanstalk](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon-beanstalk.html)\n- [Running the X-Ray daemon on Amazon EC2](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon-ec2.html)\n- [Running the X-Ray daemon on Amazon ECS](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon-ecs.html)\n  - Allows the application to send segments to daemon in sidecar container, network can be:\n    - Bridge (with links declaration)\n    - AwsVpc (Fargate, all containers in same task definition will have the same ENI)\n",
+                "name": "Configuring AWS X-Ray for different services (e.g, containers, API Gateway, Lambda)"
               },
               {
-                "content": "Analyzing real-time log streams (for example, using Kinesis Data Streams)",
-                "name": "Analyzing real-time log streams (for example, using Kinesis Data Streams)"
+                "content": "### Kinesis\n- [Blog: Practical Guide to Unified Log Processing with Amazon Kinesis](https://www.apriorit.com/dev-blog/cloud-unified-log-processing-with-amazon-kinesis)\n",
+                "name": "Analyzing real-time log streams (e.g, using Kinesis Data Streams)"
               },
               {
-                "content": "Analyzing logs with AWS services (for example, Amazon Athena, CloudWatch Logs Insights)",
-                "name": "Analyzing logs with AWS services (for example, Amazon Athena, CloudWatch Logs Insights)"
+                "content": "### Athena\n- [Querying AWS service logs](https://docs.aws.amazon.com/athena/latest/ug/querying-aws-service-logs.html)\n### CloudWatch Logs Insights\n- [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)\n",
+                "name": "Analyzing logs with AWS services (e.g, Amazon Athena, CloudWatch Logs Insights)"
               }
             ]
           },
@@ -493,51 +493,51 @@
             "id": "4.3",
             "knowledgeOf": [
               {
-                "content": "Event-driven, asynchronous design patterns (for example, S3 Event Notifications or Amazon EventBridge events to Amazon Simple Notification Service [Amazon SNS] or Lambda)",
-                "name": "Event-driven, asynchronous design patterns (for example, S3 Event Notifications or Amazon EventBridge events to Amazon Simple Notification Service [Amazon SNS] or Lambda)"
+                "content": "Event-driven, asynchronous design patterns (e.g, S3 Event Notifications or Amazon EventBridge events to SNS or Lambda)",
+                "name": "Event-driven, asynchronous design patterns (e.g, S3 Event Notifications or Amazon EventBridge events to SNS or Lambda)"
               },
               {
-                "content": "Capabilities of auto scaling a variety of AWS services (for example, EC2 Auto Scaling groups, RDS storage auto scaling, DynamoDB, ECS capacity provider, EKS autoscalers)",
-                "name": "Capabilities of auto scaling a variety of AWS services (for example, EC2 Auto Scaling groups, RDS storage auto scaling, DynamoDB, ECS capacity provider, EKS autoscalers)"
+                "content": "Capabilities of auto scaling a variety of AWS services (e.g, EC2 Auto Scaling groups, RDS storage auto scaling, DynamoDB, ECS capacity provider, EKS autoscalers)",
+                "name": "Capabilities of auto scaling a variety of AWS services (e.g, EC2 Auto Scaling groups, RDS storage auto scaling, DynamoDB, ECS capacity provider, EKS autoscalers)"
               },
               {
-                "content": "Alert notification and action capabilities (for example, CloudWatch alarms to Amazon SNS, Lambda, EC2 automatic recovery)",
-                "name": "Alert notification and action capabilities (for example, CloudWatch alarms to Amazon SNS, Lambda, EC2 automatic recovery)"
+                "content": "Alert notification and action capabilities (e.g, CloudWatch alarms to Amazon SNS, Lambda, EC2 automatic recovery)",
+                "name": "Alert notification and action capabilities (e.g, CloudWatch alarms to Amazon SNS, Lambda, EC2 automatic recovery)"
               },
               {
-                "content": "Health check capabilities in AWS services (for example, Application Load Balancer target groups, Route 53)",
-                "name": "Health check capabilities in AWS services (for example, Application Load Balancer target groups, Route 53)"
+                "content": "Health check capabilities in AWS services (e.g, Application Load Balancer target groups, Route 53)",
+                "name": "Health check capabilities in AWS services (e.g, Application Load Balancer target groups, Route 53)"
               }
             ],
             "name": "Automate monitoring and event management of complex environments.",
             "skillsIn": [
               {
-                "content": "Configuring solutions for auto scaling (for example, DynamoDB, EC2 Auto Scaling groups, RDS storage auto scaling, ECS capacity provider)",
-                "name": "Configuring solutions for auto scaling (for example, DynamoDB, EC2 Auto Scaling groups, RDS storage auto scaling, ECS capacity provider)"
+                "content": "Configuring solutions for auto scaling (e.g, DynamoDB, EC2 Auto Scaling groups, RDS storage auto scaling, ECS capacity provider)",
+                "name": "Configuring solutions for auto scaling (e.g, DynamoDB, EC2 Auto Scaling groups, RDS storage auto scaling, ECS capacity provider)"
               },
               {
-                "content": "Creating CloudWatch custom metrics and metric filters, alarms, and notifications (for example, Amazon SNS, Lambda)",
-                "name": "Creating CloudWatch custom metrics and metric filters, alarms, and notifications (for example, Amazon SNS, Lambda)"
+                "content": "Creating CloudWatch custom metrics and metric filters, alarms, and notifications (e.g, Amazon SNS, Lambda)",
+                "name": "Creating CloudWatch custom metrics and metric filters, alarms, and notifications (e.g, Amazon SNS, Lambda)"
               },
               {
-                "content": "Configuring S3 events to process log files (for example, by using Lambda), and deliver log files to another destination (for example, OpenSearch Service, CloudWatch Logs)",
-                "name": "Configuring S3 events to process log files (for example, by using Lambda), and deliver log files to another destination (for example, OpenSearch Service, CloudWatch Logs)"
+                "content": "Configuring S3 events to process log files (e.g, by using Lambda), and deliver log files to another destination (e.g, OpenSearch Service, CloudWatch Logs)",
+                "name": "Configuring S3 events to process log files (e.g, by using Lambda), and deliver log files to another destination (e.g, OpenSearch Service, CloudWatch Logs)"
               },
               {
                 "content": "Configuring EventBridge to send notifications based on a particular event pattern",
                 "name": "Configuring EventBridge to send notifications based on a particular event pattern"
               },
               {
-                "content": "Installing and configuring agents on EC2 instances (for example, AWS Systems Manager Agent [SSM Agent], CloudWatch agent)",
-                "name": "Installing and configuring agents on EC2 instances (for example, AWS Systems Manager Agent [SSM Agent], CloudWatch agent)"
+                "content": "Installing and configuring agents on EC2 instances (e.g, AWS Systems Manager Agent [SSM Agent], CloudWatch agent)",
+                "name": "Installing and configuring agents on EC2 instances (e.g, AWS Systems Manager Agent [SSM Agent], CloudWatch agent)"
               },
               {
                 "content": "### AWS Config\nhttps://mng.workshop.aws/config.html\n",
                 "name": "Configuring AWS Config rules to remediate issues"
               },
               {
-                "content": "Configuring health checks (for example, Route 53, Application Load Balancer)",
-                "name": "Configuring health checks (for example, Route 53, Application Load Balancer)"
+                "content": "Configuring health checks (e.g, Route 53, Application Load Balancer)",
+                "name": "Configuring health checks (e.g, Route 53, Application Load Balancer)"
               }
             ]
           }
@@ -551,23 +551,23 @@
             "id": "5.1",
             "knowledgeOf": [
               {
-                "content": "AWS services that generate, capture, and process events (for example, AWS Health, EventBridge, CloudTrail, CloudWatch Events)",
-                "name": "AWS services that generate, capture, and process events (for example, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
+                "content": "AWS services that generate, capture, and process events (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)",
+                "name": "AWS services that generate, capture, and process events (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
               },
               {
-                "content": "Event-driven architectures (for example, fan out, event streaming, queuing)",
-                "name": "Event-driven architectures (for example, fan out, event streaming, queuing)"
+                "content": "Event-driven architectures (e.g, fan out, event streaming, queuing)",
+                "name": "Event-driven architectures (e.g, fan out, event streaming, queuing)"
               }
             ],
             "name": "Manage event sources to process, notify, and take action in response to events.",
             "skillsIn": [
               {
-                "content": "Integrating AWS event sources (for example, AWS Health, EventBridge, CloudTrail, CloudWatch Events)",
-                "name": "Integrating AWS event sources (for example, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
+                "content": "Integrating AWS event sources (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)",
+                "name": "Integrating AWS event sources (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
               },
               {
-                "content": "Building event processing workflows (for example, Amazon Simple Queue Service [Amazon SQS], Kinesis, Amazon SNS, Lambda, Step Functions)",
-                "name": "Building event processing workflows (for example, Amazon Simple Queue Service [Amazon SQS], Kinesis, Amazon SNS, Lambda, Step Functions)"
+                "content": "Building event processing workflows (e.g, Amazon Simple Queue Service [Amazon SQS], Kinesis, Amazon SNS, Lambda, Step Functions)",
+                "name": "Building event processing workflows (e.g, Amazon Simple Queue Service [Amazon SQS], Kinesis, Amazon SNS, Lambda, Step Functions)"
               }
             ]
           },
@@ -575,12 +575,12 @@
             "id": "5.2",
             "knowledgeOf": [
               {
-                "content": "Fleet management services (for example, Systems Manager, AWS Auto Scaling)",
-                "name": "Fleet management services (for example, Systems Manager, AWS Auto Scaling)"
+                "content": "Fleet management services (e.g, Systems Manager, AWS Auto Scaling)",
+                "name": "Fleet management services (e.g, Systems Manager, AWS Auto Scaling)"
               },
               {
-                "content": "Configuration management services (for example, AWS Config)",
-                "name": "Configuration management services (for example, AWS Config)"
+                "content": "Configuration management services (e.g, AWS Config)",
+                "name": "Configuration management services (e.g, AWS Config)"
               }
             ],
             "name": "Implement configuration changes in response to events.",
@@ -603,12 +603,12 @@
             "id": "5.3",
             "knowledgeOf": [
               {
-                "content": "AWS metrics and logging services (for example, CloudWatch, X-Ray)",
-                "name": "AWS metrics and logging services (for example, CloudWatch, X-Ray)"
+                "content": "AWS metrics and logging services (e.g, CloudWatch, X-Ray)",
+                "name": "AWS metrics and logging services (e.g, CloudWatch, X-Ray)"
               },
               {
-                "content": "AWS service health services (for example, AWS Health, CloudWatch, Systems Manager OpsCenter)",
-                "name": "AWS service health services (for example, AWS Health, CloudWatch, Systems Manager OpsCenter)"
+                "content": "AWS service health services (e.g, AWS Health, CloudWatch, Systems Manager OpsCenter)",
+                "name": "AWS service health services (e.g, AWS Health, CloudWatch, Systems Manager OpsCenter)"
               },
               {
                 "content": "Root cause analysis",
@@ -618,12 +618,12 @@
             "name": "Troubleshoot system and application failures.",
             "skillsIn": [
               {
-                "content": "Analyzing failed deployments (for example, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)",
-                "name": "Analyzing failed deployments (for example, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)"
+                "content": "Analyzing failed deployments (e.g, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)",
+                "name": "Analyzing failed deployments (e.g, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)"
               },
               {
-                "content": "Analyzing incidents regarding failed processes (for example, auto scaling, Amazon ECS, Amazon EKS)",
-                "name": "Analyzing incidents regarding failed processes (for example, auto scaling, Amazon ECS, Amazon EKS)"
+                "content": "Analyzing incidents regarding failed processes (e.g, auto scaling, Amazon ECS, Amazon EKS)",
+                "name": "Analyzing incidents regarding failed processes (e.g, auto scaling, Amazon ECS, Amazon EKS)"
               }
             ]
           }
@@ -638,12 +638,12 @@
             "id": "6.1",
             "knowledgeOf": [
               {
-                "content": "Appropriate usage of different IAM entities for human and machine access (for example, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)",
-                "name": "Appropriate usage of different IAM entities for human and machine access (for example, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)"
+                "content": "Appropriate usage of different IAM entities for human and machine access (e.g, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)",
+                "name": "Appropriate usage of different IAM entities for human and machine access (e.g, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)"
               },
               {
-                "content": "Identity federation techniques (for example, using IAM identity providers and AWS Single Sign-On)",
-                "name": "Identity federation techniques (for example, using IAM identity providers and AWS Single Sign-On)"
+                "content": "Identity federation techniques (e.g, using IAM identity providers and AWS Single Sign-On)",
+                "name": "Identity federation techniques (e.g, using IAM identity providers and AWS Single Sign-On)"
               },
               {
                 "content": "Organizational SCPs",
@@ -661,12 +661,12 @@
                 "name": "Implementing role-based and attribute-based access control patterns"
               },
               {
-                "content": "Automating credential rotation for machine identities (for example, Secrets Manager)",
-                "name": "Automating credential rotation for machine identities (for example, Secrets Manager)"
+                "content": "Automating credential rotation for machine identities (e.g, Secrets Manager)",
+                "name": "Automating credential rotation for machine identities (e.g, Secrets Manager)"
               },
               {
-                "content": "Managing permissions to control access to human and machine identities (for example, enabling multi-factor authentication [MFA], AWS Security Token Service [AWS STS], IAM profiles)",
-                "name": "Managing permissions to control access to human and machine identities (for example, enabling multi-factor authentication [MFA], AWS Security Token Service [AWS STS], IAM profiles)"
+                "content": "Managing permissions to control access to human and machine identities (e.g, enabling multi-factor authentication [MFA], AWS Security Token Service [AWS STS], IAM profiles)",
+                "name": "Managing permissions to control access to human and machine identities (e.g, enabling multi-factor authentication [MFA], AWS Security Token Service [AWS STS], IAM profiles)"
               }
             ]
           },
@@ -674,35 +674,35 @@
             "id": "6.2",
             "knowledgeOf": [
               {
-                "content": "Network security components (for example, security groups, network ACLs, routing, AWS Network Firewall, AWS WAF, AWS Shield)",
-                "name": "Network security components (for example, security groups, network ACLs, routing, AWS Network Firewall, AWS WAF, AWS Shield)"
+                "content": "Network security components (e.g, security groups, network ACLs, routing, AWS Network Firewall, AWS WAF, AWS Shield)",
+                "name": "Network security components (e.g, security groups, network ACLs, routing, AWS Network Firewall, AWS WAF, AWS Shield)"
               },
               {
                 "content": "Certificates and public key infrastructure (PKI)",
                 "name": "Certificates and public key infrastructure (PKI)"
               },
               {
-                "content": "Data management (for example, data classification, encryption, key management, access controls)",
-                "name": "Data management (for example, data classification, encryption, key management, access controls)"
+                "content": "Data management (e.g, data classification, encryption, key management, access controls)",
+                "name": "Data management (e.g, data classification, encryption, key management, access controls)"
               }
             ],
             "name": "Apply automation for security controls and data protection.",
             "skillsIn": [
               {
-                "content": "Automating the application of security controls in multi-account and multi-Region environments (for example, Security Hub, Organizations, AWS Control Tower, Systems Manager)",
-                "name": "Automating the application of security controls in multi-account and multi-Region environments (for example, Security Hub, Organizations, AWS Control Tower, Systems Manager)"
+                "content": "Automating the application of security controls in multi-account and multi-Region environments (e.g, Security Hub, Organizations, AWS Control Tower, Systems Manager)",
+                "name": "Automating the application of security controls in multi-account and multi-Region environments (e.g, Security Hub, Organizations, AWS Control Tower, Systems Manager)"
               },
               {
-                "content": "Combining security controls to apply defense in depth (for example, AWS Certificate Manager [ACM], AWS WAF, AWS Config, AWS Config rules, Security Hub, GuardDuty, security groups, network ACLs, Amazon Detective, Network Firewall)",
-                "name": "Combining security controls to apply defense in depth (for example, AWS Certificate Manager [ACM], AWS WAF, AWS Config, AWS Config rules, Security Hub, GuardDuty, security groups, network ACLs, Amazon Detective, Network Firewall)"
+                "content": "Combining security controls to apply defense in depth (e.g, AWS Certificate Manager [ACM], AWS WAF, AWS Config, AWS Config rules, Security Hub, GuardDuty, security groups, network ACLs, Amazon Detective, Network Firewall)",
+                "name": "Combining security controls to apply defense in depth (e.g, AWS Certificate Manager [ACM], AWS WAF, AWS Config, AWS Config rules, Security Hub, GuardDuty, security groups, network ACLs, Amazon Detective, Network Firewall)"
               },
               {
-                "content": "Automating the discovery of sensitive data at scale (for example, Amazon Macie)",
-                "name": "Automating the discovery of sensitive data at scale (for example, Amazon Macie)"
+                "content": "Automating the discovery of sensitive data at scale (e.g, Amazon Macie)",
+                "name": "Automating the discovery of sensitive data at scale (e.g, Amazon Macie)"
               },
               {
-                "content": "Encrypting data in transit and data at rest (for example, AWS KMS, AWS CloudHSM, ACM)",
-                "name": "Encrypting data in transit and data at rest (for example, AWS KMS, AWS CloudHSM, ACM)"
+                "content": "Encrypting data in transit and data at rest (e.g, AWS KMS, AWS CloudHSM, ACM)",
+                "name": "Encrypting data in transit and data at rest (e.g, AWS KMS, AWS CloudHSM, ACM)"
               }
             ]
           },
@@ -710,16 +710,16 @@
             "id": "6.3",
             "knowledgeOf": [
               {
-                "content": "Security auditing services and features (for example, CloudTrail, AWS Config, VPC Flow Logs, CloudFormation drift detection)",
-                "name": "Security auditing services and features (for example, CloudTrail, AWS Config, VPC Flow Logs, CloudFormation drift detection)"
+                "content": "Security auditing services and features (e.g, CloudTrail, AWS Config, VPC Flow Logs, CloudFormation drift detection)",
+                "name": "Security auditing services and features (e.g, CloudTrail, AWS Config, VPC Flow Logs, CloudFormation drift detection)"
               },
               {
-                "content": "AWS services for identifying security vulnerabilities and events (for example, GuardDuty, Amazon Inspector, IAM Access Analyzer, AWS Config)",
-                "name": "AWS services for identifying security vulnerabilities and events (for example, GuardDuty, Amazon Inspector, IAM Access Analyzer, AWS Config)"
+                "content": "AWS services for identifying security vulnerabilities and events (e.g, GuardDuty, Amazon Inspector, IAM Access Analyzer, AWS Config)",
+                "name": "AWS services for identifying security vulnerabilities and events (e.g, GuardDuty, Amazon Inspector, IAM Access Analyzer, AWS Config)"
               },
               {
-                "content": "Common cloud security threats (for example, insecure web traffic, exposed AWS access keys, S3 buckets with public access enabled or encryption disabled)",
-                "name": "Common cloud security threats (for example, insecure web traffic, exposed AWS access keys, S3 buckets with public access enabled or encryption disabled)"
+                "content": "Common cloud security threats (e.g, insecure web traffic, exposed AWS access keys, S3 buckets with public access enabled or encryption disabled)",
+                "name": "Common cloud security threats (e.g, insecure web traffic, exposed AWS access keys, S3 buckets with public access enabled or encryption disabled)"
               }
             ],
             "name": "Implement security monitoring and auditing solutions.",
