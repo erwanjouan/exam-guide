@@ -551,11 +551,11 @@
             "id": "5.1",
             "knowledgeOf": [
               {
-                "content": "AWS services that generate, capture, and process events (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)",
+                "content": "### AWS Health\n- [Concepts for AWS Health](https://docs.aws.amazon.com/health/latest/ug/aws-health-concepts-and-terms.html)\n- [Monitoring AWS Health events with Amazon EventBridge](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)\n### Event Bridge\n- [AWS Monitoring with EventBridge](https://cloudonaut.io/aws-monitoring-with-eventbridge/)\n- [WorkShop](https://catalog.us-east-1.prod.workshops.aws/workshops/dde4faf0-b40a-467c-b062-6085162d2215/en-US/lab01)\n",
                 "name": "AWS services that generate, capture, and process events (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
               },
               {
-                "content": "Event-driven architectures (e.g, fan out, event streaming, queuing)",
+                "content": "### Principles\n- [What Is EDA (Event-Driven Architecture)?](https://aws.amazon.com/what-is/eda/)\n- [Best practices for implementing event-driven architectures in your organization](https://aws.amazon.com/blogs/architecture/best-practices-for-implementing-event-driven-architectures-in-your-organization/)\n- [Differences between a message queue and an event stream](https://www.linkedin.com/pulse/differences-between-message-queue-event-stream-frank-lieu/)\n",
                 "name": "Event-driven architectures (e.g, fan out, event streaming, queuing)"
               }
             ],

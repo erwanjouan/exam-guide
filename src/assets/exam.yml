@@ -962,11 +962,19 @@ exam:
           name: "Manage event sources to process, notify, and take action in response to events."
           knowledgeOf:
             - name: "AWS services that generate, capture, and process events (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
-              content: >-
-                AWS services that generate, capture, and process events (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)
+              content: |
+                ### AWS Health
+                - [Concepts for AWS Health](https://docs.aws.amazon.com/health/latest/ug/aws-health-concepts-and-terms.html)
+                - [Monitoring AWS Health events with Amazon EventBridge](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)
+                ### Event Bridge
+                - [AWS Monitoring with EventBridge](https://cloudonaut.io/aws-monitoring-with-eventbridge/)
+                - [WorkShop](https://catalog.us-east-1.prod.workshops.aws/workshops/dde4faf0-b40a-467c-b062-6085162d2215/en-US/lab01)
             - name: "Event-driven architectures (e.g, fan out, event streaming, queuing)"
-              content: >-
-                Event-driven architectures (e.g, fan out, event streaming, queuing)
+              content: |
+                ### Principles
+                - [What Is EDA (Event-Driven Architecture)?](https://aws.amazon.com/what-is/eda/)
+                - [Best practices for implementing event-driven architectures in your organization](https://aws.amazon.com/blogs/architecture/best-practices-for-implementing-event-driven-architectures-in-your-organization/)
+                - [Differences between a message queue and an event stream](https://www.linkedin.com/pulse/differences-between-message-queue-event-stream-frank-lieu/)
           skillsIn:
             - name: "Integrating AWS event sources (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
               content: >-
