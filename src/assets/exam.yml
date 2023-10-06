@@ -169,8 +169,9 @@ exam:
                 - [Migrating from Packer to EC2 Image Builder](https://geeks.wego.com/migrating-jenkins-from-packer-to-ec2-image-builder/)
                 ### WorkShop
                 - [Building golden images using Amazon EC2 Image Builder](https://catalog.us-east-1.prod.workshops.aws/workshops/d6c7ecdc-c75f-4ad1-910f-fdd994cc4aed/en-US/100-ec2-ib)
-                ### Blog
+                ### AWS Cloud Operations & Migrations Blog
                 - [Create immutable servers using EC2 Image Builder and AWS CodePipeline](https://aws.amazon.com/blogs/mt/create-immutable-servers-using-ec2-image-builder-aws-codepipeline/)
+                - [GitHub: Create immutable servers using EC2 Image Builder and AWS CodePipeline](https://github.com/aws-samples/immutable-server-pipeline)
         - id: "1.4"
           name: "Implement deployment strategies for instance, container, and serverless environments."
           knowledgeOf:
@@ -460,11 +461,13 @@ exam:
                 #### RDS
                 - [RDS:Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
                 - [https://aws.amazon.com/rds/features/multi-az/](https://aws.amazon.com/rds/features/multi-az/)
+                #### Route53
+                - [Route53:Adding another Region to your latency-based routing in Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialAddingLBRRegion.html)
                 ### Blog: Building highly resilient applications using Amazon Route 53 Application Recovery Controller
                 - [Part 1: Single-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-1-single-region-stack/)
                 - [Part 2: Multi-Region stack](https://aws.amazon.com/blogs/networking-and-content-delivery/building-highly-resilient-applications-using-amazon-route-53-application-recovery-controller-part-2-multi-region-stack/)
-                ### Route53
-                - [Route53:Adding another Region to your latency-based routing in Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialAddingLBRRegion.html)
+                ### WorkShop
+                - [Testing resilience of EC2, RDS and AZ using Chaos Engineering](https://www.wellarchitectedlabs.com/reliability/300_labs/300_testing_for_resiliency_of_ec2_rds_and_s3/)
             - name: "SLAs"
               content: |
                 ### AWS Services
@@ -776,6 +779,7 @@ exam:
               content: |
                 ### Amazon CloudWatch Logs
                 - [Using CloudWatch anomaly detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html)
+                - [WorkShop](https://catalog.workshops.aws/observability/en-US/aws-native/metrics/anomalydetection)
             - name: "Common CloudWatch metrics and logs (e.g, CPU utilization with Amazon EC2, queue length with Amazon RDS, 5xx errors with an Application Load Balancer)"
               content: |
                 ### CloudWatch
@@ -807,8 +811,9 @@ exam:
           skillsIn:
             - name: "Building CloudWatch dashboards and Amazon QuickSight visualizations"
               content: |
-                ### CloudWatch
+                ### CloudWatch Dashboard
                 - [Using Amazon CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html)
+                - [Creating Dashboards](https://catalog.us-east-1.prod.workshops.aws/workshops/a8e9c6a6-0ba9-48a7-a90d-378a440ab8ba/en-US/300-cloudwatch/340-cloudwatch-dashboards/341-cloudwatch-dashboard)
                 ### Amazon QuickSight
                 - [What is Amazon QuickSight?](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
             - name: "Associating CloudWatch alarms with CloudWatch metrics (standard and custom)"
@@ -833,6 +838,8 @@ exam:
                   - Allows the application to send segments to daemon in sidecar container, network can be:
                     - Bridge (with links declaration)
                     - AwsVpc (Fargate, all containers in same task definition will have the same ENI)
+                ### Workshop
+                - [X-Ray traces](https://catalog.workshops.aws/observability/en-US/aws-native/xray)
             - name: "Analyzing real-time log streams (e.g, using Kinesis Data Streams)"
               content: |
                 ### Kinesis
@@ -843,44 +850,111 @@ exam:
                 - [Querying AWS service logs](https://docs.aws.amazon.com/athena/latest/ug/querying-aws-service-logs.html)
                 ### CloudWatch Logs Insights
                 - [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
+                - [Workshop](https://catalog.workshops.aws/observability/en-US/aws-native/logs/logsinsights)
         - id: "4.3"
           name: "Automate monitoring and event management of complex environments."
           knowledgeOf:
             - name: "Event-driven, asynchronous design patterns (e.g, S3 Event Notifications or Amazon EventBridge events to SNS or Lambda)"
-              content: >-
-                Event-driven, asynchronous design patterns (e.g, S3 Event Notifications or Amazon EventBridge events to SNS or Lambda)
+              content: |
+                ### S3
+                - [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html)
+                ### Event Bridge
+                - [What Is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
+                  - [Amazon EventBridge Event Bus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bus.html)
+                  - [Amazon EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html)
+                ### Workshop
+                - [Building event-driven architectures on AWS](https://catalog.us-east-1.prod.workshops.aws/workshops/63320e83-6abc-493d-83d8-f822584fb3cb/en-US)
             - name: "Capabilities of auto scaling a variety of AWS services (e.g, EC2 Auto Scaling groups, RDS storage auto scaling, DynamoDB, ECS capacity provider, EKS autoscalers)"
-              content: >-
-                Capabilities of auto scaling a variety of AWS services (e.g, EC2 Auto Scaling groups, RDS storage auto scaling, DynamoDB, ECS capacity provider, EKS autoscalers)
+              content: |
+                ### EC2 Auto Scaling
+                - [What is Amazon EC2 Auto Scaling?](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
+                - [Amazon EC2 Auto Scaling Cheat sheet](https://digitalcloud.training/amazon-ec2-auto-scaling/)
+                ### RDS Auto Scaling
+                - [Managing capacity automatically with Amazon RDS storage autoscaling](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html#USER_PIOPS.Autoscaling)
+                ### DynamoDB
+                - [Managing throughput capacity automatically with DynamoDB auto scaling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html)
+                  - Adjust read write capacity units based on CloudWatch capacity unit metric
+                ### ECS
+                - [Amazon ECS capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html)
+                ### EKS
+                - [AutoScaling](https://docs.aws.amazon.com/eks/latest/userguide/autoscaling.html)
+                - [Cluster Autoscaler on AWS](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/aws/README.md)
             - name: "Alert notification and action capabilities (e.g, CloudWatch alarms to Amazon SNS, Lambda, EC2 automatic recovery)"
-              content: >-
-                Alert notification and action capabilities (e.g, CloudWatch alarms to Amazon SNS, Lambda, EC2 automatic recovery)
+              content: |
+                ### CloudWatch
+                - [Alarm actions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarms-and-actions)
+                - [Create alarms to stop, terminate, reboot, or recover an EC2 instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html)
+                - [Step and simple scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
+                - [Configure CloudWatch alarms to create OpsItems](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-create-OpsItems-from-CloudWatch-Alarms.html)
+                ### Lambda
+                - [Event-driven with Lambda](https://catalog.us-east-1.prod.workshops.aws/workshops/63320e83-6abc-493d-83d8-f822584fb3cb/en-US/lambda)
+                ### EC2 
+                - [Recover your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html)
             - name: "Health check capabilities in AWS services (e.g, Application Load Balancer target groups, Route 53)"
-              content: >-
-                Health check capabilities in AWS services (e.g, Application Load Balancer target groups, Route 53)
+              content: |
+                ### Load balancer
+                - [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
+                - [Target group health](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health.html)
+                ### Route 53
+                - [Creating Amazon Route 53 health checks and configuring DNS failover](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html)
+                  - Health checks that monitor an endpoint
+                  - Health checks that monitor other health checks (calculated health checks)
+                  - Health checks that monitor CloudWatch alarms
+                  - Amazon Route 53 Application Recovery Controller
           skillsIn:
             - name: "Configuring solutions for auto scaling (e.g, DynamoDB, EC2 Auto Scaling groups, RDS storage auto scaling, ECS capacity provider)"
-              content: >-
-                Configuring solutions for auto scaling (e.g, DynamoDB, EC2 Auto Scaling groups, RDS storage auto scaling, ECS capacity provider)
+              content: |
+                ### DynamoDB
+                - [Workshop](https://amazon-dynamodb-labs.com/design-patterns/ex1capacity/step7.html)
+                ### Ec2 Auto Scaling
+                - [Using Dynamic Scaling in Asg](https://ec2spotworkshops.com/ec2-auto-scaling-with-multiple-instance-types-and-purchase-options/scale_dynamic.html)
+                ### RDS storage auto scaling
+                - [Enable RDS Storage Auto Scaling instead of over-provisioning storage capacity](https://catalog.us-east-1.prod.workshops.aws/workshops/f238037c-8f0b-446e-9c15-ebcc4908901a/en-US/002-services/001-databases/002-rds)
+                - [AWS RDS Fundamentals](https://blog.clairvoyantsoft.com/aws-rds-fundamentals-4e4874649912#859f)
+                ### ECS Capacity Provider
+                - [ECS WorkShop](https://ecsworkshop.com/capacity_providers/)
             - name: "Creating CloudWatch custom metrics and metric filters, alarms, and notifications (e.g, Amazon SNS, Lambda)"
-              content: >-
-                Creating CloudWatch custom metrics and metric filters, alarms, and notifications (e.g, Amazon SNS, Lambda)
+              content: |
+                ### Lambda
+                - [Lambda:Custom metrics](https://docs.aws.amazon.com/lambda/latest/operatorguide/custom-metrics.html)
+                ### CloudWatch
+                - [Publish custom Metrics](https://catalog.workshops.aws/observability/en-US/aws-native/metrics/publishmetrics)
+                - [Creating metric filters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringPolicyExamples.html)
             - name: "Configuring S3 events to process log files (e.g, by using Lambda), and deliver log files to another destination (e.g, OpenSearch Service, CloudWatch Logs)"
-              content: >-
-                Configuring S3 events to process log files (e.g, by using Lambda), and deliver log files to another destination (e.g, OpenSearch Service, CloudWatch Logs)
+              content: |
+                ### S3 Events
+                - [S3 Events: Unlocking your Imagination](https://www.bitslovers.com/s3-events-with-event-bus-routing-and-filtering/)
+                - [How to set up event-based ingestion of files in S3 for free](https://www.tinybird.co/blog-posts/how-to-set-up-event-based-ingestion-of-files-in-s3-for-free)
+                ### OpenSearch Service
+                - [What is Amazon OpenSearch Service?](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html)
+                - [OpenSearch Ingestion pipeline](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-s3.html)
+                ### Lambda CloudWatch
+                - [Tutorial: Using an Amazon S3 trigger to invoke a Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html)
             - name: "Configuring EventBridge to send notifications based on a particular event pattern"
-              content: >-
-                Configuring EventBridge to send notifications based on a particular event pattern
+              content: |
+                ### Amazon EventBridge
+                - [Amazon EventBridge event patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html)
+                - [Amazon EventBridge rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html)
+                - [Amazon EventBridge targets](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html)
             - name: "Installing and configuring agents on EC2 instances (e.g, AWS Systems Manager Agent [SSM Agent], CloudWatch agent)"
-              content: >-
-                Installing and configuring agents on EC2 instances (e.g, AWS Systems Manager Agent [SSM Agent], CloudWatch agent)
+              content: |
+                ### Systems Manager
+                - [Working with SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html)
+                - [How do I install SSM Agent on an Amazon EC2 Linux instance at launch?](https://repost.aws/knowledge-center/install-ssm-agent-ec2-linux)
+                - [AmazonSSMManagedInstanceCore](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html)
+                ### CloudWatch Agent
+                - [Installing the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html)
             - name: "Configuring AWS Config rules to remediate issues"
               content: |
                 ### AWS Config
-                https://mng.workshop.aws/config.html
+                - [Workshop: Config Rule with Remediation](https://mng.workshop.aws/config.html)
+                - [Workshop: Config Rule with Lambda](https://mng.workshop.aws/config/configrule-with-lambda.html)
             - name: "Configuring health checks (e.g, Route 53, Application Load Balancer)"
-              content: >-
-                Configuring health checks (e.g, Route 53, Application Load Balancer)
+              content: |
+                ### Load Balancer
+                - [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-health-checks.html)
+                ### Route53
+                - [Creating, updating, and deleting health checks](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-creating-deleting.html)               
     - id: "5"
       name: "Incident and Event Response (14%)"
       taskStatements:
