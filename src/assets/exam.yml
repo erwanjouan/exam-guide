@@ -977,42 +977,85 @@ exam:
                 - [Differences between a message queue and an event stream](https://www.linkedin.com/pulse/differences-between-message-queue-event-stream-frank-lieu/)
           skillsIn:
             - name: "Integrating AWS event sources (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
-              content: >-
-                Integrating AWS event sources (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)
+              content: |
+                ### AWS Health
+                - [Logging AWS Health API calls with AWS CloudTrail](https://docs.aws.amazon.com/health/latest/ug/logging-using-cloudtrail.html)
+                - [AWS Health now aggregates Health events in your organization to Amazon EventBridge](https://aws.amazon.com/fr/about-aws/whats-new/2023/10/aws-health-aggregates-events-organization-eventbridge/)
+                - [Monitoring AWS Health Events](https://curiousorbit.com/blog/monitoring-aws-health-events/)
+                ### CloudTrail
+                - [Using AWS Lambda with AWS CloudTrail](https://docs.aws.amazon.com/lambda/latest/dg/with-cloudtrail.html)
+                ### SNS
+                - [Amazon SNS event sources](https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources.html)
+                ### Event Bridge
+                - [Monitoring AWS Config with Amazon EventBridge](https://docs.aws.amazon.com/config/latest/developerguide/monitor-config-with-cloudwatchevents.html)
             - name: "Building event processing workflows (e.g, Amazon Simple Queue Service [Amazon SQS], Kinesis, Amazon SNS, Lambda, Step Functions)"
-              content: >-
-                Building event processing workflows (e.g, Amazon Simple Queue Service [Amazon SQS], Kinesis, Amazon SNS, Lambda, Step Functions)
+              content: |
+                ### Blog
+                - [Run event-driven workflows with Amazon EKS and AWS Step Functions](https://aws.amazon.com/fr/blogs/containers/run-event-driven-workflows-with-amazon-eks-and-aws-step-functions/)
+                ### Step function
+                - [How to Leverage AWS Step Functions to Build an Event-Driven Architecture](https://medium.com/@marco.berlot/how-to-leverage-aws-step-functions-to-build-an-event-driven-architecture-d955cd41be28)
+                ### Kinesis
+                - [Event sourcing pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/service-per-team.html)
+                - [How Freebird Scaled Data Processing with AWS Step Functions – Express Workflows](https://aws.amazon.com/fr/blogs/startups/how-freebird-scaled-data-processing-with-aws-step-functions/)
+                ### SQS
+                - [Orchestrate Queue-based Microservices with AWS Step Functions and Amazon SQS](https://aws.amazon.com/fr/tutorials/orchestrate-microservices-with-message-queues-on-step-functions/)
         - id: "5.2"
           name: "Implement configuration changes in response to events."
           knowledgeOf:
             - name: "Fleet management services (e.g, Systems Manager, AWS Auto Scaling)"
-              content: >-
-                Fleet management services (e.g, Systems Manager, AWS Auto Scaling)
+              content: |
+                ### Systems manager
+                - [What is AWS Systems Manager?](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)
+                - [AWS Systems Manager Fleet Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet.html)
+                ### Auto Scaling
+                - [Amazon EC2 Auto Scaling instance lifecycle](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-lifecycle.html)
+                - [AWS Auto Scaling Lifecycle](https://jayendrapatil.com/aws-auto-scaling-lifecycle/?utm_content=cmp-true)
             - name: "Configuration management services (e.g, AWS Config)"
-              content: >-
-                Configuration management services (e.g, AWS Config)
+              content: |
+                ### AWS WhitePaper
+                - [[AWS Cloud Adoption Framework] Operations Perspective: Configuration management](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/configuration-management.html)
+                - [[Implementing Microservices on AWS] Configuration management](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/configuration-management.html)
+                ### Blog
+                - [Centralizing configuration management using AWS Systems Manager](https://aws.amazon.com/fr/blogs/mt/centralizing-configuration-management-using-aws-systems-manager/)
           skillsIn:
             - name: "Applying configuration changes to systems"
-              content: >-
-                Applying configuration changes to systems
+              content: |
+                ### Systems Manager
+                - [AWS Systems Manager Documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/documents.html)
+                - [AWS Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html)
             - name: "Modifying infrastructure configurations in response to events"
-              content: >-
-                Modifying infrastructure configurations in response to events
+              content: |
+                ### Blog
+                - [Automate continuous compliance at scale in AWS](https://aws.amazon.com/fr/blogs/mt/automate-cloud-foundational-services-for-compliance-in-aws/)
             - name: "Remediating a non-desired system state"
-              content: >-
-                Remediating a non-desired system state
+              content: |
+                ### AWS Config
+                - [Remediating Noncompliant Resources with AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/remediation.html)
         - id: "5.3"
           name: "Troubleshoot system and application failures."
           knowledgeOf:
             - name: "AWS metrics and logging services (e.g, CloudWatch, X-Ray)"
-              content: >-
-                AWS metrics and logging services (e.g, CloudWatch, X-Ray)
+              content: |
+                ### CloudWatch Logs
+                - [What is Amazon CloudWatch Logs?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+                - [Common scenarios with the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-common-scenarios.html)
+                ### X-Ray
+                - [Integrating AWS X-Ray with other AWS services](https://docs.aws.amazon.com/xray/latest/devguide/xray-services.html)
+                - [Troubleshooting Amazon Simple Queue Service queues using AWS X-Ray](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-troubleshooting-using-x-ray.html)
+                - [[Medium] Real-Time Application Monitoring and Troubleshooting with AWS X-Ray](https://medium.com/@kylejones_47003/real-time-application-monitoring-and-troubleshooting-with-aws-x-ray-2bb99acc1a02)
             - name: "AWS service health services (e.g, AWS Health, CloudWatch, Systems Manager OpsCenter)"
-              content: >-
-                AWS service health services (e.g, AWS Health, CloudWatch, Systems Manager OpsCenter)
+              content: |
+                ### Systems Manager OpsCenter
+                - [AWS Systems Manager OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter.html)
+                - [Learn how to get started with AWS Systems Manager OpsCenter](https://d1.awsstatic.com/events/reinvent/2019/REPEAT_1_Learn_how_to_get_started_with_AWS_Systems_Manager_OpsCenter_MGT412-R1.pdf)
             - name: "Root cause analysis"
-              content: >-
-                Root cause analysis
+              content: |
+                ### AWS Well-Architected Framework Glossary
+                - [Root cause analysis](https://wa.aws.amazon.com/wat.concept.rca.en.html)
+                ### AWS Open Source Blog
+                - [Root Cause Analysis with DoWhy, an Open Source Python Library for Causal Machine Learning](https://aws.amazon.com/blogs/opensource/root-cause-analysis-with-dowhy-an-open-source-python-library-for-causal-machine-learning/)
+                ### Amazon OpenSearch Service
+                - [Root cause analysis](https://aws.amazon.com/opensearch-service/resources/root-cause-analysis/?nc1=h_ls)
           skillsIn:
             - name: "Analyzing failed deployments (e.g, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)"
               content: >-
