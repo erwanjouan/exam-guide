@@ -385,7 +385,7 @@
             "id": "4.1",
             "knowledgeOf": [
               {
-                "content": "### CloudWatch\n- [What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)\n### AWS Health\n- [What is AWS Health?](https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html)\n- [Getting started with your AWS Health Dashboard – Your account health](https://docs.aws.amazon.com/health/latest/ug/getting-started-health-dashboard.html)\n- [Logging and monitoring in AWS Health](https://docs.aws.amazon.com/health/latest/ug/monitoring-overview.html)\n",
+                "content": "### CloudWatch\n- [What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)\n- [Application monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html)\n### AWS Health\n- [What is AWS Health?](https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html)\n- [Getting started with your AWS Health Dashboard – Your account health](https://docs.aws.amazon.com/health/latest/ug/getting-started-health-dashboard.html)\n- [Logging and monitoring in AWS Health](https://docs.aws.amazon.com/health/latest/ug/monitoring-overview.html)\n",
                 "name": "How to monitor applications and infrastructure"
               },
               {
@@ -618,11 +618,11 @@
             "name": "Troubleshoot system and application failures.",
             "skillsIn": [
               {
-                "content": "Analyzing failed deployments (e.g, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)",
+                "content": "### AWS CodePipeline\n- [Troubleshooting CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/troubleshooting.html)\n### AWS CodeBuild\n- [Troubleshooting AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/troubleshooting.html)\n### AWS CodeDeploy\n- [Troubleshooting CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting.html)\n### AWS CloudFormation\n- [Troubleshooting CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html)\n### CloudWatch synthetic monitoring\n- [Using synthetic monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html)\n",
                 "name": "Analyzing failed deployments (e.g, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)"
               },
               {
-                "content": "Analyzing incidents regarding failed processes (e.g, auto scaling, Amazon ECS, Amazon EKS)",
+                "content": "### Auto Scaling\n- [Troubleshoot Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/CHAP_Troubleshooting.html)\n### Amazon ECS\n- [Amazon ECS troubleshooting](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting.html)\n### Amazon EKS\n- [Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html)\n",
                 "name": "Analyzing incidents regarding failed processes (e.g, auto scaling, Amazon ECS, Amazon EKS)"
               }
             ]
@@ -638,7 +638,7 @@
             "id": "6.1",
             "knowledgeOf": [
               {
-                "content": "Appropriate usage of different IAM entities for human and machine access (e.g, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)",
+                "content": "### IAM\n- [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)\n- [IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)\n- [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)\n- [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html)\n- [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)\n- [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)\n",
                 "name": "Appropriate usage of different IAM entities for human and machine access (e.g, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)"
               },
               {

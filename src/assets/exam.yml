@@ -681,6 +681,7 @@ exam:
               content: |
                 ### CloudWatch
                 - [What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+                - [Application monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html)
                 ### AWS Health
                 - [What is AWS Health?](https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html)
                 - [Getting started with your AWS Health Dashboard – Your account health](https://docs.aws.amazon.com/health/latest/ug/getting-started-health-dashboard.html)
@@ -1058,11 +1059,25 @@ exam:
                 - [Root cause analysis](https://aws.amazon.com/opensearch-service/resources/root-cause-analysis/?nc1=h_ls)
           skillsIn:
             - name: "Analyzing failed deployments (e.g, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)"
-              content: >-
-                Analyzing failed deployments (e.g, AWS CodePipeline, CodeBuild, CodeDeploy, CloudFormation, CloudWatch synthetic monitoring)
+              content: |
+                ### AWS CodePipeline
+                - [Troubleshooting CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/troubleshooting.html)
+                ### AWS CodeBuild
+                - [Troubleshooting AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/troubleshooting.html)
+                ### AWS CodeDeploy
+                - [Troubleshooting CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting.html)
+                ### AWS CloudFormation
+                - [Troubleshooting CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html)
+                ### CloudWatch synthetic monitoring
+                - [Using synthetic monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html)
             - name: "Analyzing incidents regarding failed processes (e.g, auto scaling, Amazon ECS, Amazon EKS)"
-              content: >-
-                Analyzing incidents regarding failed processes (e.g, auto scaling, Amazon ECS, Amazon EKS)
+              content: |
+                ### Auto Scaling
+                - [Troubleshoot Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/CHAP_Troubleshooting.html)
+                ### Amazon ECS
+                - [Amazon ECS troubleshooting](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting.html)
+                ### Amazon EKS
+                - [Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html)
     - id: "6"
       name: "Security and Compliance (17%)"
       taskStatements:
@@ -1073,8 +1088,14 @@ exam:
             [Identity Management & Access Control capability](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/identity-management-access-control-capability.html)
           knowledgeOf:
             - name: "Appropriate usage of different IAM entities for human and machine access (e.g, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)"
-              content: >-
-                Appropriate usage of different IAM entities for human and machine access (e.g, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)
+              content: |
+                ### IAM
+                - [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)
+                - [IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)
+                - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+                - [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html)
+                - [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
+                - [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
             - name: "Identity federation techniques (e.g, using IAM identity providers and AWS Single Sign-On)"
               content: >-
                 Identity federation techniques (e.g, using IAM identity providers and AWS Single Sign-On)
