@@ -630,6 +630,7 @@
         ]
       },
       {
+        "content": "### AWS Security Maturity Model\n- [Welcome to the AWS Security Maturity Model](https://maturitymodel.security.aws.dev/en/)\n",
         "id": "6",
         "name": "Security and Compliance (17%)",
         "taskStatements": [
@@ -642,30 +643,34 @@
                 "name": "Appropriate usage of different IAM entities for human and machine access (e.g, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)"
               },
               {
-                "content": "Identity federation techniques (e.g, using IAM identity providers and AWS Single Sign-On)",
+                "content": "### IAM\n- [About web identity federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html)\n- [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)\n",
                 "name": "Identity federation techniques (e.g, using IAM identity providers and AWS Single Sign-On)"
               },
               {
-                "content": "Organizational SCPs",
+                "content": "### AWS Security Blog\n- [Delegate permission management to developers by using IAM permissions boundaries](https://aws.amazon.com/fr/blogs/security/delegate-permission-management-to-developers-using-iam-permissions-boundaries/)\n  - Allow trusted employee to modify IAM role for an application, but within boundaries\n  - Administrator defines a set permission \"dynamodb:PutItem\", \"dynamodb:UpdateItem\", \"dynamodb:DeleteItem\"\n  - Developer can set a role with \"dynamodb:*\" but it will be restricted to the permissions above\n  - Steps for IAM administrator:\n    - Define the permissions boundary by creating a customer-managed policy.\n    - Create and attach a permissions policy to allow an employee to create roles, but only with a permissions boundary and a name that meets a specific convention.\n    - Create and attach a permissions policy to allow an employee to pass this role to Amazon EC2.\n  - Steps for Employee:\n    - Create a role with the required permissions boundary.\n    - Attach a permissions policy to the role.\n",
                 "name": "Permission management delegation by using IAM permissions boundaries"
+              },
+              {
+                "content": "### AWS Organizations\n- [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)\n",
+                "name": "Organizational SCPs"
               }
             ],
             "name": "Implement techniques for identity and access management at scale.",
             "skillsIn": [
               {
-                "content": "Designing policies to enforce least privilege access",
+                "content": "### AWS Well-Architected Framework\n- [SEC03-BP02 Grant least privilege access](https://docs.aws.amazon.com/wellarchitected/latest/framework/sec_permissions_least_privileges.html)\n- [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)\n  - [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)\n",
                 "name": "Designing policies to enforce least privilege access"
               },
               {
-                "content": "Implementing role-based and attribute-based access control patterns",
+                "content": "### AWS Prescriptive Guidance\n- [Types of access control](https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/access-control-types.html)\n  - RBAC defines permissions based on a person's job function\n  - Attribute-based access control (ABAC) determines access to resources based on attributes.\n### IAM\n- [What is ABAC for AWS?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html)\n  - You can attach tags to IAM resources, including IAM entities (users or roles) and to AWS resources.\n  - ABAC policies can be designed to allow operations when the principal's tag matches the resource tag\n  - Use employee attributes from your corporate directory with ABAC. You can configure your SAML-based or web identity provider to pass session tags to AWS. When your employees federate into AWS, their attributes are applied to their resulting principal in AWS. You can then use ABAC to allow or deny permissions based on those attributes.\n",
                 "name": "Implementing role-based and attribute-based access control patterns"
               },
               {
-                "content": "Automating credential rotation for machine identities (e.g, Secrets Manager)",
+                "content": "### Secret Manager\n- [Rotate AWS Secrets Manager secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html)\n  - Secrets Manager rotation uses an AWS Lambda function \n- [Rotation Function Example](https://github.com/aws-samples/aws-secrets-manager-rotation-lambdas/blob/master/SecretsManagerRDSMariaDBRotationSingleUser/lambda_function.py)\n",
                 "name": "Automating credential rotation for machine identities (e.g, Secrets Manager)"
               },
               {
-                "content": "Managing permissions to control access to human and machine identities (e.g, enabling multi-factor authentication [MFA], AWS Security Token Service [AWS STS], IAM profiles)",
+                "content": "### IAM\n- [Using multi-factor authentication (MFA) in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)\n- [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html)\n- [Using instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html)\n",
                 "name": "Managing permissions to control access to human and machine identities (e.g, enabling multi-factor authentication [MFA], AWS Security Token Service [AWS STS], IAM profiles)"
               }
             ]
@@ -674,34 +679,34 @@
             "id": "6.2",
             "knowledgeOf": [
               {
-                "content": "Network security components (e.g, security groups, network ACLs, routing, AWS Network Firewall, AWS WAF, AWS Shield)",
+                "content": "### VPC\n- [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/security-groups.html)\n- [Control traffic to subnets using network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)\n- [Configure route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)\n### Network Firewall\n- [What is AWS Network Firewall?](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.htm)\n- [Filter network traffic using AWS Network Firewall](https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.html)\n### AWS WAF, AWS Firewall Manager, and AWS Shield Advanced\n- [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html#waf-intro)\n  - Protects paths with 403\n  - Counts requests, Capcha\n- [AWS Shield](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html#ddos-intro)\n  - DDOoS\n  - Shield Standard \u003e no cost , Shiels advance \u003e cost\n  - Shield Advanced options and features include automatic application layer DDoS mitigation, advanced event visibility, and dedicated support from the Shield Response Team (SRT)\n- [AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html#fms-intro)\n  - AWS Firewall Manager simplifies your administration and maintenance tasks across previously mentionned products                  \n",
                 "name": "Network security components (e.g, security groups, network ACLs, routing, AWS Network Firewall, AWS WAF, AWS Shield)"
               },
               {
-                "content": "Certificates and public key infrastructure (PKI)",
+                "content": "### AWS cryptography services\n- [AWS public key infrastructure (PKI) services and tools](https://docs.aws.amazon.com/crypto/latest/userguide/awspki-service-toplevel.html)\n  - [AWS Certificate Manager](https://docs.aws.amazon.com/crypto/latest/userguide/awspki-service-acm.html)\n    - ++ wildcard certificate\n  - [AWS Private Certificate Authority](https://docs.aws.amazon.com/crypto/latest/userguide/awspki-service-pca.html)\n",
                 "name": "Certificates and public key infrastructure (PKI)"
               },
               {
-                "content": "Data management (e.g, data classification, encryption, key management, access controls)",
+                "content": "### AWS WhitePaper\n- [Data classification overview](https://docs.aws.amazon.com/whitepapers/latest/data-classification/data-classification-overview.html)\n- [Data Encryption](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/data-encryption.html)\n### S3\n- [Protecting data with encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html)\n### Encrypting File Data with Amazon Elastic File System\n- [Encryption of Data at Rest](https://docs.aws.amazon.com/whitepapers/latest/efs-encrypted-file-systems/encryption-of-data-at-rest.html)\n### RDS\n- [Encrypting Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html)\n### Systems Manager\n- [Data protection in AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/data-protection.html)\n### KMS\n- [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)\n### Access Control with IAM\n- [What is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)\n",
                 "name": "Data management (e.g, data classification, encryption, key management, access controls)"
               }
             ],
             "name": "Apply automation for security controls and data protection.",
             "skillsIn": [
               {
-                "content": "Automating the application of security controls in multi-account and multi-Region environments (e.g, Security Hub, Organizations, AWS Control Tower, Systems Manager)",
+                "content": "### Security Hub\n- [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)\n### Organizations\n- [Manage Accounts Through AWS Organizations](https://docs.aws.amazon.com/controltower/latest/userguide/organizations.html)\n### Control Tower\n- [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)\n  - Landing zone in an hour\n  - Built on top of trusted and reliable AWS services including AWS Service Catalog, AWS IAM Identity Center and AWS Organizations.\n### Systems Manager\n- [Running automations in multiple AWS Regions and accounts](https://docs.aws.amazon.com/systems-manager/latest/userguide/running-automations-multiple-accounts-regions.html)\n",
                 "name": "Automating the application of security controls in multi-account and multi-Region environments (e.g, Security Hub, Organizations, AWS Control Tower, Systems Manager)"
               },
               {
-                "content": "Combining security controls to apply defense in depth (e.g, AWS Certificate Manager [ACM], AWS WAF, AWS Config, AWS Config rules, Security Hub, GuardDuty, security groups, network ACLs, Amazon Detective, Network Firewall)",
-                "name": "Combining security controls to apply defense in depth (e.g, AWS Certificate Manager [ACM], AWS WAF, AWS Config, AWS Config rules, Security Hub, GuardDuty, security groups, network ACLs, Amazon Detective, Network Firewall)"
+                "content": "### ReInvent 2019\n- [A defense-in-depth approach to building web applications](https://d1.awsstatic.com/events/reinvent/2019/REPEAT_1_A_defense-in-depth_approach_to_building_web_applications_SEC407-R1.pdf)\n### AWS Security Blog\n- [Defense in depth using AWS Managed Rules for AWS WAF (part 1)](https://aws.amazon.com/fr/blogs/security/defense-in-depth-using-aws-managed-rules-for-aws-waf-part-1/)\n- [Deploying defense in depth using AWS Managed Rules for AWS WAF (part 2)](https://aws.amazon.com/fr/blogs/security/deploying-defense-in-depth-using-aws-managed-rules-for-aws-waf-part-2/)\n### AWS Well Architected Framework\n- [Security Pillars](https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.pillar.security.en.html)\n### Blog Cohesive Network\n- [AWS Defense in Depth Overview](https://www.cohesive.net/blog/aws-defense-in-depth-overview/)\n### SlideShare\n- [Core strategies to develop defense in depth in AWS](https://www.slideshare.net/ShanePedenCISSPCISAM/core-strategies-to-develop-defense-in-depth-in-aws)\n### GuardDuty\n- [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)\n### Detective\n- [What is Amazon Detective?](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)\n",
+                "name": "Combining security controls to apply defense in depth (e.g, AWS Certificate Manager [ACM], WAF, Config, Config rules, Security Hub, GuardDuty, security groups, network ACLs, Amazon Detective, Network Firewall)"
               },
               {
-                "content": "Automating the discovery of sensitive data at scale (e.g, Amazon Macie)",
+                "content": "- [What is Amazon Macie?](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html)\n",
                 "name": "Automating the discovery of sensitive data at scale (e.g, Amazon Macie)"
               },
               {
-                "content": "Encrypting data in transit and data at rest (e.g, AWS KMS, AWS CloudHSM, ACM)",
+                "content": "### AWS cryptography services\n- [AWS cryptographic services and tools](https://docs.aws.amazon.com/crypto/latest/userguide/awscryp-overview.html)\n### AWS WhitePaper\n- [Encrypting Data-at-Rest and Data-in-Transit](https://docs.aws.amazon.com/whitepapers/latest/logical-separation/encrypting-data-at-rest-and--in-transit.html)\n- [When to use AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/crypto/latest/userguide/awscryp-choose-kms.html)\n### AWS CloudHSM\n- [What is AWS CloudHSM?](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)\n- [When to use AWS CloudHSM](https://docs.aws.amazon.com/crypto/latest/userguide/awscryp-choose-hsm.html)\n",
                 "name": "Encrypting data in transit and data at rest (e.g, AWS KMS, AWS CloudHSM, ACM)"
               }
             ]
