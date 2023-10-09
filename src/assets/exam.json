@@ -461,7 +461,7 @@
                 "name": "AWS Config rules"
               },
               {
-                "content": "### CloudTrail \n- [CloudTrail log event reference](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html)\n- [CloudTrail log file examples](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-examples.html)\n- [Sending events to CloudWatch Logs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html)\n",
+                "content": "### CloudTrail\n- [Security best practices in AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/best-practices-security.html)\n- [CloudTrail log event reference](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference.html)\n- [CloudTrail log file examples](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-examples.html)\n- [Sending events to CloudWatch Logs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html)\n",
                 "name": "AWS CloudTrail log events"
               }
             ],
@@ -715,7 +715,7 @@
             "id": "6.3",
             "knowledgeOf": [
               {
-                "content": "Security auditing services and features (e.g, CloudTrail, AWS Config, VPC Flow Logs, CloudFormation drift detection)",
+                "content": "### Medium\n- [Using CloudTrail Logs to Detect Security Threats: Techniques and Queries for Unusual Resource Access Patterns, Failed Login Attempts, and More](https://medium.com/@prathameshghumade/using-cloudtrail-logs-to-detect-security-threats-techniques-and-queries-for-unusual-resource-87fe86fc97ac)\n### CloudTrail\n- [Key CloudTrail Events To Monitor for Security in AWS](https://www.gorillastack.com/blog/real-time-events/important-aws-cloudtrail-security-events-tracking/)\n- [Using CloudTrail to identify unexpected behaviors in individual workloads](https://aws.amazon.com/fr/blogs/security/using-cloudtrail-to-identify-unexpected-behaviors-in-individual-workloads/)\n### Config\n- [Prepare for an Audit in AWS Part 1 – AWS Audit Manager, AWS Config, and AWS Artifact](https://aws.amazon.com/fr/blogs/mt/prepare-for-an-audit-in-aws-part-1-aws-audit-manager-aws-config-and-aws-artifact/)\n- [Prepare for an Audit in AWS Part 2 – General Best Practices](https://aws.amazon.com/fr/blogs/mt/prepare-for-an-audit-in-aws-part-2-general-best-practices/)\n### VPC Flog\n",
                 "name": "Security auditing services and features (e.g, CloudTrail, AWS Config, VPC Flow Logs, CloudFormation drift detection)"
               },
               {
