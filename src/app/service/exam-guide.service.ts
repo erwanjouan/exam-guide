@@ -55,7 +55,11 @@ export class ExamGuideService {
     let taskStatement = this.getTaskStatement(domainId, taskStatementId)
     if (taskStatement != undefined) {
       let taskId = Number(subTaskId)
-      return type == "K" ? taskStatement.knowledgeOf[taskId] : taskStatement.skillsIn[taskId]
+      if(type == "K" && taskStatement.knowledgeOf != undefined){
+        return taskStatement.knowledgeOf[taskId]
+      } else if (type == "S" && taskStatement.skillsIn != undefined){
+        return taskStatement.skillsIn[taskId]
+      }
     }
     return undefined;
   }

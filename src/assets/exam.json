@@ -2,6 +2,27 @@
   "exam": {
     "domains": [
       {
+        "id": "0",
+        "name": "Useful Resources",
+        "taskStatements": [
+          {
+            "content": "### AWS Architecture Center\n- [Reference architecture examples and diagrams](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate\u0026cards-all.sort-order=desc\u0026awsf.content-type=*all\u0026awsf.methodology=*all\u0026awsf.tech-category=*all\u0026awsf.industries=*all\u0026awsf.business-category=*all)\n",
+            "id": "0.1",
+            "name": "Reference architecture"
+          },
+          {
+            "content": "### Github Labs\n- [Amazon Web Services - Labs](https://github.com/awslabs)\n### AWS Cli with auto prompt\nInspired from aws-shell in aws labs\n```shell\naws  --cli-auto-prompt\n(or)\nexport AWS_CLI_AUTO_PROMPT=on\n```\n",
+            "id": "0.2",
+            "name": "Tooling"
+          },
+          {
+            "content": "### AWS re:Post (previously Forum)\n- [Welcome to AWS re:Post](https://repost.aws/)\n",
+            "id": "0.3",
+            "name": "User Forum"
+          }
+        ]
+      },
+      {
         "content": "## This is the first domain for the certification\n",
         "id": "1",
         "name": "SDLC Automation (22%)",
@@ -723,7 +744,7 @@
                 "name": "AWS services for identifying security vulnerabilities and events (e.g, GuardDuty, Amazon Inspector, IAM Access Analyzer, AWS Config)"
               },
               {
-                "content": "### Blog\n- [12 CLOUD SECURITY ISSUES: RISKS, THREATS, AND CHALLENGES](https://www.crowdstrike.com/cybersecurity-101/cloud-security/cloud-security-risks-threats-challenges/)\n- [Main Cloud Security Issues and Threats in 2023](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/top-cloud-security-issues-threats-and-concerns/)\n### Framework for Incident Response Playbooks\nAn example framework for customers to create, develop, and integrate security playbooks in preparation for potential attack scenarios when using AWS services.\n- [Playbooks](https://github.com/aws-samples/aws-customer-playbook-framework)\n",
+                "content": "### Blog\n- [12 CLOUD SECURITY ISSUES: RISKS, THREATS, AND CHALLENGES](https://www.crowdstrike.com/cybersecurity-101/cloud-security/cloud-security-risks-threats-challenges/)\n- [Main Cloud Security Issues and Threats in 2023](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/top-cloud-security-issues-threats-and-concerns/)\n### Framework for Incident Response Playbooks\n- [Playbooks](https://github.com/aws-samples/aws-customer-playbook-framework) : An example framework for customers to create, develop, and integrate security playbooks in preparation for potential attack scenarios when using AWS services.\n",
                 "name": "Common cloud security threats (e.g, insecure web traffic, exposed AWS access keys, S3 buckets with public access enabled or encryption disabled)"
               }
             ],

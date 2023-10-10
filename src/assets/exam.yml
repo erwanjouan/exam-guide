@@ -1,6 +1,31 @@
 exam:
   name: "AWS Certified DevOps Engineer - Professional"
   domains:
+    - id: "0"
+      name: "Useful Resources"
+      taskStatements:
+        - id: "0.1"
+          name: "Reference architecture"
+          content: |
+            ### AWS Architecture Center
+            - [Reference architecture examples and diagrams](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all&awsf.tech-category=*all&awsf.industries=*all&awsf.business-category=*all)
+        - id: "0.2"
+          name: "Tooling"
+          content: |
+            ### Github Labs
+            - [Amazon Web Services - Labs](https://github.com/awslabs)
+            ### AWS Cli with auto prompt
+            Inspired from aws-shell in aws labs
+            ```shell
+            aws  --cli-auto-prompt
+            (or)
+            export AWS_CLI_AUTO_PROMPT=on
+            ```
+        - id: "0.3"
+          name: "User Forum"
+          content: |
+            ### AWS re:Post (previously Forum)
+            - [Welcome to AWS re:Post](https://repost.aws/)
     - id: "1"
       name: "SDLC Automation (22%)"
       content: |

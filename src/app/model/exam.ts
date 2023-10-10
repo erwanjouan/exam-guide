@@ -15,10 +15,9 @@ export interface Domain extends Displayable {
 
 export interface TaskStatement extends Displayable {
     id: string
-    name: string 
     parentId?: string
-    knowledgeOf: Array<SubTask>
-    skillsIn: Array<SubTask>
+    knowledgeOf?: Array<SubTask>
+    skillsIn?: Array<SubTask>
 }
 
 export interface SubTask extends Displayable {
