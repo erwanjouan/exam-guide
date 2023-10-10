@@ -6,19 +6,19 @@
         "name": "Useful Resources",
         "taskStatements": [
           {
-            "content": "### AWS Architecture Center\n- [Reference architecture examples and diagrams](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate\u0026cards-all.sort-order=desc\u0026awsf.content-type=*all\u0026awsf.methodology=*all\u0026awsf.tech-category=*all\u0026awsf.industries=*all\u0026awsf.business-category=*all)\n",
+            "content": "### AWS Architecture Center\n- [Reference architecture examples and diagrams](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate\u0026cards-all.sort-order=desc\u0026awsf.content-type=*all\u0026awsf.methodology=*all\u0026awsf.tech-category=*all\u0026awsf.industries=*all\u0026awsf.business-category=*all)\n### AWS Solutions Library\n- [AWS Solutions Library](https://aws.amazon.com/solutions/)\n### Customer Success\n- [Customer Success](https://aws.amazon.com/solutions/case-studies/?nc1=f_cc%20AW\u0026customer-references-cards.sort-by=item.additionalFields.sortDate\u0026customer-references-cards.sort-order=desc\u0026awsf.customer-references-location=*all\u0026awsf.customer-references-industry=*all\u0026awsf.customer-references-use-case=*all\u0026awsf.language=language%23english)\n### AWS Compliance Programs\n- [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/)\n",
             "id": "0.1",
-            "name": "Reference architecture"
+            "name": "Reference"
           },
           {
-            "content": "### Github Labs\n- [Amazon Web Services - Labs](https://github.com/awslabs)\n### AWS Cli with auto prompt\nInspired from aws-shell in aws labs\n```shell\naws  --cli-auto-prompt\n(or)\nexport AWS_CLI_AUTO_PROMPT=on\n```\n",
+            "content": "### Github Labs\n- [Amazon Web Services - Labs](https://github.com/awslabs)\n### AWS CLI\n#### Auto prompt\nInspired from aws-shell in aws labs\n```shell\naws  --cli-auto-prompt # or export AWS_CLI_AUTO_PROMPT=on\n```\n#### Formatting\n```shell\n--output, --query, --profile\n```\n### AWS IP Ranges\n- [AWS IP address ranges](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html)\n### Error Retries and Exponential Backoff in AWS\n- [Retry behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html)\n### AWS Services by Region\n- [List of AWS Services Available by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)\n### AWS Service Endpoints\n- [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html)\n### AWS service Quotas \n- [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)\n",
             "id": "0.2",
-            "name": "Tooling"
+            "name": "Tooling / Technical"
           },
           {
-            "content": "### AWS re:Post (previously Forum)\n- [Welcome to AWS re:Post](https://repost.aws/)\n",
+            "content": "### AWS re:Post (previously Forum)\n- [Welcome to AWS re:Post](https://repost.aws/)\n### AWS Certification\n- [AWS Certification](https://aws.amazon.com/certification/)\n### AWS Architecture Icons\n- [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/)\n",
             "id": "0.3",
-            "name": "User Forum"
+            "name": "User Forum and misc"
           }
         ]
       },
@@ -232,7 +232,7 @@
                 "name": "Applying IAM solutions for multi-account and complex organization structures (e.g, SCPs, assuming roles)"
               },
               {
-                "content": "### AWS Config\n- [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)\n### AWS Control Tower\n- [AWS multi-account strategy for your AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html)\n### AWS Security Hub\n- [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)\n### Amazon Detective\n- [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)\n### Amazon GuardDuty\n- [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)\n### Service Catalog\n- [Compliance Validation for Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/service-catalog-compliance.html)\n- [Security Best Practices for AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/security-best-practices.html)\n## SCPs\n- [What is AWS SCP (Service Control Policy) and How does it Help with Permissions?](https://www.stormit.cloud/blog/aws-scp-service-control-policy/)\n",
+                "content": "### AWS Config\n- [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)\n### AWS Control Tower\n- [AWS multi-account strategy for your AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html)\n### AWS Security Hub\n- [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)\n- [How to Enable Custom Actions in AWS Security Hub](https://aws.amazon.com/blogs/apn/how-to-enable-custom-actions-in-aws-security-hub/)\n### Amazon Detective\n- [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)\n### Amazon GuardDuty\n- [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)\n### Service Catalog\n- [Compliance Validation for Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/service-catalog-compliance.html)\n- [Security Best Practices for AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/security-best-practices.html)\n## SCPs\n- [What is AWS SCP (Service Control Policy) and How does it Help with Permissions?](https://www.stormit.cloud/blog/aws-scp-service-control-policy/)\n",
                 "name": "Implementing and developing governance and security controls at scale (AWS Config, AWS Control Tower, AWS Security Hub, Amazon Detective, Amazon GuardDuty, AWS Service Catalog, SCPs)"
               }
             ]

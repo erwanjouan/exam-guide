@@ -5,27 +5,50 @@ exam:
       name: "Useful Resources"
       taskStatements:
         - id: "0.1"
-          name: "Reference architecture"
+          name: "Reference"
           content: |
             ### AWS Architecture Center
             - [Reference architecture examples and diagrams](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all&awsf.tech-category=*all&awsf.industries=*all&awsf.business-category=*all)
+            ### AWS Solutions Library
+            - [AWS Solutions Library](https://aws.amazon.com/solutions/)
+            ### Customer Success
+            - [Customer Success](https://aws.amazon.com/solutions/case-studies/?nc1=f_cc%20AW&customer-references-cards.sort-by=item.additionalFields.sortDate&customer-references-cards.sort-order=desc&awsf.customer-references-location=*all&awsf.customer-references-industry=*all&awsf.customer-references-use-case=*all&awsf.language=language%23english)
+            ### AWS Compliance Programs
+            - [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/)
         - id: "0.2"
-          name: "Tooling"
+          name: "Tooling / Technical"
           content: |
             ### Github Labs
             - [Amazon Web Services - Labs](https://github.com/awslabs)
-            ### AWS Cli with auto prompt
+            ### AWS CLI
+            #### Auto prompt
             Inspired from aws-shell in aws labs
             ```shell
-            aws  --cli-auto-prompt
-            (or)
-            export AWS_CLI_AUTO_PROMPT=on
+            aws  --cli-auto-prompt # or export AWS_CLI_AUTO_PROMPT=on
             ```
+            #### Formatting
+            ```shell
+            --output, --query, --profile
+            ```
+            ### AWS IP Ranges
+            - [AWS IP address ranges](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html)
+            ### Error Retries and Exponential Backoff in AWS
+            - [Retry behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html)
+            ### AWS Services by Region
+            - [List of AWS Services Available by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
+            ### AWS Service Endpoints
+            - [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html)
+            ### AWS service Quotas 
+            - [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)
         - id: "0.3"
-          name: "User Forum"
+          name: "User Forum and misc"
           content: |
             ### AWS re:Post (previously Forum)
             - [Welcome to AWS re:Post](https://repost.aws/)
+            ### AWS Certification
+            - [AWS Certification](https://aws.amazon.com/certification/)
+            ### AWS Architecture Icons
+            - [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/)
     - id: "1"
       name: "SDLC Automation (22%)"
       content: |
@@ -419,6 +442,7 @@ exam:
                 - [AWS multi-account strategy for your AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/aws-multi-account-landing-zone.html)
                 ### AWS Security Hub
                 - [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)
+                - [How to Enable Custom Actions in AWS Security Hub](https://aws.amazon.com/blogs/apn/how-to-enable-custom-actions-in-aws-security-hub/)
                 ### Amazon Detective
                 - [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)
                 ### Amazon GuardDuty
