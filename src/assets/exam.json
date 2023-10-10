@@ -179,7 +179,7 @@
                 "name": "Applying AWS CloudFormation StackSets across multiple accounts and AWS Regions"
               },
               {
-                "content": "### OpsWorks Stacks Vs AWS Systems Manager\n- [[Blog] Migrate your AWS OpsWorks Stacks to AWS Systems Manager](https://aws.amazon.com/fr/blogs/mt/migrate-your-aws-opsworks-stacks-to-aws-systems-manager/)\n### AWS AppConfig\n- [What Is AWS AppConfig?](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html)\n### AWS Config\n- [What Is AWS Config?](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)\n",
+                "content": "### OpsWorks Stacks Vs AWS Systems Manager\n- [[Blog] Migrate your AWS OpsWorks Stacks to AWS Systems Manager](https://aws.amazon.com/fr/blogs/mt/migrate-your-aws-opsworks-stacks-to-aws-systems-manager/)\n### AWS Systems Manager Explorer\n- [AWS Systems Manager Explorer](https://docs.aws.amazon.com/systems-manager/latest/userguide/Explorer.html)\n### AWS AppConfig\n- [What Is AWS AppConfig?](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html)\n### AWS Config\n- [What Is AWS Config?](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)\n",
                 "name": "Determining optimal configuration management services (e.g. AWS OpsWorks, AWS Systems Manager, AWS Config, AWS AppConfig)"
               },
               {
@@ -630,7 +630,7 @@
         ]
       },
       {
-        "content": "### AWS Security Maturity Model\n- [Welcome to the AWS Security Maturity Model](https://maturitymodel.security.aws.dev/en/)\n",
+        "content": "### AWS Security Maturity Model\n- [Welcome to the AWS Security Maturity Model](https://maturitymodel.security.aws.dev/en/)\n### AWS Security Incident Response Guide\n- [AWS Security Incident Response Guide](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/aws-security-incident-response-guide.html)\n",
         "id": "6",
         "name": "Security and Compliance (17%)",
         "taskStatements": [
@@ -715,30 +715,30 @@
             "id": "6.3",
             "knowledgeOf": [
               {
-                "content": "### Medium\n- [Using CloudTrail Logs to Detect Security Threats: Techniques and Queries for Unusual Resource Access Patterns, Failed Login Attempts, and More](https://medium.com/@prathameshghumade/using-cloudtrail-logs-to-detect-security-threats-techniques-and-queries-for-unusual-resource-87fe86fc97ac)\n### CloudTrail\n- [Key CloudTrail Events To Monitor for Security in AWS](https://www.gorillastack.com/blog/real-time-events/important-aws-cloudtrail-security-events-tracking/)\n- [Using CloudTrail to identify unexpected behaviors in individual workloads](https://aws.amazon.com/fr/blogs/security/using-cloudtrail-to-identify-unexpected-behaviors-in-individual-workloads/)\n### Config\n- [Prepare for an Audit in AWS Part 1 – AWS Audit Manager, AWS Config, and AWS Artifact](https://aws.amazon.com/fr/blogs/mt/prepare-for-an-audit-in-aws-part-1-aws-audit-manager-aws-config-and-aws-artifact/)\n- [Prepare for an Audit in AWS Part 2 – General Best Practices](https://aws.amazon.com/fr/blogs/mt/prepare-for-an-audit-in-aws-part-2-general-best-practices/)\n### VPC Flog\n",
+                "content": "### Medium\n- [Using CloudTrail Logs to Detect Security Threats: Techniques and Queries for Unusual Resource Access Patterns, Failed Login Attempts, and More](https://medium.com/@prathameshghumade/using-cloudtrail-logs-to-detect-security-threats-techniques-and-queries-for-unusual-resource-87fe86fc97ac)\n### CloudTrail\n- [Key CloudTrail Events To Monitor for Security in AWS](https://www.gorillastack.com/blog/real-time-events/important-aws-cloudtrail-security-events-tracking/)\n- [Using CloudTrail to identify unexpected behaviors in individual workloads](https://aws.amazon.com/fr/blogs/security/using-cloudtrail-to-identify-unexpected-behaviors-in-individual-workloads/)\n### Config\n- [Prepare for an Audit in AWS Part 1 – AWS Audit Manager, AWS Config, and AWS Artifact](https://aws.amazon.com/fr/blogs/mt/prepare-for-an-audit-in-aws-part-1-aws-audit-manager-aws-config-and-aws-artifact/)\n- [Prepare for an Audit in AWS Part 2 – General Best Practices](https://aws.amazon.com/fr/blogs/mt/prepare-for-an-audit-in-aws-part-2-general-best-practices/)\n### VPC Flow log\n- [Logging IP traffic using VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)\n- [Querying Amazon VPC flow logs](https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs.html)\n### CloudFormation drift detection\n- [Detect drift on an entire CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detect-drift-stack.html)\n- [Detect drift on individual stack resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detect-drift-resource.html)\n",
                 "name": "Security auditing services and features (e.g, CloudTrail, AWS Config, VPC Flow Logs, CloudFormation drift detection)"
               },
               {
-                "content": "AWS services for identifying security vulnerabilities and events (e.g, GuardDuty, Amazon Inspector, IAM Access Analyzer, AWS Config)",
+                "content": "### GuardDuty\n- [Understanding Amazon GuardDuty findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html)\n- [Remediating security issues discovered by GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_remediate.html)\n### Amazon Inspector\n- [Amazon Inspector FAQs](https://aws.amazon.com/inspector/faqs/?nc1=h_ls)\n- [Automate vulnerability management and remediation in AWS using Amazon Inspector and AWS Systems Manager – Part 1](https://aws.amazon.com/blogs/mt/automate-vulnerability-management-and-remediation-in-aws-using-amazon-inspector-and-aws-systems-manager-part-1/)\n- [Automate vulnerability management and remediation in AWS using Amazon Inspector and AWS Systems Manager – Part 2](https://aws.amazon.com/blogs/mt/automate-vulnerability-management-and-remediation-in-aws-using-amazon-inspector-and-aws-systems-manager-part-2/)\n### IAM\n- [Using AWS Identity and Access Management Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html)\n- [Automate vulnerability management and remediation in AWS using Amazon Inspector and AWS Systems Manager – Part 1](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-findings-remediate.html)\n### AWS Config\n- [Remediate noncompliant AWS Config rules with AWS Systems Manager Automation runbooks](https://aws.amazon.com/blogs/mt/remediate-noncompliant-aws-config-rules-with-aws-systems-manager-automation-runbooks/)\n",
                 "name": "AWS services for identifying security vulnerabilities and events (e.g, GuardDuty, Amazon Inspector, IAM Access Analyzer, AWS Config)"
               },
               {
-                "content": "Common cloud security threats (e.g, insecure web traffic, exposed AWS access keys, S3 buckets with public access enabled or encryption disabled)",
+                "content": "### Blog\n- [12 CLOUD SECURITY ISSUES: RISKS, THREATS, AND CHALLENGES](https://www.crowdstrike.com/cybersecurity-101/cloud-security/cloud-security-risks-threats-challenges/)\n- [Main Cloud Security Issues and Threats in 2023](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/top-cloud-security-issues-threats-and-concerns/)\n### Framework for Incident Response Playbooks\nAn example framework for customers to create, develop, and integrate security playbooks in preparation for potential attack scenarios when using AWS services.\n- [Playbooks](https://github.com/aws-samples/aws-customer-playbook-framework)\n",
                 "name": "Common cloud security threats (e.g, insecure web traffic, exposed AWS access keys, S3 buckets with public access enabled or encryption disabled)"
               }
             ],
             "name": "Implement security monitoring and auditing solutions.",
             "skillsIn": [
               {
-                "content": "Implementing robust security auditing",
+                "content": "### AWS Audit Manager\n- [What is AWS Audit Manager?](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html)\n### AWS Security Blog\n- [Continuous compliance monitoring using custom audit controls and frameworks with AWS Audit Manage](https://aws.amazon.com/blogs/security/continuous-compliance-monitoring-using-custom-audit-controls-and-frameworks-with-aws-audit-manager/)\n",
                 "name": "Implementing robust security auditing"
               },
               {
-                "content": "Configuring alerting based on unexpected or anomalous security events",
+                "content": "### AWS Security Incident Response Guide\n- [Visibility and alerting](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/visibility-and-alerting.html)\n### AWS Security Hub\n- [Automated response and remediation](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cloudwatch-events.html)\n### AWS Macie\n- [Monitoring and processing Amazon Macie findings](https://docs.aws.amazon.com/macie/latest/user/findings-monitor.html)\n### AWS Config\n- [Notifications that AWS Config Sends to an Amazon SNS topic](https://docs.aws.amazon.com/config/latest/developerguide/notifications-for-AWS-Config.html)\n### AWS Trusted Advisor\n- [Monitoring and logging for AWS Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/cloudwatch-ta.html)\n### AWS Inspector\n- [Creating custom responses to Amazon Inspector findings with Amazon EventBridge](https://docs.aws.amazon.com/inspector/latest/user/findings-managing-automating-responses.html)\n### AWS GuardDuty\n- [Creating custom responses to GuardDuty findings with Amazon CloudWatch Events](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html)\n",
                 "name": "Configuring alerting based on unexpected or anomalous security events"
               },
               {
-                "content": "Analyzing logs, metrics, and security findings",
+                "content": "### AWS Security Incident Response Guide\n- [Alert sources](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/alert-sources.html)",
                 "name": "Analyzing logs, metrics, and security findings"
               }
             ]
