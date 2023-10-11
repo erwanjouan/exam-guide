@@ -609,10 +609,13 @@ exam:
               content: |
                 ### Comparison
                 - [What Are the Differences Between Elastic Beanstalk, EKS, ECS, EC2, Lambda, and Fargate?](https://www.logicmonitor.com/blog/what-are-the-differences-between-elastic-beanstalk-eks-ecs-ec2-lambda-and-fargate)
+                - [Choosing your container environment on AWS with Lightsail, ECS, EKS, Lambda, and Fargate](https://nathanpeck.com/choosing-container-environment-on-aws-lightsail-ecs-eks-lambda-fargate/)
+                ### What is ?
                 - [What is Amazon EKS?](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
                 - [What is Amazon Elastic Container Service?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
                 - [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
                 - [What is AWS Elastic Beanstalk?](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
+
           skillsIn:
             - name: "Identifying and remediating scaling issues"
               content: |
@@ -1158,6 +1161,7 @@ exam:
                 ### IAM
                 - [About web identity federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html)
                 - [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
+                - [aws:FederatedProvider](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-federatedprovider)
             - name: "Permission management delegation by using IAM permissions boundaries"
               content: |
                 ### AWS Security Blog
@@ -1335,6 +1339,8 @@ exam:
                 - [Main Cloud Security Issues and Threats in 2023](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/top-cloud-security-issues-threats-and-concerns/)
                 ### Framework for Incident Response Playbooks
                 - [Playbooks](https://github.com/aws-samples/aws-customer-playbook-framework) : An example framework for customers to create, develop, and integrate security playbooks in preparation for potential attack scenarios when using AWS services.
+                ### AWS Penetration test
+                - [AWS Pentesting](https://cloud.hacktricks.xyz/pentesting-cloud/aws-security)
           skillsIn:
             - name: "Implementing robust security auditing"
               content: |

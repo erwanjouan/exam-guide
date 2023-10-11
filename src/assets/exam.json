@@ -336,7 +336,7 @@
                 "name": "Serverless architectures"
               },
               {
-                "content": "### Comparison\n- [What Are the Differences Between Elastic Beanstalk, EKS, ECS, EC2, Lambda, and Fargate?](https://www.logicmonitor.com/blog/what-are-the-differences-between-elastic-beanstalk-eks-ecs-ec2-lambda-and-fargate)\n- [What is Amazon EKS?](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)\n- [What is Amazon Elastic Container Service?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)\n- [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)\n- [What is AWS Elastic Beanstalk?](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)\n",
+                "content": "### Comparison\n- [What Are the Differences Between Elastic Beanstalk, EKS, ECS, EC2, Lambda, and Fargate?](https://www.logicmonitor.com/blog/what-are-the-differences-between-elastic-beanstalk-eks-ecs-ec2-lambda-and-fargate)\n- [Choosing your container environment on AWS with Lightsail, ECS, EKS, Lambda, and Fargate](https://nathanpeck.com/choosing-container-environment-on-aws-lightsail-ecs-eks-lambda-fargate/)\n### What is ?\n- [What is Amazon EKS?](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)\n- [What is Amazon Elastic Container Service?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)\n- [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)\n- [What is AWS Elastic Beanstalk?](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)\n",
                 "name": "Container platforms"
               }
             ],
@@ -664,7 +664,7 @@
                 "name": "Appropriate usage of different IAM entities for human and machine access (e.g, users, groups, roles, identity providers, identity-based policies, resource-based policies, session policies)"
               },
               {
-                "content": "### IAM\n- [About web identity federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html)\n- [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)\n",
+                "content": "### IAM\n- [About web identity federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html)\n- [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)\n- [aws:FederatedProvider](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-federatedprovider)\n",
                 "name": "Identity federation techniques (e.g, using IAM identity providers and AWS Single Sign-On)"
               },
               {
@@ -744,7 +744,7 @@
                 "name": "AWS services for identifying security vulnerabilities and events (e.g, GuardDuty, Amazon Inspector, IAM Access Analyzer, AWS Config)"
               },
               {
-                "content": "### Blog\n- [12 CLOUD SECURITY ISSUES: RISKS, THREATS, AND CHALLENGES](https://www.crowdstrike.com/cybersecurity-101/cloud-security/cloud-security-risks-threats-challenges/)\n- [Main Cloud Security Issues and Threats in 2023](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/top-cloud-security-issues-threats-and-concerns/)\n### Framework for Incident Response Playbooks\n- [Playbooks](https://github.com/aws-samples/aws-customer-playbook-framework) : An example framework for customers to create, develop, and integrate security playbooks in preparation for potential attack scenarios when using AWS services.\n",
+                "content": "### Blog\n- [12 CLOUD SECURITY ISSUES: RISKS, THREATS, AND CHALLENGES](https://www.crowdstrike.com/cybersecurity-101/cloud-security/cloud-security-risks-threats-challenges/)\n- [Main Cloud Security Issues and Threats in 2023](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/top-cloud-security-issues-threats-and-concerns/)\n### Framework for Incident Response Playbooks\n- [Playbooks](https://github.com/aws-samples/aws-customer-playbook-framework) : An example framework for customers to create, develop, and integrate security playbooks in preparation for potential attack scenarios when using AWS services.\n### AWS Penetration test\n- [AWS Pentesting](https://cloud.hacktricks.xyz/pentesting-cloud/aws-security)\n",
                 "name": "Common cloud security threats (e.g, insecure web traffic, exposed AWS access keys, S3 buckets with public access enabled or encryption disabled)"
               }
             ],
