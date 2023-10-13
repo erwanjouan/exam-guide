@@ -54,6 +54,8 @@ exam:
           content: |
             ### DynamoDB
             - [Change data capture for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html)
+            ### AWS Well-Architected Labs
+            - [AWS Well-Architected Labs](https://wellarchitectedlabs.com/)
     - id: "1"
       name: "SDLC Automation (22%)"
       content: |
@@ -221,6 +223,8 @@ exam:
                 ### EC2 Image Builder
                 - [Automate OS Image Build Pipelines with EC2 Image Builder](https://aws.amazon.com/blogs/aws/automate-os-image-build-pipelines-with-ec2-image-builder/)
                 - [Amazon EC2 Image Builder Samples](https://github.com/aws-samples/amazon-ec2-image-builder-samples)
+                - [Amazon managed STIG hardening components for EC2 Image Builder](https://docs.aws.amazon.com/imagebuilder/latest/userguide/ib-stig.html#linux-os-stig)
+                ### Systems Manager Automation
                 - [Creating Packer images using AWS System Manager Automation](https://aws.amazon.com/blogs/mt/creating-packer-images-using-system-manager-automation/)
                 ### Migrating from Packer to EC2 Image Builder
                 - [Migrating from Packer to EC2 Image Builder](https://geeks.wego.com/migrating-jenkins-from-packer-to-ec2-image-builder/)
@@ -366,10 +370,13 @@ exam:
               content: |
                 ### CloudFormation
                 - [[CloudFormation UserGuide] What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
-                ### Cdk
+                ### CDK
                 - [[CDK User Guide] What is the AWS CDK?](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
                 ### SAM
-                - [[SAM Devi Guide] What is the AWS Serverless Application Model (AWS SAM)?](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
+                - [[SAM Dev Guide] What is the AWS Serverless Application Model (AWS SAM)?](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
+                ### AppRunner
+                - [App Runner architecture and concepts](https://docs.aws.amazon.com/apprunner/latest/dg/architecture.html)
+                - [How App Runner works with IAM](https://docs.aws.amazon.com/apprunner/latest/dg/security_iam_service-with-iam.html)
             - name: "Change management processes for IaC-based platforms"
               content: |
                 ### AWS WhitePaper
@@ -395,15 +402,21 @@ exam:
                   - The optional Conditions section contains statements that define the circumstances under which entities are created or configured
                 ### AWS Cloud Development Kit [AWS CDK]
                 - [[Developer Guide] Core Concepts](https://docs.aws.amazon.com/cdk/v2/guide/core_concepts.html)
+                ### SAM
+                - [Managing resource permissions with AWS SAM connectors](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/managing-permissions-connectors.html)
             - name: Applying AWS CloudFormation StackSets across multiple accounts and AWS Regions
               content: |
                 ### AWS Cloudformation
                 - [[UserGuide] Working with AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
                 - [[UserGuide] Prerequisites for stack set operations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs.html)
+                - [Troubleshooting AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-troubleshooting.html)
+                - [Grant self-managed permissions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs-self-managed.html#prereqs-self-managed-permissions)
+                - [Activate trusted access with AWS Organizations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-activate-trusted-access.html)
             - name: Determining optimal configuration management services (e.g. AWS OpsWorks, AWS Systems Manager, AWS Config, AWS AppConfig)
               content: |
-                ### OpsWorks Stacks Vs AWS Systems Manager
+                ### OpsWorks Stacks
                 - [[Blog] Migrate your AWS OpsWorks Stacks to AWS Systems Manager](https://aws.amazon.com/fr/blogs/mt/migrate-your-aws-opsworks-stacks-to-aws-systems-manager/)
+                - [Migrating your AWS OpsWorks Stacks applications to AWS Systems Manager Application Manager](https://docs.aws.amazon.com/opsworks/latest/userguide/migrating-to-systems-manager.html)
                 ### AWS Systems Manager Explorer
                 - [AWS Systems Manager Explorer](https://docs.aws.amazon.com/systems-manager/latest/userguide/Explorer.html)
                 ### AWS AppConfig
@@ -518,7 +531,7 @@ exam:
             - name: "Automating the configuration of software applications to the desired state (e.g, OpsWorks, Systems Manager State Manager)"
               content: |
                 ### AWS OpsWorks 
-                - [AWS OpsWorks Stacks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome_classic.html) EOL May 26 2024
+                - [AWS OpsWorks Stacks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome_classic.html) /!\ EOL May 26 2024
                 - [Using Auto Healing to Replace Failed Instances](https://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autohealing.html)
                   - if no communication between OpsWorks & instance during 5 minutes > new instance is launched
                 - [Installing Custom Cookbooks](https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-installingcustom-enable.html)
@@ -571,6 +584,12 @@ exam:
                 -  [Multi-AZ DB instance deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZSingleStandby.html)
                 ### Aurora
                 - [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)
+                |Feature|Aurora Serverless v1|Aurora Serverless v2|
+                |---|---|---|
+                |Scale compute & memory capacities seamlessly|X|X|
+                |Global database| |X|
+                |Multi-AZ| |X|
+                |Granular scaling| |X|
                 ### S3
                 - [Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)
             - name: "Techniques to achieve high availability (e.g, Multi-AZ, multi-Region)"
@@ -657,10 +676,22 @@ exam:
                 - [What is AWS Elastic Beanstalk?](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
                 ### AWS Copilot
                 - [AWS Copilot CLI](https://aws.github.io/copilot-cli/)
+                - [Getting started with Amazon ECS using AWS Copilot](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-aws-copilot-cli.html)
+                - [Introducing AWS Copilot](https://aws.amazon.com/fr/blogs/containers/introducing-aws-copilot/)
+                - [Automatically deploying your container application with AWS Copilot](https://aws.amazon.com/fr/blogs/containers/automatically-deploying-your-container-application-with-aws-copilot/)
+                ```shell
+                copilot pipeline init # Generate pipeline manifest
+                copilot pipeline update # Deploy the pipeline
+                copilot pipeline status # Monitor the pipeline
+                ```
+                ### AWS App2Container
+                - [What is AWS App2Container?](https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html)
+                  - Utility to generate images on ECR from live running environment and deploy them to ECS, EKS, AppRunner. Can generate CodePipeline pipeline. But not Elastic Beanstalk.
                 ### Elastic Beanstalk
                 - [Deploying Elastic Beanstalk applications from Docker containers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html)
                 - [Customizing software on Linux servers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html)
                 - [Design considerations](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.html)
+                - [Precedence](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html#configuration-options-precedence)
           skillsIn:
             - name: "Identifying and remediating scaling issues"
               content: |
@@ -722,6 +753,8 @@ exam:
                 - [Blog: Disaster Recovery (DR) Architecture on AWS, Part II: Backup and Restore with Rapid Recovery](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-ii-backup-and-restore-with-rapid-recovery/)
                 - [Blog: Disaster Recovery (DR) Architecture on AWS, Part III: Pilot Light and Warm Standby](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/)
                 - [Blog: Disaster Recovery (DR) Architecture on AWS, Part IV: Multi-site Active/Active](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iv-multi-site-active-active/)
+                ### Workshop
+                - [Plan for Disaster Recovery (DR)](https://catalog.us-east-1.prod.workshops.aws/workshops/6b7a41c6-3cae-45f2-bf2c-72c64b55d920/en-US)
             - name: "Recovery procedures"
               content: |
                 ### AWS Well-Architected Framework
@@ -749,8 +782,7 @@ exam:
                 - [Doing failover in Amazon Aurora Read Replica with the highest priority](https://dev.to/aws-builders/doing-failover-in-amazon-aurora-read-replica-with-the-highest-priority-4okb)
                 - [How can I perform a failover in my Aurora global database, and why did my failover fail?](https://repost.aws/knowledge-center/aurora-postgresql-failover-issues)
                 - [DR WorkShop: Fail Over at Aurora Global Database](https://disaster-recovery.workshop.aws/en/labs/advanced/aurora-global-database/failover.html)
-                - [Blog: Deploy multi-Region Amazon Aurora applications with a failover blueprint](https://aws.amazon.com/blogs/database/deploy-multi-region-amazon-aurora-applications-with-a-failover-blueprint/)
-
+                - [Blog: Deploy multi-Region Amazon Aurora applications with a failover blueprint](https://aws.amazon.com/blogs/database/deploy-multi-region-amazon-aurora-applications-with-a-failover-blueprint/)                
                 ### Route 53
                 - [DNS Failover with Route53](https://medium.com/tysonworks/dns-failover-with-route53-cc3427a3629a)
                 - [Amazon Route 53: Health Checks and DNS Failover](https://www.stormit.cloud/blog/route-53-health-check/)
@@ -798,6 +830,9 @@ exam:
               content: |
                 ### CloudWatch
                 - [Real-time processing of log data with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html)
+                - [Streaming CloudWatch Logs data to Amazon OpenSearch Service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_OpenSearch_Stream.html)
+                ### Amazon OpenSearch Service
+                - [Loading streaming data from Amazon CloudWatch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/integrations.html#integrations-cloudwatch)
                 ### Kinesis Firehose
                 - [CloudWatch Logs vs. Kinesis Firehose](https://medium.com/circuitpeople/cloudwatch-logs-vs-kinesis-firehose-71fc3fd54f8c)
                 ### Kinesis Stream
@@ -809,6 +844,9 @@ exam:
                 ### Blog
                 - [Medium: Data Encryption at Rest & Transit on AWS](https://hetakshi-patil.medium.com/data-encryption-at-rest-transit-on-aws-38a6a9140004)
                 - [How to Enable End-to-End Encryption in AWS](https://www.infracloud.io/blogs/enable-end-to-end-encryption-aws/)
+                ### App Flow
+                - [What is Amazon AppFlow?](https://docs.aws.amazon.com/appflow/latest/userguide/what-is-appflow.html)
+                - [SAP OData connector for Amazon AppFlow](https://docs.aws.amazon.com/appflow/latest/userguide/sapodata.htmls)
             - name: "Security configurations (e.g, IAM roles and permissions to allow for log collection)"
               content: |
                 ### AWS CloudWatch
@@ -971,6 +1009,7 @@ exam:
                 - [What Is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
                   - [Amazon EventBridge Event Bus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bus.html)
                   - [Amazon EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html)
+                  - [Receiving events from a SaaS partner with Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas.html)
                 ### Workshop
                 - [Building event-driven architectures on AWS](https://catalog.us-east-1.prod.workshops.aws/workshops/63320e83-6abc-493d-83d8-f822584fb3cb/en-US)
             - name: "Capabilities of auto scaling a variety of AWS services (e.g, EC2 Auto Scaling groups, RDS storage auto scaling, DynamoDB, ECS capacity provider, EKS autoscalers)"
