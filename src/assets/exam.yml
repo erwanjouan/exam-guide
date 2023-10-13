@@ -49,6 +49,11 @@ exam:
             - [AWS Certification](https://aws.amazon.com/certification/)
             ### AWS Architecture Icons
             - [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/)
+        - id: "0.4"
+          name: "Unmatching (yet interesting) links"
+          content: |
+            ### DynamoDB
+            - [Change data capture for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html)
     - id: "1"
       name: "SDLC Automation (22%)"
       content: |
@@ -89,6 +94,7 @@ exam:
               content: |
                 ### Code commit
                 - [Setting up in User Guide](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up.html)
+                - [Customer managed policy examples](https://docs.aws.amazon.com/codecommit/latest/userguide/customer-managed-policies.html)
                 - HTTPS
                   - [Setup for HTTPS users using Git credentials](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html)
                 - SSH
@@ -112,8 +118,11 @@ exam:
             - name: "Setting up build processes (e.g AWS CodeBuild)"
               content: |
                 ### CodeBuild
+                - [Plan a build in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/planning.html)
                 - [Workshop:CI/CD Pipeline/AWS CodeBuild](https://catalog.us-east-1.prod.workshops.aws/workshops/fff8e490-f397-43d2-ae26-737a6dc4ac68/en-US/50-build-ci-cd-pipeline/52-set-up-codebuild)
                 - [CodeBuild CheatSheet](https://tutorialsdojo.com/aws-codebuild/)
+                ### Jenkins
+                - [Setting up a CI/CD pipeline by integrating Jenkins with AWS CodeBuild and AWS CodeDeploy](https://aws.amazon.com/blogs/devops/setting-up-a-ci-cd-pipeline-by-integrating-jenkins-with-aws-codebuild-and-aws-codedeploy/)
             - name: "Managing build and deployment secrets (e.g, AWS Secrets Manager, AWS Systems Manager, Parameter Store)"
               content: |
                 ### Building well-architected serverless applications
@@ -307,12 +316,20 @@ exam:
               content: |
                 ### Deployment patterns
                 - [Blog: Mutable vs. Immutable Infrastructure](https://blog.isweluiz.com.br/2022/10/mutable-vs-immutable-infrastructure.html)
+                ### Elastic Beanstalk
                 - [EB UserGuide: Immutable environment updates](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environmentmgmt-updates-immutable.html)
+                - [Deployment policies and settings](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html)
             - name: Tools and services available for distributing code (e.g, CodeDeploy, EC2 Image Builder)
               content: |
                 ### AWS Developer tools
                 - [AWS Cheat Sheets:AWS Developer Tools Overview](https://digitalcloud.training/aws-developer-tools/)
                 - [EC2 Image Builder FAQs](https://aws.amazon.com/image-builder/faqs/?nc1=h_ls)
+                ### CodeDeploy
+                - [Working with instances for CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances.html)
+                - [CodeDeploy AppSpec file reference](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html)
+                  - [AppSpec 'hooks' section for an EC2/On-Premises deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-server)
+                  - [AppSpec 'hooks' section for an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs)
+                  - [AppSpec 'hooks' section for an AWS Lambda deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-lambda)
           skillsIn:
             - name: Configuring security permissions to allow access to artifact repositories (e.g. IAM, CodeArtifact)
               content: |
@@ -335,6 +352,10 @@ exam:
                 - [Article:Deployment Strategies for Lambda in SAM](https://osamaoracle.com/2021/11/13/deployment-strategies/)
                 - [Medium:AWS Deployment Strategies](https://jafreitas90.medium.com/aws-deployment-strategies-ebc910420bf2)
                 - [AWS WhitePaper:Overview of Deployment Options on AWS](https://d1.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf)
+                ### WhitePaper
+                - [Blue/Green Deployments on AWS](https://d0.awsstatic.com/whitepapers/AWS_Blue_Green_Deployments.pdf)
+                ### Elastic Beanstalk
+                - [Deploying applications to Elastic Beanstalk environments](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deploy-existing-version.html)
     - id: "2"
       name: "Configuration Management and IaC (17%)"
       taskStatements:
@@ -364,6 +385,14 @@ exam:
                 - [[UserGuide] AWS SAM template anatomy](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-template-anatomy.html)
                 ### AWS CloudFormation
                 - [[UserGuide] Working with AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html)
+                - [AWS CloudFormation best practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html)
+                - [Updating stacks using change sets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html)
+                - [aws . cloudformation . create-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-change-set.html)
+                - [Creating wait conditions in a template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-waitcondition.html)
+                - [Working with nested stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
+                - [DeletionPolicy attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html)
+                - [Conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
+                  - The optional Conditions section contains statements that define the circumstances under which entities are created or configured
                 ### AWS Cloud Development Kit [AWS CDK]
                 - [[Developer Guide] Core Concepts](https://docs.aws.amazon.com/cdk/v2/guide/core_concepts.html)
             - name: Applying AWS CloudFormation StackSets across multiple accounts and AWS Regions
@@ -420,6 +449,7 @@ exam:
               content: |
                 ### AWS Organizations
                 - [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
+                - [Viewing last accessed information for Organizations](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html)
                 ### AWS Control Tower
                 - [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
                 - [WorkShop](https://controltower.aws-management.tools/core/overview/)
@@ -430,6 +460,8 @@ exam:
                 ### WhitePaper
                 - [Identity Management & Access Control capability](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/identity-management-access-control-capability.html)
                 - [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+                ### IAM
+                - [[Access Advisor tab] Example scenarios for using last accessed information](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-example-scenarios.html)
                 ### AWS Organizations
                 - [Accessing member accounts in your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html)
                 - [Granting a user permissions to switch roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html)
@@ -487,6 +519,13 @@ exam:
               content: |
                 ### AWS OpsWorks 
                 - [AWS OpsWorks Stacks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome_classic.html) EOL May 26 2024
+                - [Using Auto Healing to Replace Failed Instances](https://docs.aws.amazon.com/opsworks/latest/userguide/workinginstances-autohealing.html)
+                  - if no communication between OpsWorks & instance during 5 minutes > new instance is launched
+                - [Installing Custom Cookbooks](https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-installingcustom-enable.html)
+                - [Automatically Running Recipes](https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-assigningcustom.html)
+                  - layer's lifecycle event -> recipe
+                - [Running Docker on AWS OpsWorks](https://aws.amazon.com/blogs/devops/running-docker-on-aws-opsworks/)
+                ### AWS Systems Manager State Manager
                 - [AWS Systems Manager State Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html)
             - name: "Maintaining software compliance (e.g, Systems Manager)"
               content: |
@@ -511,7 +550,8 @@ exam:
                 - [ASG:Amazon EC2 Auto Scaling benefits](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html)
                 #### RDS
                 - [RDS:Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
-                - [https://aws.amazon.com/rds/features/multi-az/](https://aws.amazon.com/rds/features/multi-az/)
+                - [Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
+                - [Amazon RDS Read Replicas](https://aws.amazon.com/rds/features/read-replicas/)
                 #### Route53
                 - [Route53:Adding another Region to your latency-based routing in Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialAddingLBRRegion.html)
                 ### Blog: Building highly resilient applications using Amazon Route 53 Application Recovery Controller
@@ -615,7 +655,12 @@ exam:
                 - [What is Amazon Elastic Container Service?](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
                 - [What is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
                 - [What is AWS Elastic Beanstalk?](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
-
+                ### AWS Copilot
+                - [AWS Copilot CLI](https://aws.github.io/copilot-cli/)
+                ### Elastic Beanstalk
+                - [Deploying Elastic Beanstalk applications from Docker containers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html)
+                - [Customizing software on Linux servers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html)
+                - [Design considerations](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.html)
           skillsIn:
             - name: "Identifying and remediating scaling issues"
               content: |
@@ -627,6 +672,11 @@ exam:
                 - [ASG_UserGuide: Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
                 - [ASG_UserGuide: Temporarily remove instances from your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-standby.html)
                 - [ASG_UserGuide: Suspend and resume a process for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-suspend-resume-processes.html)
+                ### LifeCycle Hooks
+                - [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html)
+                  - E.g.
+                    - When a scale-out event occurs, your newly launched instance completes its startup sequence and transitions to a wait state. While the instance is in a wait state, it runs a script to download and install the needed software packages for your application, making sure that your instance is fully ready before it starts receiving traffic. When the script is finished installing software, it sends the complete-lifecycle-action command to continue. (state=Pending:Wait)
+                    - When a scale-in event occurs, a lifecycle hook pauses the instance before it is terminated and sends you a notification using Amazon EventBridge. While the instance is in the wait state, you can invoke an AWS Lambda function or connect to the instance to download logs or other data before the instance is fully terminated. (state=Terminating:Wait)
             - name: "Identifying and implementing appropriate auto scaling, load balancing, and caching solutions"
               content: |
                 ### Auto Scaling
@@ -766,6 +816,8 @@ exam:
           skillsIn:
             - name: "Securely storing and managing logs"
               content: |
+                ### S3
+                - [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
                 ### Solutions for Cloud Foundation
                 - [Guidance for Log Storage on AWS](https://aws.amazon.com/solutions/guidance/log-storage-on-aws/)
                   - Log storage must be tamper-resistant and encrypted, and accessed only by controlled and monitored mechanisms, based on least privilege access by role.
@@ -809,6 +861,7 @@ exam:
                 - [Publish custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html)
                 - [Collect metrics, logs, and traces from Amazon EC2 instances and on-premises servers with the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html)
                 - [Metrics collected by the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html)
+                - [Start the CloudWatch Logs agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/StartTheCWLAgent.html)
             - name: "Managing log storage lifecycles (e.g, S3 lifecycles, CloudWatch log group retention)"
               content: |
                 ### S3
@@ -1162,6 +1215,8 @@ exam:
                 - [About web identity federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html)
                 - [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)
                 - [aws:FederatedProvider](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-federatedprovider)
+                ### SDK JavaScript
+                - [Using Web Federated Identity to Authenticate Users](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-browser-credentials-federated-id.html)
             - name: "Permission management delegation by using IAM permissions boundaries"
               content: |
                 ### AWS Security Blog
@@ -1295,10 +1350,13 @@ exam:
                 - [AWS cryptographic services and tools](https://docs.aws.amazon.com/crypto/latest/userguide/awscryp-overview.html)
                 ### AWS WhitePaper
                 - [Encrypting Data-at-Rest and Data-in-Transit](https://docs.aws.amazon.com/whitepapers/latest/logical-separation/encrypting-data-at-rest-and--in-transit.html)
+                - [Protecting data at rest](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/protecting-data-at-rest.html)
                 - [When to use AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/crypto/latest/userguide/awscryp-choose-kms.html)
                 ### AWS CloudHSM
                 - [What is AWS CloudHSM?](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)
                 - [When to use AWS CloudHSM](https://docs.aws.amazon.com/crypto/latest/userguide/awscryp-choose-hsm.html)
+                ### Classic Elastic Load Balancer
+                - [HTTPS listeners for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-https-load-balancers.html)
         - id: "6.3"
           name: "Implement security monitoring and auditing solutions."
           knowledgeOf:
