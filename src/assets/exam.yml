@@ -452,6 +452,8 @@ exam:
                 - [Establishing Your Cloud Foundation on AWS](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/welcome.html)
                 ### AWS Organizations
                 - [Best practices for multi-account management](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices.html)
+                ### AWS Prescriptive Guidance
+                - [Apply security services across your AWS organization](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/security-services.html)
           skillsIn:
             - name: Standardizing and automating account provisioning and configuration
               content: |
