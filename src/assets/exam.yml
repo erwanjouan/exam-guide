@@ -374,6 +374,7 @@ exam:
                 - [[CDK User Guide] What is the AWS CDK?](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
                 ### SAM
                 - [[SAM Dev Guide] What is the AWS Serverless Application Model (AWS SAM)?](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
+                - [Using container image support for AWS Lambda with AWS SAM](https://aws.amazon.com/blogs/compute/using-container-image-support-for-aws-lambda-with-aws-sam/)
                 ### AppRunner
                 - [App Runner architecture and concepts](https://docs.aws.amazon.com/apprunner/latest/dg/architecture.html)
                 - [How App Runner works with IAM](https://docs.aws.amazon.com/apprunner/latest/dg/security_iam_service-with-iam.html)
