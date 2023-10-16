@@ -331,9 +331,15 @@ exam:
                 ### CodeDeploy
                 - [Working with instances for CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances.html)
                 - [CodeDeploy AppSpec file reference](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html)
-                  - [AppSpec 'hooks' section for an EC2/On-Premises deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-server)
-                  - [AppSpec 'hooks' section for an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs)
-                  - [AppSpec 'hooks' section for an AWS Lambda deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-lambda)
+                #### AppSpec File example for an EC2/On-Premises deployment
+                - [AppSpec File example for an EC2/On-Premises deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-server)
+                - [AppSpec 'hooks' section for an EC2/On-Premises deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-server)
+                #### AppSpec ECS
+                - [AppSpec File example for an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-ecs)
+                - [AppSpec 'hooks' section for an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs)
+                #### AppSpec Lambda
+                - [AppSpec File example for an AWS Lambda deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-lambda)
+                - [AppSpec 'hooks' section for an AWS Lambda deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-lambda)
           skillsIn:
             - name: Configuring security permissions to allow access to artifact repositories (e.g. IAM, CodeArtifact)
               content: |
@@ -402,6 +408,7 @@ exam:
                 - [DeletionPolicy attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html)
                 - [Conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
                   - The optional Conditions section contains statements that define the circumstances under which entities are created or configured
+                - [Acknowledging IAM resources in AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities)
                 ### AWS Cloud Development Kit [AWS CDK]
                 - [[Developer Guide] Core Concepts](https://docs.aws.amazon.com/cdk/v2/guide/core_concepts.html)
                 ### SAM
@@ -433,6 +440,8 @@ exam:
                 - [Identity, Security, and Compliance AWS services to help govern your AWS environment](https://docs.aws.amazon.com/whitepapers/latest/establishing-your-cloud-foundation-on-aws/security-assurance-aws.html#identity-security-compliance-services)
                 ### Service Catalog
                 - [What Is Service Catalog?](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html)
+                - [AWS Service Catalog FAQs](https://aws.amazon.com/servicecatalog/faqs/)
+                - [AWS CloudFormation support for AWS Service Catalog products](https://aws.amazon.com/blogs/mt/how-to-launch-secure-and-governed-aws-resources-with-aws-cloudformation-and-aws-service-catalog/)
                 ### AWS CloudFormation
                 - [[Blog] Introducing AWS CloudFormation modules](https://aws.amazon.com/fr/blogs/mt/introducing-aws-cloudformation-modules/)
                 - [Developing hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/hooks.html#hooks-characteristics)
@@ -705,6 +714,7 @@ exam:
                 - [Blog: How do I troubleshoot scaling issues with my Amazon EC2 Auto Scaling group?](https://repost.aws/knowledge-center/auto-scaling-troubleshooting)
                 ### Auto Scaling actions
                 - [ASG_UserGuide: Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
+                - [ASG_UserGuide: Enter and exit standby](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-lifecycle.html#as-lifecycle-standby)
                 - [ASG_UserGuide: Temporarily remove instances from your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-standby.html)
                 - [ASG_UserGuide: Suspend and resume a process for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-suspend-resume-processes.html)
                 ### LifeCycle Hooks
@@ -717,6 +727,10 @@ exam:
                 ### Auto Scaling
                 - [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html)
                 - [Worshop: Ec2 Spot Instances](https://ec2spotworkshops.com/)
+                #### Target tracking
+                - [Target tracking scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
+                #### Schedules Scaling
+                - [Scheduled scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html)
             - name: "Deploying container-based applications (e.g, Amazon ECS, Amazon EKS)"
               content: |
                 ### Workshop
@@ -1047,6 +1061,7 @@ exam:
                 ### Load balancer
                 - [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
                 - [Target group health](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health.html)
+                - [Add Elastic Load Balancing health checks to an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-add-elb-healthcheck.html)
                 ### Route 53
                 - [Creating Amazon Route 53 health checks and configuring DNS failover](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html)
                   - Health checks that monitor an endpoint
@@ -1217,8 +1232,11 @@ exam:
                 - [Troubleshooting AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/troubleshooting.html)
                 ### AWS CodeDeploy
                 - [Troubleshooting CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting.html)
+                - [Monitoring deployments with CloudWatch alarms in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-create-alarms.html)
+                - [Working with deployment configurations in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html)
                 ### AWS CloudFormation
                 - [Troubleshooting CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html)
+                - [Handling circular dependency errors in AWS CloudFormation](https://aws.amazon.com/blogs/infrastructure-and-automation/handling-circular-dependency-errors-in-aws-cloudformation/)
                 ### CloudWatch synthetic monitoring
                 - [Using synthetic monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html)
             - name: "Analyzing incidents regarding failed processes (e.g, auto scaling, Amazon ECS, Amazon EKS)"
