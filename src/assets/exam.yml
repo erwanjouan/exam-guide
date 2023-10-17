@@ -91,12 +91,16 @@ exam:
                 ### Multiple accounts
                 - Use AWS CodeCommit and AWS CodePipeline to deploy a CI/CD pipeline in multiple AWS accounts [workshop](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/use-aws-codecommit-and-aws-codepipeline-to-deploy-a-ci-cd-pipeline-in-multiple-aws-accounts.html)
                 - Building a Cross-account CI/CD Pipeline [workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/00bc829e-fd7c-4204-9da1-faea3cf8bd88/en-US)
+                ### CodeDeploy
+                - [Deploy an application in a different AWS account](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-cross-account.html)
+                  - Use case: You work primarily in the development account, but you want to be able kick off deployments in your production account without a full set of credentials there or without having to sign out of the development account and in to the production account.
           skillsIn:
             - name: "Configuring code, image, and artifact repositories"
               content: |
                 ### Code commit
                 - [Setting up in User Guide](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up.html)
                 - [Customer managed policy examples](https://docs.aws.amazon.com/codecommit/latest/userguide/customer-managed-policies.html)
+                - [Limit pushes and merges to branches in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-conditional-branch.html)
                 - HTTPS
                   - [Setup for HTTPS users using Git credentials](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html)
                 - SSH
@@ -218,6 +222,8 @@ exam:
                 - [Deploy Java Lambda functions with .zip or JAR file archives](https://docs.aws.amazon.com/lambda/latest/dg/java-package.html)
                 - [Deploy Java Lambda functions with container images](https://docs.aws.amazon.com/lambda/latest/dg/java-image.html)
                 - [Working with .zip file archives for Python Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)
+                - [AWS::Lambda::Function Code](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html)
+                  - Changes to a deployment package in Amazon S3 or a container image in ECR are not detected automatically during stack updates. To update the function code, change the object key or version in the template.
             - name: "Automating Amazon EC2 instance and container image build processes (e.g, EC2 Image Builder)"
               content: |
                 ### EC2 Image Builder
@@ -322,7 +328,6 @@ exam:
                 - [Blog: Mutable vs. Immutable Infrastructure](https://blog.isweluiz.com.br/2022/10/mutable-vs-immutable-infrastructure.html)
                 ### Elastic Beanstalk
                 - [EB UserGuide: Immutable environment updates](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environmentmgmt-updates-immutable.html)
-                - [Deployment policies and settings](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html)
             - name: Tools and services available for distributing code (e.g, CodeDeploy, EC2 Image Builder)
               content: |
                 ### AWS Developer tools
@@ -331,15 +336,16 @@ exam:
                 ### CodeDeploy
                 - [Working with instances for CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances.html)
                 - [CodeDeploy AppSpec file reference](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html)
-                #### AppSpec File example for an EC2/On-Premises deployment
-                - [AppSpec File example for an EC2/On-Premises deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-server)
-                - [AppSpec 'hooks' section for an EC2/On-Premises deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-server)
-                #### AppSpec ECS
-                - [AppSpec File example for an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-ecs)
-                - [AppSpec 'hooks' section for an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs)
-                #### AppSpec Lambda
-                - [AppSpec File example for an AWS Lambda deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-lambda)
-                - [AppSpec 'hooks' section for an AWS Lambda deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-lambda)
+                - AppSpec for an EC2/On-Premises deployment
+                  - [AppSpec File example for an EC2/On-Premises deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-server)
+                  - [AppSpec 'hooks' section for an EC2/On-Premises deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-server)
+                - AppSpec ECS
+                  - [AppSpec File example for an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-ecs)
+                  - [AppSpec 'hooks' section for an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-ecs)
+                - AppSpec Lambda
+                  - [AppSpec File example for an AWS Lambda deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html#appspec-file-example-lambda)
+                  - [AppSpec 'hooks' section for an AWS Lambda deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-lambda)
+                - [Configure advanced options for a deployment group](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-configure-advanced-options.html)
           skillsIn:
             - name: Configuring security permissions to allow access to artifact repositories (e.g. IAM, CodeArtifact)
               content: |
@@ -366,6 +372,7 @@ exam:
                 - [Blue/Green Deployments on AWS](https://d0.awsstatic.com/whitepapers/AWS_Blue_Green_Deployments.pdf)
                 ### Elastic Beanstalk
                 - [Deploying applications to Elastic Beanstalk environments](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deploy-existing-version.html)
+                - [Deployment policies and settings](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html)
     - id: "2"
       name: "Configuration Management and IaC (17%)"
       taskStatements:
@@ -409,6 +416,8 @@ exam:
                 - [Conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
                   - The optional Conditions section contains statements that define the circumstances under which entities are created or configured
                 - [Acknowledging IAM resources in AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html#using-iam-capabilities)
+                - [Custom resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html)
+                - [Use cross-stack references to export shared resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html#cross-stack)
                 ### AWS Cloud Development Kit [AWS CDK]
                 - [[Developer Guide] Core Concepts](https://docs.aws.amazon.com/cdk/v2/guide/core_concepts.html)
                 ### SAM
@@ -426,6 +435,12 @@ exam:
                 ### OpsWorks Stacks
                 - [[Blog] Migrate your AWS OpsWorks Stacks to AWS Systems Manager](https://aws.amazon.com/fr/blogs/mt/migrate-your-aws-opsworks-stacks-to-aws-systems-manager/)
                 - [Migrating your AWS OpsWorks Stacks applications to AWS Systems Manager Application Manager](https://docs.aws.amazon.com/opsworks/latest/userguide/migrating-to-systems-manager.html)
+                - [AWS OpsWorks Stacks Lifecycle Events](https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-events.html)
+                  - Setup, Deploy, Undeploy, Shutdown,
+                  - Configure : This event occurs on all of the stack's instances when one of the following occurs:
+                    - An instance enters or leaves the online state.
+                    - You associate an Elastic IP address with an instance or disassociate one from an instance.
+                    - You attach an Elastic Load Balancing load balancer to a layer, or detach one from a layer.
                 ### AWS Systems Manager Explorer
                 - [AWS Systems Manager Explorer](https://docs.aws.amazon.com/systems-manager/latest/userguide/Explorer.html)
                 ### AWS AppConfig
@@ -578,6 +593,10 @@ exam:
                 - [RDS:Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
                 - [Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
                 - [Amazon RDS Read Replicas](https://aws.amazon.com/rds/features/read-replicas/)
+                - Upgrading RDS with Read Replica
+                  - [[Create read replica] AWS::RDS::DBInstance.SourceDBInstanceIdentifier](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbinstance.html#cfn-rds-dbinstance-sourcedbinstanceidentifier)
+                  - [AWS::RDS::DBInstance.EngineVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbinstance.html#cfn-rds-dbinstance-engineversion)
+                  - [Best Practices for Upgrading Amazon RDS for MySQL and Amazon RDS for MariaDB](https://aws.amazon.com/blogs/database/best-practices-for-upgrading-amazon-rds-for-mysql-and-amazon-rds-for-mariadb/)
                 #### Route53
                 - [Route53:Adding another Region to your latency-based routing in Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialAddingLBRRegion.html)
                 ### Blog: Building highly resilient applications using Amazon Route 53 Application Recovery Controller
@@ -633,7 +652,14 @@ exam:
                 ### Amazon RDS
                 - [Cross-Region read replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionReadReplicas.html)
                 - [Cross-Region automated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionAutomatedBackups.html)
+                ### Amazon Aurora
                 - [Using Amazon Aurora global databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)
+                  - Amazon Aurora global databases span multiple AWS Regions, enabling low latency global reads and providing fast recovery from the rare outage that might affect an entire AWS Region. An Aurora global database has a primary DB cluster in one Region, and up to five secondary DB clusters in different Regions.
+                  - Compatibilty:
+                    - Aurora MySQL with MySQL 8.0 compatibility, version 3.01.0 and higher
+                    - Aurora MySQL with MySQL 5.7 compatibility, version 2.09.1 and higher
+                    - Aurora PostgreSQL versions 13.3 and higher, 12.4 and higher, and 11.9 and higher
+                - [Disaster Recovery Workshop](https://disaster-recovery.workshop.aws/en/services/databases/aurora.html)
                 ### Amazon Route 53
                 - [Blog: Using Route 53 Private Hosted Zones for Cross-account Multi-region Architectures](https://aws.amazon.com/fr/blogs/architecture/using-route-53-private-hosted-zones-for-cross-account-multi-region-architectures/)
                 - [Workshop: Module 5: Multi-Region Resiliency with Route 53 ARC](https://www.wellarchitectedlabs.com/reliability/disaster-recovery/workshop_5/)
@@ -705,6 +731,9 @@ exam:
                 - [Customizing software on Linux servers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html)
                 - [Design considerations](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.concepts.design.html)
                 - [Precedence](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html#configuration-options-precedence)
+                - [Customizing software on Linux servers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html)
+                  - command on a single machine (in cluster) : container_commands: leader_only:true
+                  - [What is the difference between commands and container_commands configuration keys in Beanstalk?](https://stackoverflow.com/questions/35788499/what-is-the-difference-between-commands-and-container-commands-configuration-key/40096352#40096352)
           skillsIn:
             - name: "Identifying and remediating scaling issues"
               content: |
@@ -928,6 +957,8 @@ exam:
               content: |
                 ### Cloudwatch logs
                 - [Real-time processing of log data with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html)
+                - [Cross-account log data sharing with subscriptions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CrossAccountSubscriptions.html)
+                  - Kinesis streams are currently the only resource supported as a destination for cross-account subscriptions.
             - name: "Searching log data by using filter and pattern syntax or CloudWatch Logs Insights"
               content: |
                 ### Amazon CloudWatch Logs
@@ -964,8 +995,17 @@ exam:
               content: |
                 ### AWS Config
                 - [Evaluating Resources with AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html)
-                #### Aggregator
+                - Rules:
+                  - [cloudtrail-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-enabled.html)
+                  - [cloudtrail-security-trail-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-security-trail-enabled.html)
                 - [Multi-Account Multi-Region Data Aggregation](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html)
+                #### AWS DevOps Blog
+                - [AWS Config: Checking for Compliance with New Managed Rule Options](https://aws.amazon.com/blogs/devops/aws-config-checking-for-compliance-with-new-managed-rule-options/)
+                  - strong_password_policy – Checks that we have a Strong Password policy for AWS IAM Users
+                  - only_encrypted_volumes – Checks that all attached EBS volumes are encrypted
+                  - approved_ami_by_id – Checks that approved AMI IDs have been used
+                  - approved_ami_by_tag – Check that AMIs tagged as sec_approved have been used
+                  - ec2_required_tags – Check that all required tags have been applied to EC2 instances
             - name: "AWS CloudTrail log events"
               content: |
                 ### CloudTrail
@@ -1024,6 +1064,7 @@ exam:
                 ### S3
                 - [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html)
                 ### Event Bridge
+                - [EventBridge is the evolution of Amazon CloudWatch Events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cwe-now-eb.html)
                 - [What Is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
                   - [Amazon EventBridge Event Bus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bus.html)
                   - [Amazon EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html)
@@ -1058,6 +1099,8 @@ exam:
                 - [Recover your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html)
             - name: "Health check capabilities in AWS services (e.g, Application Load Balancer target groups, Route 53)"
               content: |
+                ### Buider's library
+                - [Implementing health checks](https://d1.awsstatic.com/builderslibrary/pdfs/implementing-health-checks.pdf)
                 ### Load balancer
                 - [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
                 - [Target group health](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health.html)
@@ -1228,12 +1271,15 @@ exam:
               content: |
                 ### AWS CodePipeline
                 - [Troubleshooting CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/troubleshooting.html)
+                - [Monitoring CodePipeline events](https://docs.aws.amazon.com/codepipeline/latest/userguide/detect-state-changes-cloudwatch-events.html)
                 ### AWS CodeBuild
                 - [Troubleshooting AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/troubleshooting.html)
                 ### AWS CodeDeploy
                 - [Troubleshooting CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting.html)
                 - [Monitoring deployments with CloudWatch alarms in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-create-alarms.html)
                 - [Working with deployment configurations in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html)
+                - [Scale-out events during a deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-aws-auto-scaling.html#integrations-aws-auto-scaling-behaviors-mixed-environment)
+                - [elb-v2/common_functions.sh](https://github.com/aws-samples/aws-codedeploy-samples/blob/master/load-balancing/elb-v2/common_functions.sh)
                 ### AWS CloudFormation
                 - [Troubleshooting CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html)
                 - [Handling circular dependency errors in AWS CloudFormation](https://aws.amazon.com/blogs/infrastructure-and-automation/handling-circular-dependency-errors-in-aws-cloudformation/)
