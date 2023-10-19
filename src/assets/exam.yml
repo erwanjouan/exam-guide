@@ -103,6 +103,11 @@ exam:
                 - [Limit pushes and merges to branches in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-conditional-branch.html)
                 - HTTPS
                   - [Setup for HTTPS users using Git credentials](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html)
+                  |Step|Action|
+                  |---|---|
+                  |1.|IAM > Users > (Select User) > (Select Security Credendials Tab)|
+                  |2.|(HTTPS Git Credentials for AWS CodeCommit)> (Generate)|
+                  |3.|(Copy credentials)|
                 - SSH
                   - [Setup for SSH users not using the AWS CLI](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-without-cli.html)
                 - IAM
@@ -224,6 +229,7 @@ exam:
                 - [Working with .zip file archives for Python Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)
                 - [AWS::Lambda::Function Code](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html)
                   - Changes to a deployment package in Amazon S3 or a container image in ECR are not detected automatically during stack updates. To update the function code, change the object key or version in the template.
+                - [Invoke an AWS Lambda function in a pipeline in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-invoke-lambda-function.html)
             - name: "Automating Amazon EC2 instance and container image build processes (e.g, EC2 Image Builder)"
               content: |
                 ### EC2 Image Builder
