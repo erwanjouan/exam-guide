@@ -2,6 +2,7 @@
   "exam": {
     "domains": [
       {
+        "content": "\u003cpre class=\"mermaid\"\u003e\n  graph TD;\n    A--\u003eB;\n    A--\u003eC;\n    B--\u003eD;\n    C--\u003eD;\n\u003c/pre\u003e\n",
         "id": "0",
         "name": "Useful Resources",
         "taskStatements": [

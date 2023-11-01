@@ -3,6 +3,14 @@ exam:
   domains:
     - id: "0"
       name: "Useful Resources"
+      content: |
+        <pre class="mermaid">
+          graph TD;
+            A-->B;
+            A-->C;
+            B-->D;
+            C-->D;
+        </pre>
       taskStatements:
         - id: "0.1"
           name: "Reference"
