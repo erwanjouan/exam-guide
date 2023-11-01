@@ -1,6 +1,6 @@
-import { AfterContentChecked, AfterViewChecked, AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Displayable } from '../model/exam';
-import { ActivatedRoute, NavigationEnd, ParamMap, Router,Event as NavigationEvent  } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router  } from '@angular/router';
 import { ExamGuideService } from '../service/exam-guide.service';
 import mermaid from 'mermaid';
 import {delay} from 'utils-decorators';
