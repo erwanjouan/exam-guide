@@ -1224,6 +1224,50 @@ exam:
                   - [Amazon EventBridge Event Bus](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bus.html)
                   - [Amazon EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html)
                   - [Receiving events from a SaaS partner with Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas.html)
+                - Amazon EventBridge provides a powerful yet simple implementation of an application event bus.
+                - It is a fully managed, serverless event bus service that facilitates the connection of a applications through a common touchpoint.
+                - Provides a schema registry that can store schemas in a shared centralized location with a standard naming convention.
+                  - allows to have different formats for different endpoints
+                - EventBridge simplifies the creation of event-Driven applications by handling these tasks:
+                  - Event ingestion
+                  - Event delivery
+                  - Message security
+                  - User authorization and authentication (via IAM)
+                  - Error handling
+                - Routing rules can be intituively set up to filter out which services receive which message.
+                  - EventBridge is a rule-driven event router, it enables the definition of event patterns.
+                  - These patterns can be routed based on the content of the event to determine which subscribers or targets receive the generated event.
+                - List of [AWS EventBridge targets](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html)
+                  - API destination
+                  - API Gateway
+                  - Batch job queue
+                  - CloudWatch log group
+                  - CodeBuild project
+                  - CodePipeline
+                  - Amazon EBS CreateSnapshot API call
+                  - EC2 Image Builder
+                  - EC2 RebootInstances API call
+                  - EC2 StopInstances API call
+                  - EC2 TerminateInstances API call
+                  - ECS task
+                  - Event bus in a different account or Region
+                  - Event bus in the same account and Region
+                  - Firehose delivery stream
+                  - Glue workflow
+                  - Incident Manager response plan
+                  - Inspector assessment template
+                  - Kinesis stream
+                  - Lambda function (ASYNC)
+                  - Amazon Redshift cluster data API queries
+                  - Amazon Redshift Serverless workgroup data API queries
+                  - SageMaker Pipeline
+                  - Amazon SNS topic
+                  - EventBridge does not support Amazon SNS FIFO (first in, first out) topics.
+                  - Amazon SQS queue
+                  - Step Functions state machine (ASYNC)
+                  - Systems Manager Automation
+                  - Systems Manager OpsItem
+                  - Systems Manager Run Command
                 ### Workshop
                 - [Building event-driven architectures on AWS](https://catalog.us-east-1.prod.workshops.aws/workshops/63320e83-6abc-493d-83d8-f822584fb3cb/en-US)
             - name: "Capabilities of auto scaling a variety of AWS services (e.g, EC2 Auto Scaling groups, RDS storage auto scaling, DynamoDB, ECS capacity provider, EKS autoscalers)"
@@ -1340,6 +1384,36 @@ exam:
                 - [What Is EDA (Event-Driven Architecture)?](https://aws.amazon.com/what-is/eda/)
                 - [Best practices for implementing event-driven architectures in your organization](https://aws.amazon.com/blogs/architecture/best-practices-for-implementing-event-driven-architectures-in-your-organization/)
                 - [Differences between a message queue and an event stream](https://www.linkedin.com/pulse/differences-between-message-queue-event-stream-frank-lieu/)
+                - (Classical) layered architecture (UI/API/Service/Dao/DB) is a synchronous request/response model where user interface has a prominent role.
+                - With EDA, creating, messaging, processing and storing event are critical in asynchronous way.
+                - EDA is a programming philosophy, not a technology or language, it facilitates code decoupling, making application more robust and flexible.
+                - EDA has a notion of events at its core
+                - Due to the asynchronous nature of EDA, it is highly scalable and efficient
+                ### Events
+                - An event is a change in state in a system
+                  - A runtime error in an application
+                  - A request submitted by a user
+                  - A sensor in an IOT system
+                  - ...
+                - A change becomes an event when we decide to make it an event
+                ### Producer & consumers
+                - Producer
+                  - An event producer first detects a change of state and if it's an important change, generates an event and publishes it to a queue.
+                  - Producer forgets about event once delivered to the queue
+                - Consumer
+                  - Fetches message from a queue asynchronously
+                  - May perform an action based on that message
+                    - Trigger an alarm
+                    - Perform a calculation
+                    - Updating a database record
+                - EDA is a loosely coupled architecture
+                  - Producers of events are not aware of who is going to consume their outputs.
+                  - Consumers of events are not aware of who generates the event.
+                ### Event-driven architecture models
+                - One of the main design decisions that needs to be made is wether events need to be processed 
+                  - by only one copnsumer => competing consumers pattern
+                  - by multiple consumers => pub/sub pattern
+                #### Event Streaming (message queuing model)
           skillsIn:
             - name: "Integrating AWS event sources (e.g, AWS Health, EventBridge, CloudTrail, CloudWatch Events)"
               content: |
