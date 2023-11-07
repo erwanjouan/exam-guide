@@ -64,6 +64,69 @@ exam:
             - [Change data capture for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html)
             ### AWS Well-Architected Labs
             - [AWS Well-Architected Labs](https://wellarchitectedlabs.com/)
+        - id: "0.5"
+          name: "Pillars of Well Architected Framework"
+          content: |
+            ### [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
+            
+            - [Operational excellence](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html)
+              - The ability to support development and run workloads effectively, gain insight into their operations, and to continuously improve supporting processes and procedures to deliver business value.
+              - Agility / Reliability / Performance
+              - Principles
+                - Provision infrastructure with code (Cloudformation)
+                - Align operations and applications with business requirements
+                - Change systems by making incremental and regular changes
+                - Record lessons from operational events and failure
+                - Write down and keep the standard operations procedures manual up to date
+
+            - [Security](https://docs.aws.amazon.com/wellarchitected/latest/framework/security.html)
+              - The security pillar describes how to take advantage of cloud technologies to protect data, systems, and assets in a way that can improve your security posture
+              - Principles
+                - Always enable traceability
+                - Apply security at all levels
+                - Implement the principle of least priviledge
+                - Secure the system at alls levels: application, data, operating system & hardware
+                - Automate Security best practices
+
+            - [Reliability](https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html)
+              - The reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it’s expected to. This includes the ability to operate and test the workload through its total lifecycle. This paper provides in-depth, best practice guidance for implementing reliable workloads on AWS.
+              - Principles
+                - Identify single points of failure
+                - Implement self-healing systems that can recover from single component failure
+                - Continously test backup and recovery procedure
+                - Scale horizontally when possible
+                - Automate provisioning and shutting down of resources
+                - Manage change with automation
+
+            - [Performance efficiency](https://docs.aws.amazon.com/wellarchitected/latest/framework/performance-efficiency.html)
+              - The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve.
+              - Principles
+                - Resources should be efficiently utilized (avoid launching idle resources)
+                - Democratize advances technologies
+                - Deploy globally with minimal cost and low latency
+                - Serverless
+                - Multiple configurations
+            
+
+            - [Cost optimization](https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-optimization.html)
+              - The ability to run systems to deliver business value at the lowest price point.
+              - Principles
+                - Adjust to traffic changes, detect over-provisioning
+                - Automate auto-shutdown in dev and test environments
+                - Use a consumption model
+                - Leverage economies of scale whenever possible
+                - Constantly analyze infrastructure expenses
+
+            - [Sustainability](https://docs.aws.amazon.com/wellarchitected/latest/framework/sustainability.html)
+              - The ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.
+              - Principles
+                - Understand your impact (evaluate productivity, decommissioning and retirement)
+                - Establish sustainability goals (reducing the compute and storage resources required per transaction)
+                - Maximize utilization (Right-size workloads and implement efficient design)
+                - Anticipate and adopt new, more efficient hardware and software offerings
+                - Use managed services
+                - Reduce the downstream impact of your cloud workloads
+
     - id: "1"
       name: "SDLC Automation (22%)"
       content: |
@@ -149,6 +212,13 @@ exam:
                 - [Implementing application workload security – part 2](https://aws.amazon.com/fr/blogs/compute/building-well-architected-serverless-applications-implementing-application-workload-security-part-2/)
                 ### Secrets Manager
                 - [UserGuide:Intro](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+                - AWS Secrets Manager is a security service that can be used to protect secrets (passwords...)
+                - Facilitates the rotation, management and retrieval of API keys, DB credentials, passwords and other secrets (rotation is done on targeted service and secrets manager in the same time). Integrates:
+                  - Amazon RDS
+                  - Amazon RedShift
+                  - Amazon DynamoDB
+                  - Amazon Neptune
+                  - Amazon DocumentDB              
                 ### Parameter Store
                 - [UserGuide](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
         - id: "1.2"
@@ -499,12 +569,36 @@ exam:
                 ### WhitePaper
                 - [Design principles for your multi-account strategy](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/design-principles-for-your-multi-account-strategy.html#organize-based-on-security-and-operational-needs)
                 ### AWS Control Tower
+                AWS Control Tower simplifies the administration, governance and security setup of multi-account environment. It allows to setup company wide policies.
                 - [AWS Control Tower Features](https://aws.amazon.com/fr/controltower/features/#:~:text=A%20landing%20zone%20is%20a,federated%20access%2C%20and%20account%20structure.)
             - name: Creating, consolidating, and centrally managing accounts (e.g, AWS Organizations, AWS Control Tower)
               content: |
                 ### AWS Organizations
                 - [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
                 - [Viewing last accessed information for Organizations](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data-orgs.html)
+                - Principles
+                  - Tree-like structure
+                    - Root level
+                    - Organizational Units
+                  - AWS Accounts
+                    - One root / management account in an organization (handes billing)
+                    - Several Members account (can be grouped in Organizational Units)
+                
+                ### AWS Organizations example
+                - Root_Of_The_Organization
+                  - Test account
+                    - [SCP] Service Control Policies attached to test account
+                  - **MGMT_Organizational_Unit**
+                    - Management / Root Account;
+                  - **FEATURE_TEAMS_Organizational_Unit**
+                    - [SCPs] Service Control Policies attached to FEATURE_TEAMS_Organizational_Unit
+                    - **FEATURE_TEAM_1_Organizational_Unit**
+                      - Dev_Account
+                      - Uat_Account
+                      - Prd_Account
+                    - **FEATURE_TEAM_2_Organizational_Unit**
+                      - ...
+                      
                 ### AWS Control Tower
                 - [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
                 - [WorkShop](https://controltower.aws-management.tools/core/overview/)
@@ -530,10 +624,36 @@ exam:
                 ### AWS Security Hub
                 - [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)
                 - [How to Enable Custom Actions in AWS Security Hub](https://aws.amazon.com/blogs/apn/how-to-enable-custom-actions-in-aws-security-hub/)
+                - AWS Security Hub provides a central location to see security alerts and security posture over multiple AWS accounts. It provides tools like:
+                  - Firewalls
+                  - Endpoint protection
+                  - Vulnerability and compliance scanner
+                - AWS Security Hub delivers a centralized service to view, organize, prioritize and manage these security alerts across multiple AWS services and accounts.
+                - Some of the services that can work with AWS Security Hub are the following:
+                <pre class="mermaid">
+                  graph LR;
+                    Amazon_Inspector-->AWS_Security_Hub;
+                    AWS_IAM_Access_Analyzer-->AWS_Security_Hub;
+                    Amazon_GuardDuty-->AWS_Security_Hub;
+                    Amazon_Macie-->AWS_Security_Hub;
+                    AWS_Firewall_Manager-->AWS_Security_Hub;
+                    Other_AWS_MarketPlace_Third_Party_Services-->AWS_Security_Hub;
+                </pre>
+                - AWS Security Hub also provides the ability to act on security findings and investigate using:
+                  - Amazon Detective
+                  - Amazon CloudWatch Events rules
+                - And integrate these alerts with ticketing systemps, chat apps and incident management services.
                 ### Amazon Detective
                 - [Amazon Detective](https://docs.aws.amazon.com/detective/latest/adminguide/what-is-detective.html)
                 ### Amazon GuardDuty
                 - [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)
+                Amazon GuardDuty is an AWS Service that can be used to detect threats, malicious behaviour and activity from unauthorized actors.
+                Amazon GuardDuty leverages machine learning and advanced anomaly detection to compile, process, prioritize potential malicious activity.
+                It can analyze billions of events in real-time across a variety of AWS Real-time and near real time streams such as:
+                - AWS CloudTrail logs
+                - Amazon VPC Flow logs
+                - DNS Logs
+                Amazon GuardDuty is just an intrusion detection system and not an intrusion prevention system (like Aviatrix GuardDuty enforcement).
                 ### Service Catalog
                 - [Compliance Validation for Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/service-catalog-compliance.html)
                 - [Security Best Practices for AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/security-best-practices.html)
@@ -1001,6 +1121,15 @@ exam:
               content: |
                 ### Amazon Inspector
                 - [What is Amazon Inspector?](https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html)
+                - Amazon Inspector os a service that automatically checks application compliance against certain predefined policies and is used to increase compliance.
+                - Amazon Inspector can identify vulnerabilities, exposure and deviations from pre-defined best practice.
+                - Once the assessment has been completed, the service generates a comprehensive report of security flows and issues sorted by security level.
+                  - The findings can then be used to close these security gaps
+                  - Users can look for unauthorized network accessibility or vulnerabilities for EC2 instances
+                - Amazon Inspector assessments are available as predefined rule components that can map to security best practices and vulnerability definitions, such as:
+                  - Someone trying to access EC2 instances from outside your network
+                  - If someone turns on remote root login
+                  - Identify software and operating system versions that are due for patching
                 #### Legacy reports in Amazon Inspector Classic
                 - [Amazon Inspector Classic assessment templates and assessment runs](https://docs.aws.amazon.com/inspector/v1/userguide/inspector_assessments.html)
                 #### Reports in new Amazon Inspector
@@ -1067,6 +1196,18 @@ exam:
               content: |
                 ### Athena
                 - [Querying AWS service logs](https://docs.aws.amazon.com/athena/latest/ug/querying-aws-service-logs.html)
+                - [Blog: Easily query AWS service logs using Amazon Athena](https://aws.amazon.com/blogs/big-data/easily-query-aws-service-logs-using-amazon-athena/)
+                - [Automating AWS service logs table creation and querying them with Amazon Athena](https://aws.amazon.com/blogs/big-data/automating-aws-service-logs-table-creation-and-querying-them-with-amazon-athena/)
+                #### Athena Federated Queries
+                - [Using Amazon Athena Federated Query](https://docs.aws.amazon.com/athena/latest/ug/connect-to-a-data-source.html)
+                #### Athena Sources
+                <pre class="mermaid">
+                  graph LR;
+                    Amazon_S3-->Athena;
+                    Hadoop_Distributed_File_System-->Athena;
+                    MongoDB-->Athena;
+                    Cassandra-->Athena;
+                </pre>
                 ### CloudWatch Logs Insights
                 - [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
                 - [Workshop](https://catalog.workshops.aws/observability/en-US/aws-native/logs/logsinsights)
@@ -1330,6 +1471,9 @@ exam:
                 - [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html)
                 - [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
                 - [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+                ### IAM Policies
+                - Identity-based policies are attached to users, groups and roles
+                - Resource-based policies are attached to AWS resources such as S3 buckets, EC2 instances, AWS Lambda
             - name: "Identity federation techniques (e.g, using IAM identity providers and AWS Single Sign-On)"
               content: |
                 ### IAM
@@ -1338,6 +1482,22 @@ exam:
                 - [aws:FederatedProvider](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-federatedprovider)
                 ### SDK JavaScript
                 - [Using Web Federated Identity to Authenticate Users](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-browser-credentials-federated-id.html)
+                ### AWS Single Sign-On
+                - AWS Single Sign-On allows to sign on to multiple entreprise applications using a user's network login ID
+                  - SalesForce
+                  - SAP
+                  - DropBox
+                  - Box
+                  - Office 365
+                - AWS SSO can be used to 
+                  - manage user access and user permissions for multiple accounts in one central place leveraging AWS Organizations
+                  - configure and maintain all account permissions automatically
+                  - base user permissions on roles
+                - To manage user identity, AWS SSO provides an identity store or it can connect with an existing identity store like:
+                  - Microsoft AD
+                  - Azure Active Directory (Azure AD)
+                  - Okta Universal Directory
+                - Any activity that occurs when using AWS SSO will be recorded using AWS ClouTrail.
             - name: "Permission management delegation by using IAM permissions boundaries"
               content: |
                 ### AWS Security Blog
@@ -1355,7 +1515,13 @@ exam:
             - name: "Organizational SCPs"
               content: |
                 ### AWS Organizations
+                AWS Organizations is a service that can be used to manage multiple AWS accounts in a consolidated manner (billing, security policies)
+                ### SCPs
                 - [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+                - An SCP can be associated with
+                  - An AWS account
+                  - An Organizational unit
+                  - Root level
           skillsIn:
             - name: "Designing policies to enforce least privilege access"
               content: |
@@ -1400,14 +1566,52 @@ exam:
                 - [Filter network traffic using AWS Network Firewall](https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.html)
                 ### AWS WAF, AWS Firewall Manager, and AWS Shield Advanced
                 - [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html#waf-intro)
+                  - Create a layer of protection around Web application and RestFul API.
+                    - Guards against the most known web exploits
+                    - Controls network traffic via rules, that targets well-known exploits such as SQL injection or cross-site scripting.
+                    - Rules can be customized to meet user-defined patterns
+                    - Managed rules can be used as a jump start (third party providers publish their own rules in MarketPlace)    
+                  - Billing depends on the number of rules that are deployed and the number of request received
                   - Protects paths with 403
                   - Counts requests, Capcha
+                <pre class="mermaid">
+                  graph LR;
+                    Amazon_EC2_Instances_Used_As_Origin-->AWS_WAF;
+                    Elastic_Load_Balancing-->AWS_WAF;
+                    Amazon_CloudFront-->AWS_WAF;
+                    Amazon_Api_Gateway-->AWS_WAF;
+                    AWS_AppSync-->AWS_WAF;
+                </pre>
                 - [AWS Shield](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html#ddos-intro)
-                  - DDOoS
-                  - Shield Standard > no cost , Shiels advance > cost
+                  - AWS Shield is an AWS Managed Distributed Denial of Service (DDOoS) protection service used to protect systems and data. AWS Shield comes in two flavors:
+                    - AWS Shield Standard: Provided at no additional charge
+                    - AWS Shield Advanced: Provides a higher level of protection but at an additional cost
                   - Shield Advanced options and features include automatic application layer DDoS mitigation, advanced event visibility, and dedicated support from the Shield Response Team (SRT)
+                <pre class="mermaid">
+                  graph LR;
+                    Amazon_EC2_Instances-->AWS_Shield;
+                    Elastic_Load_Balancing-->AWS_Shield;
+                    Amazon_CloudFront-->AWS_Shield;
+                    Amazon_Route53-->AWS_Shield;
+                </pre>
                 - [AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html#fms-intro)
-                  - AWS Firewall Manager simplifies your administration and maintenance tasks across previously mentionned products                  
+                  - Requires the use of AWS Organizations
+                  - AWS Firewall Manager simplifies your administration and maintenance tasks across previously mentionned products
+                  - It enables users to administer firewall rules in a central dashboard, even across multiple AWS accounts and applications
+                  - AWS Firewall Manager ensures new applications are compliant with entreprise's security policies by enabling users to manage firewall settings from one location
+                  - Provides the ability to add to VPCs across accounts and resources using a centralized dashboard :
+                    - WAF rules
+                    - AWS Shield advanced protection
+                    - Security groups
+                    - AWS Network Firewall rules
+                  <pre class="mermaid">
+                  graph LR;
+                    Amazon_EC2_Instances-->AWS_Firewall_Manager;
+                    Application_Load_Balancer-->AWS_Firewall_Manager;
+                    Amazon_CloudFront_Distributions-->AWS_Firewall_Manager;
+                    Api_Gateways-->AWS_Firewall_Manager;
+                  </pre>
+
             - name: "Certificates and public key infrastructure (PKI)"
               content: |
                 ### AWS cryptography services
@@ -1430,6 +1634,10 @@ exam:
                 - [Data protection in AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/data-protection.html)
                 ### KMS
                 - [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
+                - KMS is a fundamentl AWS security service that assists in the management of encryption of data at rest.
+                  - creates and manage cryptographic keys.
+                  - manages which user, services and applications have access to cryptographic keys.
+                - Integrated with CloudTrail to know who accessed the keys and when
                 ### Access Control with IAM
                 - [What is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
           skillsIn:
@@ -1465,6 +1673,17 @@ exam:
             - name: "Automating the discovery of sensitive data at scale (e.g, Amazon Macie)"
               content: |
                 - [What is Amazon Macie?](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html)
+                - Amazon Macie is a fully managed security service that can be used to protect you data and its privacy.
+                - It leverages **artificial intelligence (AI)** and **machine learning (ML)**  to find and protect sensitive data in AWS environment.
+                - Amazon Macie can handle petabyte-sized datasets
+                - It bases its analysis on a list of S3 buckets and basically determines those who are
+                  - unencrypted
+                  - publicly accessed
+                  - shared with accounts that are not in organization
+                - It uses pattern matching and can identify sensisitive data such as personal identifiable information
+                - Delivers alerts that can be :
+                  - Filtered and displayed in Management Console
+                  - Sent to Amazon EventBridge in order to trigger automated remediation Workflow (e.g AWS Step Functions)
             - name: "Encrypting data in transit and data at rest (e.g, AWS KMS, AWS CloudHSM, ACM)"
               content: |
                 ### AWS cryptography services
@@ -1476,8 +1695,23 @@ exam:
                 ### AWS CloudHSM
                 - [What is AWS CloudHSM?](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)
                 - [When to use AWS CloudHSM](https://docs.aws.amazon.com/crypto/latest/userguide/awscryp-choose-hsm.html)
+                - Required when encryption keys cannot be provided by AWS, but you have your own instead.
+                - Hardware Security Module (HSM) that empowers users to generate their own encryption keys.
+                  - FIPS 140-2 Level 3
+                - Can be integrated with APIs
+                  - PKCS#11
+                  - Microsoft CryptoNG
+                  - Java cryptography extensions (JCEs)
+                - Can export keys
                 ### Classic Elastic Load Balancer
                 - [HTTPS listeners for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-https-load-balancers.html)
+                ### AWS Certificate Manager
+                - AWS Certificate Manager can be used to create, maintain and deploy public and private SSL/TLS certificates that can be added to other AWS Services and other applications.
+                  - ELB
+                  - CloudFront
+                  - APIs on API Gateway
+                - SSL/TLS encrypt data at transit and can be used to authenticate a website's identity in public and private networks.
+                - No cost except the AWS Certificate Manager Private Certificate **Authority** (monthly charge) and associated private certificates.
         - id: "6.3"
           name: "Implement security monitoring and auditing solutions."
           knowledgeOf:

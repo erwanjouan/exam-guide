@@ -33,7 +33,8 @@ export class ContentComponent implements OnInit {
   initMermaid() {
     mermaid.initialize({
       startOnLoad: true,
-      securityLevel: 'loose'
+      securityLevel: 'loose',
+      theme: 'dark'
     });
     mermaid.init();
   }
